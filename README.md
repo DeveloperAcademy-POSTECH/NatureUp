@@ -1,2 +1,2 @@
 # NatureUp
-Apple Developer Academy, Afternoon Session 17team's Mini Challenge Project
+Apple Developer Academy @ POSTECH, Afternoon Session 17 team's Mini Challenge Project
