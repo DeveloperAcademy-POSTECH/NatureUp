@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				16B2F96E27FC78D300E83570 /* NatureUpApp.swift */,
-				16B2F97027FC78D300E83570 /* ContentView.swift */,
+				16B2F98B27FD5EB600E83570 /* Views */,
 				16B2F97227FC78D400E83570 /* Assets.xcassets */,
 				16B2F97427FC78D400E83570 /* Preview Content */,
 			);
@@ -65,6 +65,14 @@
 				16B2F97527FC78D400E83570 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16B2F98B27FD5EB600E83570 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16B2F97027FC78D300E83570 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
