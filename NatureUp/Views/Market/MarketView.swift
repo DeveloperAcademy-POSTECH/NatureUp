@@ -27,6 +27,7 @@ struct MarketView: View {
                             .border(Color.green, width:3)
                             .frame(width:135, height:40)
                     }.padding()
+                    
                     RoundedRectangle(cornerRadius : 10)
                         .fill(Color("SecondGreen"))
                         .frame(width:280, height:80)
