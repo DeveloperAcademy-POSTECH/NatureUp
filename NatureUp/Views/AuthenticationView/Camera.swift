@@ -86,8 +86,10 @@ class CameraModel: ObservableObject {
         // first checking camerahas got permission...
         switch AVCaptureDevice.authorizationStatus(for: .video) {
         case .authorized:
+            break
             // Setting Up Session
         default:
+            break
         }
     }
 }
