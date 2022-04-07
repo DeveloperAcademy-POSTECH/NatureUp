@@ -61,7 +61,7 @@ struct ContentView: View {
                 }
                 .tag(3)
         }
-        .accentColor(Color(red: 4.0 / 255, green: 158.0 / 255, blue: 84.0 / 255))
+        .accentColor(Color("PrimaryGreen"))
     }
 }
 

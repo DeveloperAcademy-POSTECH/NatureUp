@@ -13,7 +13,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView{
             ZStack {
-                Color(red: 243.0 / 255, green: 244.0 / 255, blue: 248.0 / 255)
+                Color("BackgroundGray")
                 Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
                     .navigationBarTitle("Home", displayMode: .inline)
                     .toolbar {
@@ -22,7 +22,7 @@ struct HomeView: View {
                         } label: {
                             Label("Notifications", systemImage: "bell.badge")
                         }
-                        .accentColor(Color(red: 4.0 / 255, green: 158.0 / 255, blue: 84.0 / 255))
+                        .accentColor(Color("PrimaryGreen"))
                     }
             }
         }
