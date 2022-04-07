@@ -14,7 +14,8 @@ struct HomeView: View {
         NavigationView{
             ZStack {
                 Color("BackgroundGray")
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                MyStatus()
+                    .frame(height: 80)
                     .navigationBarTitle("Home", displayMode: .inline)
                     .toolbar {
                         Button {
