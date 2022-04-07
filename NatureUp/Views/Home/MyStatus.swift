@@ -9,18 +9,21 @@ import SwiftUI
 
 struct MyStatus: View {
     var body: some View {
-        HStack(spacing: 50.0) {
+        HStack {
+            Spacer()
             VStack(spacing: 5) {
                 Text("현재 내 등수")
                 Text("131")
             }
+            Spacer()
             Divider()
+            Spacer()
             VStack(spacing: 5) {
                 Text("현재 내 포인트")
                 Text("100")
             }
+            Spacer()
         }
-        .padding(.horizontal, 50.0)
         .background(
             Color(red: 0.85, green: 0.935, blue: 0.914)
         )
@@ -29,13 +32,13 @@ struct MyStatus: View {
             RoundedRectangle(cornerRadius: 8)
                 .stroke(Color("PrimaryGreen"), lineWidth: 1)
         )
-        
+        .frame(height: 80)
+        .padding()
     }
 }
 
 struct MyStatus_Previews: PreviewProvider {
     static var previews: some View {
         MyStatus()
-            .frame(height: 80)
     }
 }

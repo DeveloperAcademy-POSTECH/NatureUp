@@ -16,7 +16,6 @@ struct HomeView: View {
                 Color("BackgroundGray")
                 VStack {
                     MyStatus()
-                        .frame(height: 80)
                         .navigationBarTitle("Home", displayMode: .inline)
                         .toolbar {
                             Button {
