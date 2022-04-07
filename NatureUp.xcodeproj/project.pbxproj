@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		16B2F96F27FC78D300E83570 /* NatureUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F96E27FC78D300E83570 /* NatureUpApp.swift */; };
 		16B2F97127FC78D300E83570 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F97027FC78D300E83570 /* ContentView.swift */; };
-		16B2F97327FC78D400E83570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B2F97227FC78D400E83570 /* Assets.xcassets */; };
+        16B2F97327FC78D400E83570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B2F97227FC78D400E83570 /* Assets.xcassets */; };
 		16B2F97627FC78D400E83570 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B2F97527FC78D400E83570 /* Preview Assets.xcassets */; };
 		16B2F98D27FD621800E83570 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F98C27FD621800E83570 /* HomeView.swift */; };
-		16B2F9C427FEB44200E83570 /* MyStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F9C327FEB44200E83570 /* MyStatus.swift */; };
+        16B2F9C427FEB44200E83570 /* MyStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F9C327FEB44200E83570 /* MyStatus.swift */; };
 		16B2F9C627FEBCF100E83570 /* ActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F9C527FEBCF100E83570 /* ActivityList.swift */; };
 		16B2F9C827FEBDCA00E83570 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F9C727FEBDCA00E83570 /* Activity.swift */; };
 		34E46B5627FDD79400B2CA60 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E46B5527FDD79400B2CA60 /* AuthenticationView.swift */; };
 		34E46B5827FDD94A00B2CA60 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E46B5727FDD94A00B2CA60 /* Camera.swift */; };
-		6F6EAD9927FD6284007B2130 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EAD9827FD6284007B2130 /* MarketView.swift */; };
+        6F6EAD9927FD6284007B2130 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EAD9827FD6284007B2130 /* MarketView.swift */; };
 		6F6EAD9C27FD79A5007B2130 /* ItemList1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EAD9B27FD79A5007B2130 /* ItemList1.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,12 +28,12 @@
 		16B2F97227FC78D400E83570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16B2F97527FC78D400E83570 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16B2F98C27FD621800E83570 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		16B2F9C327FEB44200E83570 /* MyStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatus.swift; sourceTree = "<group>"; };
+        16B2F9C327FEB44200E83570 /* MyStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatus.swift; sourceTree = "<group>"; };
 		16B2F9C527FEBCF100E83570 /* ActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityList.swift; sourceTree = "<group>"; };
 		16B2F9C727FEBDCA00E83570 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		34E46B5527FDD79400B2CA60 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		34E46B5727FDD94A00B2CA60 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
-		6F6EAD9827FD6284007B2130 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+        6F6EAD9827FD6284007B2130 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
 		6F6EAD9B27FD79A5007B2130 /* ItemList1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,15 +86,15 @@
 		16B2F98B27FD5EB600E83570 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				34E46B5427FDD76100B2CA60 /* AuthenticationView */,
 				16B2F97027FC78D300E83570 /* ContentView.swift */,
 				16B2F9C227FEAB3B00E83570 /* Home */,
-				34E46B5427FDD76100B2CA60 /* AuthenticationView */,
-				6F6EAD9A27FD797D007B2130 /* Market */,
+                6F6EAD9A27FD797D007B2130 /* Market */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		16B2F9C227FEAB3B00E83570 /* Home */ = {
+        16B2F9C227FEAB3B00E83570 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				16B2F98C27FD621800E83570 /* HomeView.swift */,
@@ -112,7 +112,9 @@
 				34E46B5727FDD94A00B2CA60 /* Camera.swift */,
 			);
 			path = AuthenticationView;
-		6F6EAD9A27FD797D007B2130 /* Market */ = {
+			sourceTree = "<group>";
+		};
+        6F6EAD9A27FD797D007B2130 /* Market */ = {
 			isa = PBXGroup;
 			children = (
 				6F6EAD9827FD6284007B2130 /* MarketView.swift */,
@@ -179,7 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16B2F97627FC78D400E83570 /* Preview Assets.xcassets in Resources */,
+                16B2F97627FC78D400E83570 /* Preview Assets.xcassets in Resources */,
 				16B2F97327FC78D400E83570 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,9 +331,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NatureUp/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K6B59X6MS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,7 +345,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iC5.NatureUp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Neis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -358,9 +361,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NatureUp/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K6B59X6MS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -371,7 +375,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iC5.NatureUp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Neis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
