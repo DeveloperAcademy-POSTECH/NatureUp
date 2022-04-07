@@ -25,14 +25,13 @@ struct CameraView: View {
     @StateObject var camera = CameraModel()
     var body: some View {
         ZStack {
-            // Going to Be Camera preview...
-            Color.black
-                .ignoresSafeArea(.all, edges: .all)
+            CameraPreview(camera: camera)
+                // .ignoresSafeArea(edges: .bottom)
             VStack {
                 if camera.isTaken {
                     HStack {
                         Spacer()
-                        Button(action: {}, label: {
+                        Button(action: camera.reTake, label: {
                             Image(systemName: "arrow.triangle.2.circlepath.camera")
                                 .foregroundColor(Color(red: 4.0 / 255, green: 158.0 / 255, blue: 84.0 / 255))
                                 .padding()
@@ -44,10 +43,9 @@ struct CameraView: View {
                 }
                 Spacer()
                 HStack {
-                    // if taken showing save and again take button...
                     if camera.isTaken {
-                        Button(action: {}, label: {
-                            Text("인증하기")
+                        Button(action: {if !camera.isSaved {camera.savePic()}}, label: {
+                            Text(camera.isSaved ? "인증완료" : "인증하기")
                                 .foregroundColor(Color(red: 4.0 / 255, green: 158.0 / 255, blue: 84.0 / 255))
                                 .fontWeight(.semibold)
                                 .padding(.vertical, 10)
@@ -59,35 +57,138 @@ struct CameraView: View {
                         Spacer()
                     }
                     else {
-                        Button(action: {camera.isTaken.toggle()}, label: {
-                            ZStack {
-                                Circle()
-                                    .fill(Color(red: 102.0 / 255, green: 210.0 / 255, blue: 157.0 / 255))
-                                    .frame(width: 65, height: 65)
-                                Circle()
-                                    .stroke(Color(red: 102.0 / 255, green: 210.0 / 255, blue: 157.0 / 255), lineWidth: 2)
-                                    .frame(width: 75, height: 75)
-                            }
-                        })
+                        ZStack {
+                            Rectangle()
+                                .fill(.white)
+                                .ignoresSafeArea(edges: .bottom)
+                            Button(action: camera.takePic, label: {
+                                ZStack {
+                                    Circle()
+                                        .fill(Color(red: 102.0 / 255, green: 210.0 / 255, blue: 157.0 / 255))
+                                        .frame(width: 65, height: 65)
+                                    Circle()
+                                        .stroke(Color(red: 102.0 / 255, green: 210.0 / 255, blue: 157.0 / 255), lineWidth: 2)
+                                        .frame(width: 75, height: 75)
+                                }
+                            })
+                        }
                     }
                 }
-                .frame(height: 75)
+                .frame(height: 150)
             }
         }
+        .onAppear(perform: {
+            camera.Check()
+        })
     }
 }
 
 
 //Camera Model...
-class CameraModel: ObservableObject {
+class CameraModel: NSObject, ObservableObject, AVCapturePhotoCaptureDelegate {
     @Published var isTaken = false
     @Published var session = AVCaptureSession()
+    @Published var alert = false
+    @Published var output = AVCapturePhotoOutput()
+    @Published var preview : AVCaptureVideoPreviewLayer!
+    @Published var isSaved = false
+    @Published var picData = Data(count: 0)
+    
     func Check() {
-        // first checking camerahas got permission...
         switch AVCaptureDevice.authorizationStatus(for: .video) {
         case .authorized:
-            // Setting Up Session
+            setUp()
+            return
+        case .notDetermined:
+            AVCaptureDevice.requestAccess(for: .video) { (status) in
+                if status {
+                    self.setUp()
+                }
+            }
+        case .denied:
+            self.alert.toggle()
+            return
+            
         default:
+            return
         }
+    }
+    
+    func setUp() {
+        do {
+            self.session.beginConfiguration()
+            // change for your own
+            let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
+            let input = try AVCaptureDeviceInput(device: device!)
+            if self.session.canAddInput(input) {
+                self.session.addInput(input)
+            }
+            if self.session.canAddOutput(self.output) {
+                self.session.addOutput(self.output)
+            }
+            self.session.commitConfiguration()
+        }
+        catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func takePic() {
+        DispatchQueue.global(qos: .background).async {
+            self.output.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
+            self.session.stopRunning()
+            
+            DispatchQueue.main.async {
+                withAnimation{self.isTaken.toggle()}
+            }
+        }
+    }
+    
+    func reTake() {
+        DispatchQueue.global(qos: .background).async {
+            self.session.startRunning()
+            DispatchQueue.main.async {
+                withAnimation {self.isTaken.toggle()}
+                // clearing ...
+                self.isSaved = false
+            }
+        }
+    }
+    
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+        if error != nil {
+            return
+        }
+        print("pic taken...")
+        guard let imageData = photo.fileDataRepresentation() else {return}
+        self.picData = imageData
+    }
+    
+    func savePic() {
+        let image = UIImage(data: self.picData)!
+        // saving Image...
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        self.isSaved = true
+        print("saved Successfully...")
+    }
+}
+
+// setting view for preview...
+struct CameraPreview: UIViewRepresentable {
+    @ObservedObject var camera: CameraModel
+
+    func makeUIView(context: Context) -> UIView {
+    let view = UIView(frame: UIScreen.main.bounds)
+        camera.preview = AVCaptureVideoPreviewLayer(session: camera.session)
+        camera.preview.frame = view.frame
+        // Your Own Properties...
+        camera.preview.videoGravity = .resizeAspectFill
+        view.layer.addSublayer(camera.preview)
+        camera.session.startRunning()
+
+        return view
+    }
+    func updateUIView(_ uiView: UIView, context: Context) {
+
     }
 }

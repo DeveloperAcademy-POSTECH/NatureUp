@@ -10,7 +10,7 @@ import SwiftUI
 struct AuthenticationView: View {
     var body: some View {
         Camera()
-            .navigationBarTitle("활동 인증하기", displayMode:.automatic)
+            .navigationBarTitle("활동 인증하기", displayMode:.inline)
     }
 }
 

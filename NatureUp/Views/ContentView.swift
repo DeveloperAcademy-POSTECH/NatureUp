@@ -14,7 +14,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             TabView(selection: $selection) {
+                VStack {
                 Text("Tab Content 1")
+                }
                     .tabItem {
                         if selection == 0 {
                             Image(systemName: "house")
