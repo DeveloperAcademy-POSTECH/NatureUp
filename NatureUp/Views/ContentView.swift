@@ -16,12 +16,12 @@ struct ContentView: View {
             HomeView()
                 .tabItem {
                     if selection == 0 {
-                        Image(systemName: "house")
+                        Image(systemName: "leaf")
                     } else {
-                        Image(systemName: "house")
+                        Image(systemName: "leaf")
                             .environment(\.symbolVariants, .none)
                     }
-                    Text("홈")
+                    Text("추천 활동")
                 }
                 .tag(0)
             LeaderBoardView()

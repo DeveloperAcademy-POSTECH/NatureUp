@@ -44,11 +44,23 @@ struct AuthenticationView: View {
             } else {
                 ZStack {
                     Color("BackgroundGray")
+                    VStack {
                     Spacer()
-                    Text("인증을 위해 아래 버튼을 눌러주세요")
-                        .font(.title3)
+                    Text("아래 버튼을 눌러주세요")
+                        .font(.title2)
+                        .fontWeight(.black)
                         .foregroundColor(Color("PrimaryGreen"))
+                        .padding()
+                        Text("원활한 평가를 위해")
+                            .font(.body)
+                            .foregroundColor(Color("PrimaryGreen"))
+                            .opacity(0.8)
+                        Text("활동과 관련된 사진을 촬영해주세요")
+                            .font(.body)
+                            .foregroundColor(Color("PrimaryGreen"))
+                            .opacity(0.8)
                     Spacer()
+                    }
                 }
             }
             VStack {
