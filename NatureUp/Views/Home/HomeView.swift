@@ -16,7 +16,7 @@ struct HomeView: View {
                 Color("BackgroundGray")
                 VStack {
                     MyStatus()
-                        .navigationBarTitle("Home", displayMode: .inline)
+                        .navigationBarTitle("추천 활동", displayMode: .inline)
                         .toolbar {
                             Button {
                                 showingNotifications.toggle()
