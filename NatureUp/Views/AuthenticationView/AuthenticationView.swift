@@ -20,9 +20,10 @@ struct AuthenticationView: View {
                         .scaledToFill()
                     VStack {
                         HStack {
-                            Spacer()
-                            Button(action: {}, label: {
-                                Text("인증하기")
+                            Button(action: {
+                                isCustomCameraViewPresented.toggle()
+                            }, label: {
+                                Text("다시 찍기")
                                     .foregroundColor(Color(red: 4.0 / 255, green: 158.0 / 255, blue: 84.0 / 255))
                                     .fontWeight(.semibold)
                                     .padding(.vertical, 10)
@@ -31,6 +32,10 @@ struct AuthenticationView: View {
                                     .clipShape(Capsule())
                             })
                             .padding(.trailing)
+                            .sheet(isPresented: $isCustomCameraViewPresented, content: {
+                                CustomCameraView(capturedImage: $capturedImage)
+                            })
+                            Spacer()
                         }
                         .padding()
                         Spacer()
@@ -52,29 +57,32 @@ struct AuthenticationView: View {
                     Rectangle()
                         .fill(.white)
                         .frame(height: 150)
-                    Button(action: {
+                    if capturedImage != nil {
+                        NavigationLink(destination: AuthenticationSuccessView()) {
+                            Text("인증하기")
+                                .foregroundColor(Color(red: 4.0 / 255, green: 158.0 / 255, blue: 84.0 / 255))
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                                .padding(.vertical, 10)
+                                .padding(.horizontal, 20)
+                                .background(Color.white)
+                                .clipShape(Capsule())
+                        }
+                    } else { Button(action: {
                         isCustomCameraViewPresented.toggle()
                     }, label: {
-                        if capturedImage != nil {
-                            Image(systemName: "arrow.triangle.2.circlepath")
-                                .font(.largeTitle)
-                                .padding()
-                                .background(Color("SecondGreen"))
-                                .foregroundColor(.white)
-                                .clipShape(Circle())
-                        } else {
-                            Image(systemName: "camera.fill")
-                                .font(.largeTitle)
-                                .padding()
-                                .background(Color("SecondGreen"))
-                                .foregroundColor(.white)
-                                .clipShape(Circle())
-                        }
+                        Image(systemName: "camera.fill")
+                            .font(.largeTitle)
+                            .padding()
+                            .background(Color("SecondGreen"))
+                            .foregroundColor(.white)
+                            .clipShape(Circle())
                     })
                     .padding(.bottom)
                     .sheet(isPresented: $isCustomCameraViewPresented, content: {
                         CustomCameraView(capturedImage: $capturedImage)
                     })
+                    }
                 }
             }
         }
