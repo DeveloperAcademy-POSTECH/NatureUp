@@ -12,9 +12,10 @@ struct ProfileView: View {
 
         ZStack {
             Color("BackgroundGray")
+
             ProfilePicture()
-                .padding(.bottom, 400)
-            
+                .padding(.bottom, 450)
+
         }
     }
 }
@@ -22,5 +23,6 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
+        
     }
 }
