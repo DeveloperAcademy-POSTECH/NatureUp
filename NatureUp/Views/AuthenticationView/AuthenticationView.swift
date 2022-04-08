@@ -21,7 +21,7 @@ struct AuthenticationView: View {
                     VStack {
                         HStack {
                             Spacer()
-                            Button(action: {}, label: {
+                            NavigationLink(destination: AuthenticationSuccessView()) {
                                 Text("인증하기")
                                     .foregroundColor(Color(red: 4.0 / 255, green: 158.0 / 255, blue: 84.0 / 255))
                                     .fontWeight(.semibold)
@@ -29,7 +29,7 @@ struct AuthenticationView: View {
                                     .padding(.horizontal, 20)
                                     .background(Color.white)
                                     .clipShape(Capsule())
-                            })
+                            }
                             .padding(.trailing)
                         }
                         .padding()
