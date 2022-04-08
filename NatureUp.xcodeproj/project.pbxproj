@@ -21,6 +21,7 @@
 		346EBA9827FF2C820002B186 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EBA9727FF2C820002B186 /* CustomCameraView.swift */; };
 		346EBA9A27FF2F040002B186 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EBA9927FF2F040002B186 /* AuthenticationView.swift */; };
 		346EBA9F28000B880002B186 /* AuthenticationSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EBA9E28000B880002B186 /* AuthenticationSuccessView.swift */; };
+		346EBAA328007CD60002B186 /* EvaluationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EBAA228007CD60002B186 /* EvaluationView.swift */; };
 		6F66F8A727FED48E00901917 /* ItemList2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F66F8A627FED48E00901917 /* ItemList2.swift */; };
 		6F66F8A927FED59A00901917 /* ItemList3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F66F8A827FED59A00901917 /* ItemList3.swift */; };
 		6F66F8AB27FED5A400901917 /* ItemList4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F66F8AA27FED5A400901917 /* ItemList4.swift */; };
@@ -46,6 +47,7 @@
 		346EBA9727FF2C820002B186 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		346EBA9927FF2F040002B186 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		346EBA9E28000B880002B186 /* AuthenticationSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationSuccessView.swift; sourceTree = "<group>"; };
+		346EBAA228007CD60002B186 /* EvaluationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationView.swift; sourceTree = "<group>"; };
 		6F66F8A627FED48E00901917 /* ItemList2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList2.swift; sourceTree = "<group>"; };
 		6F66F8A827FED59A00901917 /* ItemList3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList3.swift; sourceTree = "<group>"; };
 		6F66F8AA27FED5A400901917 /* ItemList4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList4.swift; sourceTree = "<group>"; };
@@ -113,9 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				05447D0B2800077D0075EDB5 /* LeaderBoard */,
-				34E46B5427FDD76100B2CA60 /* AuthenticationView */,
+				34E46B5427FDD76100B2CA60 /* Authentication */,
 				16B2F97027FC78D300E83570 /* ContentView.swift */,
 				34E46B5427FDD76100B2CA60 /* AuthenticationView */,
+				346EBAA128007CA40002B186 /* Evaluation */,
 				16B2F9C227FEAB3B00E83570 /* Home */,
 				6F6EAD9A27FD797D007B2130 /* Market */,
 				B5C7FF7428000A0A0017C7AC /* Profile */,
@@ -134,7 +137,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		34E46B5427FDD76100B2CA60 /* AuthenticationView */ = {
+		346EBAA128007CA40002B186 /* Evaluation */ = {
+			isa = PBXGroup;
+			children = (
+				346EBAA228007CD60002B186 /* EvaluationView.swift */,
+			);
+			path = Evaluation;
+			sourceTree = "<group>";
+		};
+		34E46B5427FDD76100B2CA60 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				346EBA9127FF03AC0002B186 /* CameraService.swift */,
@@ -143,7 +154,7 @@
 				346EBA9E28000B880002B186 /* AuthenticationSuccessView.swift */,
 				346EBA9927FF2F040002B186 /* AuthenticationView.swift */,
 			);
-			path = AuthenticationView;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		6F6EAD9A27FD797D007B2130 /* Market */ = {
@@ -237,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346EBAA328007CD60002B186 /* EvaluationView.swift in Sources */,
 				346EBA9F28000B880002B186 /* AuthenticationSuccessView.swift in Sources */,
 				6F66F8AB27FED5A400901917 /* ItemList4.swift in Sources */,
 				6F66F8A927FED59A00901917 /* ItemList3.swift in Sources */,
@@ -385,7 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NatureUp/Preview Content\"";
-				DEVELOPMENT_TEAM = K6B59X6MS9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -400,7 +412,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Neis;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iC5.NatureUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -416,7 +428,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NatureUp/Preview Content\"";
-				DEVELOPMENT_TEAM = K6B59X6MS9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -431,7 +443,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Neis;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iC5.NatureUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
