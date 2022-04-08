@@ -24,7 +24,7 @@ struct ContentView: View {
                     Text("홈")
                 }
                 .tag(0)
-            Text("Tab Content 2")
+            LeaderBoardView()
                 .tabItem {
                     if selection == 1 {
                         Image(systemName: "star")
@@ -33,7 +33,6 @@ struct ContentView: View {
                             .environment(\.symbolVariants, .none)
                     }
                     Text("리더보드")
-                    
                 }
                 .tag(1)
             MarketView()

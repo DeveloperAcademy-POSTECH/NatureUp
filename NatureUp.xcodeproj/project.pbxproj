@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0518984628000E3400CFCB2D /* LeaderBoardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0518984528000E3400CFCB2D /* LeaderBoardRow.swift */; };
+		05447D0D280007950075EDB5 /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05447D0C280007940075EDB5 /* LeaderBoardView.swift */; };
 		1613E23327FEE951002F5231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1613E23227FEE951002F5231 /* Assets.xcassets */; };
 		16B2F96F27FC78D300E83570 /* NatureUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F96E27FC78D300E83570 /* NatureUpApp.swift */; };
 		16B2F97127FC78D300E83570 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F97027FC78D300E83570 /* ContentView.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0518984528000E3400CFCB2D /* LeaderBoardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardRow.swift; sourceTree = "<group>"; };
+		05447D0C280007940075EDB5 /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
 		1613E23227FEE951002F5231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16B2F96B27FC78D300E83570 /* NatureUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatureUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B2F96E27FC78D300E83570 /* NatureUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureUpApp.swift; sourceTree = "<group>"; };
@@ -58,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05447D0B2800077D0075EDB5 /* LeaderBoard */ = {
+			isa = PBXGroup;
+			children = (
+				05447D0C280007940075EDB5 /* LeaderBoardView.swift */,
+				0518984528000E3400CFCB2D /* LeaderBoardRow.swift */,
+			);
+			path = LeaderBoard;
+			sourceTree = "<group>";
+		};
 		16B2F96227FC78D300E83570 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +108,7 @@
 		16B2F98B27FD5EB600E83570 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				05447D0B2800077D0075EDB5 /* LeaderBoard */,
 				34E46B5427FDD76100B2CA60 /* AuthenticationView */,
 				16B2F97027FC78D300E83570 /* ContentView.swift */,
 				16B2F9C227FEAB3B00E83570 /* Home */,
@@ -215,11 +229,13 @@
 				16B2F9CC27FED13000E83570 /* ActivityList.swift in Sources */,
 				16B2F9CA27FED10E00E83570 /* Activity.swift in Sources */,
 				346EBA9427FF0B580002B186 /* CameraView.swift in Sources */,
+				0518984628000E3400CFCB2D /* LeaderBoardRow.swift in Sources */,
 				16B2F9CE27FED1C100E83570 /* HomeView.swift in Sources */,
 				16B2F97127FC78D300E83570 /* ContentView.swift in Sources */,
 				16B2F9C427FEB44200E83570 /* MyStatus.swift in Sources */,
 				346EBA9827FF2C820002B186 /* CustomCameraView.swift in Sources */,
 				16B2F96F27FC78D300E83570 /* NatureUpApp.swift in Sources */,
+				05447D0D280007950075EDB5 /* LeaderBoardView.swift in Sources */,
 				6F6EAD9C27FD79A5007B2130 /* ItemList1.swift in Sources */,
 				6F66F8A727FED48E00901917 /* ItemList2.swift in Sources */,
 				6F6EAD9927FD6284007B2130 /* MarketView.swift in Sources */,
@@ -351,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NatureUp/Preview Content\"";
-				DEVELOPMENT_TEAM = K6B59X6MS9;
+				DEVELOPMENT_TEAM = 2K43262B89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -382,7 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NatureUp/Preview Content\"";
-				DEVELOPMENT_TEAM = K6B59X6MS9;
+				DEVELOPMENT_TEAM = 2K43262B89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";

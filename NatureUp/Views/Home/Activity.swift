@@ -14,8 +14,12 @@ struct Activity: View {
         ZStack {
             Color(.white)
             HStack {
-                Text(activity)
-                    .font(.headline)
+                NavigationLink(destination: AuthenticationView()) {
+                    Text(activity)
+                        .font(.headline)
+                        .fontWeight(.medium)
+                        .foregroundColor(Color.black)
+                }
                 Spacer()
             }
             .padding()
@@ -23,7 +27,7 @@ struct Activity: View {
         .cornerRadius(1)
         .overlay(
             RoundedRectangle(cornerRadius: 1)
-                .stroke(Color(.black), lineWidth: 0.4)
+                .stroke(Color(red: 151.0/255, green: 151.0/255, blue: 151.0/255), lineWidth: 0.4)
         )
         .frame(height: 50)
     }
