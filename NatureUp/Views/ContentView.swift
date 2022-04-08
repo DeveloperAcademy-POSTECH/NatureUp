@@ -33,7 +33,6 @@ struct ContentView: View {
                             .environment(\.symbolVariants, .none)
                     }
                     Text("리더보드")
-                    
                 }
                 .tag(1)
             MarketView()
