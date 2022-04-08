@@ -19,6 +19,7 @@ struct MyStatus: View {
             Divider()
                 .background(Color("PrimaryGreen"))
                 .opacity(0.3)
+                .frame(height: 60)
             Spacer()
             VStack(spacing: 5) {
                 Text("현재 내 포인트")
@@ -26,6 +27,7 @@ struct MyStatus: View {
             }
             Spacer()
         }
+        .frame(height: 80)
         .background(
             Color(red: 0.85, green: 0.935, blue: 0.914)
         )
@@ -34,7 +36,6 @@ struct MyStatus: View {
             RoundedRectangle(cornerRadius: 8)
                 .stroke(Color("PrimaryGreen"), lineWidth: 1)
         )
-        .frame(height: 80)
         .padding()
     }
 }

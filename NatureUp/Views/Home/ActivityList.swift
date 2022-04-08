@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ActivityList: View {
-    var location: String
+    @State var selection: Int? = nil
+    let location: String
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -17,12 +18,16 @@ struct ActivityList: View {
                     .font(.title2)
                     .fontWeight(.semibold)
                     .foregroundColor(Color("PrimaryGreen"))
-                Button(action: {}) {
-                    Image(systemName: "chevron.forward")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color("PrimaryGreen"))
-                        .frame(width: 20.0, height: 20.0)
+                NavigationLink(destination: Text("상세 리스트 페이지"), tag: 1, selection: $selection) {
+                    Button(action: {
+                        self.selection = 1
+                    }) {
+                        Image(systemName: "chevron.forward")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(Color("PrimaryGreen"))
+                            .frame(width: 20.0, height: 20.0)
+                    }
                 }
             }
             Activity(activity: "쓰레기 분리수거 하기")

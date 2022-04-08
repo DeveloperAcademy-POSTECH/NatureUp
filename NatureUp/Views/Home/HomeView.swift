@@ -38,7 +38,7 @@ struct HomeView: View {
                         }
                     }
                     Button(action: {
-                            print("sign up bin tapped")
+                            print("랜덤평가 버튼")
                     }) {
                         Text("랜덤평가 진행하기")
                             .frame(minWidth: 0, maxWidth: .infinity)
@@ -47,7 +47,7 @@ struct HomeView: View {
                             .foregroundColor(.white)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color("PrimaryGreen"), lineWidth: 2)
+                                    .stroke(.white, lineWidth: 0)
                             )
                     }
                     .background(Color("SecondGreen"))
