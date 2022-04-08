@@ -26,6 +26,7 @@
 		6F66F8AB27FED5A400901917 /* ItemList4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F66F8AA27FED5A400901917 /* ItemList4.swift */; };
 		6F6EAD9927FD6284007B2130 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EAD9827FD6284007B2130 /* MarketView.swift */; };
 		6F6EAD9C27FD79A5007B2130 /* ItemList1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EAD9B27FD79A5007B2130 /* ItemList1.swift */; };
+		B5B4417B28008B06005514C7 /* ActivityPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4417A28008B06005514C7 /* ActivityPicture.swift */; };
 		B5C7FF7328000A050017C7AC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7FF7228000A050017C7AC /* ProfileView.swift */; };
 		B5C7FF7628000C530017C7AC /* ProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7FF7528000C530017C7AC /* ProfilePicture.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		6F66F8AA27FED5A400901917 /* ItemList4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList4.swift; sourceTree = "<group>"; };
 		6F6EAD9827FD6284007B2130 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
 		6F6EAD9B27FD79A5007B2130 /* ItemList1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList1.swift; sourceTree = "<group>"; };
+		B5B4417A28008B06005514C7 /* ActivityPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPicture.swift; sourceTree = "<group>"; };
 		B5C7FF7228000A050017C7AC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B5C7FF7528000C530017C7AC /* ProfilePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				05447D0B2800077D0075EDB5 /* LeaderBoard */,
-				34E46B5427FDD76100B2CA60 /* AuthenticationView */,
 				16B2F97027FC78D300E83570 /* ContentView.swift */,
 				34E46B5427FDD76100B2CA60 /* AuthenticationView */,
 				16B2F9C227FEAB3B00E83570 /* Home */,
@@ -163,6 +164,7 @@
 			children = (
 				B5C7FF7228000A050017C7AC /* ProfileView.swift */,
 				B5C7FF7528000C530017C7AC /* ProfilePicture.swift */,
+				B5B4417A28008B06005514C7 /* ActivityPicture.swift */,
 			);
 			name = Profile;
 			path = Market/Profile;
@@ -253,6 +255,7 @@
 				16B2F9C427FEB44200E83570 /* MyStatus.swift in Sources */,
 				346EBA9827FF2C820002B186 /* CustomCameraView.swift in Sources */,
 				16B2F96F27FC78D300E83570 /* NatureUpApp.swift in Sources */,
+				B5B4417B28008B06005514C7 /* ActivityPicture.swift in Sources */,
 				05447D0D280007950075EDB5 /* LeaderBoardView.swift in Sources */,
 				6F6EAD9C27FD79A5007B2130 /* ItemList1.swift in Sources */,
 				6F66F8A727FED48E00901917 /* ItemList2.swift in Sources */,

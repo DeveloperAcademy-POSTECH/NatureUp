@@ -14,8 +14,12 @@ struct ProfileView: View {
         ZStack {
             Color("BackgroundGray")
                 .navigationBarTitle("사용자 정보", displayMode: .inline)
+            VStack{
                 ProfilePicture()
-                    .padding(.bottom, 450)
+                
+                
+            }
+
 
 
             }
