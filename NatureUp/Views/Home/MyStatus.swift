@@ -19,7 +19,7 @@ struct MyStatus: View {
             Divider()
                 .background(Color("PrimaryGreen"))
                 .opacity(0.3)
-                .frame(height: 60)
+                .frame(height: 40)
             Spacer()
             VStack(spacing: 5) {
                 Text("현재 내 포인트")
@@ -27,7 +27,7 @@ struct MyStatus: View {
             }
             Spacer()
         }
-        .frame(height: 80)
+        .frame(height: 60)
         .background(
             Color(red: 0.85, green: 0.935, blue: 0.914)
         )
