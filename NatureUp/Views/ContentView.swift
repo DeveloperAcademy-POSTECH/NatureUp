@@ -36,8 +36,7 @@ struct ContentView: View {
                     
                 }
                 .tag(1)
-            Text("Tab Content 2")
-            
+            MarketView()
                 .tabItem {
                     if selection == 2 {
                         Image(systemName: "cart")
