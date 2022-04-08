@@ -47,7 +47,7 @@ struct ContentView: View {
                     
                 }
                 .tag(2)
-            Text("Tab Content 2")
+            ProfileView()
                 .tabItem {
                     if selection == 3 {
                         Image(systemName: "person.crop.circle")
