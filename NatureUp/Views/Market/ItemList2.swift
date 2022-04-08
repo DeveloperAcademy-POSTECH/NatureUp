@@ -13,17 +13,34 @@ struct ItemList2: View {
             LazyVStack (alignment: .center) {
                 ForEach(1...10, id:\.self) { i in
                     HStack{
-                        RoundedRectangle(cornerRadius: 10)
-                                                .fill(Color.green)
-                                                .frame(width:90, height:90)
-                        
-                        RoundedRectangle(cornerRadius: 10)
-                                            .fill(Color.green)
-                                                .frame(width:90, height:90)
-                        
-                        RoundedRectangle(cornerRadius: 10)
-                                                .fill(Color.green)
-                                                .frame(width:90, height:90)
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color("SecondGreen"), lineWidth: 3)
+                                        .frame(width:100, height:100)
+                            RoundedRectangle(cornerRadius:10)
+                                .fill(Color.white)
+                                .frame(width:100, height:100)
+                        }
+                        Spacer()
+                            .frame(width:20)
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color("SecondGreen"), lineWidth: 3)
+                                        .frame(width:100, height:100)
+                            RoundedRectangle(cornerRadius:10)
+                                .fill(Color.white)
+                                .frame(width:100, height:100)
+                        }
+                        Spacer()
+                            .frame(width:20)
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color("SecondGreen"), lineWidth: 3)
+                                        .frame(width:100, height:100)
+                            RoundedRectangle(cornerRadius:10)
+                                .fill(Color.white)
+                                .frame(width:100, height:100)
+                        }
                     }.padding()
                     
                 }

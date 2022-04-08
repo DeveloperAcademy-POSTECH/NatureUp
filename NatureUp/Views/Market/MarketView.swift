@@ -18,20 +18,41 @@ struct MarketView: View {
                     .navigationBarTitle("상점", displayMode: .inline)
                 VStack {
                     HStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.white)
-                            .border(Color.green, width:3)
-                            .frame(width:135, height:40)
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.white)
-                            .border(Color.green, width:3)
-                            .frame(width:135, height:40)
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color("SecondGreen"), lineWidth: 2)
+                                        .frame(width:150, height:40)
+                            RoundedRectangle(cornerRadius:10)
+                                .fill(Color("SecondGreen"))
+                                .opacity(0.1)
+                                .frame(width:150, height:40)
+                            Text("포인트 : 100pt")
+                        }
+                        Spacer()
+                            .frame(width:30)
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color("SecondGreen"), lineWidth: 2)
+                                        .frame(width:150, height:40)
+                            RoundedRectangle(cornerRadius:10)
+                                .fill(Color("SecondGreen"))
+                                .opacity(0.1)
+                                .frame(width:150, height:40)
+                            Text("경험치 : 100exp")
+                        }
                     }.padding()
                     
-                    RoundedRectangle(cornerRadius : 10)
-                        .fill(Color("SecondGreen"))
-                        .frame(width:280, height:80)
-                    Picker(selection: $selectedNum, label:      Text("Item List")) {
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color("SecondGreen"), lineWidth: 3)
+                                    .frame(width:330, height:90)
+                        RoundedRectangle(cornerRadius : 10)
+                            .fill(Color.white)
+                            .frame(width:330, height:90)
+                    }
+                    
+                    
+                    Picker(selection: $selectedNum, label: Text("Item List")) {
                         Text("테두리")
                             .tag(1)
                         Text("보석 장식")
