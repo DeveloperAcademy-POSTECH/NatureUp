@@ -77,6 +77,7 @@ struct ContentView: View {
             .accentColor(Color("PrimaryGreen"))
             .navigationBarTitle(returnNaviBarTitle(tabSelection: self.tabSelection), displayMode: .inline)
         }
+        .accentColor(Color("PrimaryGreen"))
     }
 }
 
