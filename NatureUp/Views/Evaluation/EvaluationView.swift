@@ -15,12 +15,9 @@ struct EvaluationView: View {
         ZStack {
             Color("BackgroundGray")
             VStack {
-                Text("다른 사람 평가하기")
-                    .font(.title)
-                    .padding(1)
+                Spacer()
                 Text("활동에 맞는 올바른 사진인지 평가해주세요")
-                    .font(.body)
-                    .padding(.bottom)
+                    .font(.headline)
                 HStack {
                     ProgressView(value: progress, total: 10)
                     Spacer()
@@ -83,11 +80,12 @@ struct EvaluationView: View {
                         })
                     }
                 }
+                .padding(.bottom)
             }
             .padding()
         }
+        .ignoresSafeArea(.all, edges: .bottom)
         .navigationBarTitle("랜덤평가", displayMode:.inline)
-        .accentColor(Color("PrimaryGreen"))
     }
 }
 
