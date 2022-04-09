@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var showingNotifications = false
+    @State var selection: Int? = nil
     
     var body: some View {
         NavigationView{
@@ -37,8 +38,9 @@ struct HomeView: View {
                                 .padding()
                         }
                     }
+                    NavigationLink(destination: EvaluationView(), tag: 1, selection: $selection) {
                     Button(action: {
-                            print("랜덤평가 버튼")
+                        self.selection = 1
                     }) {
                         Text("랜덤평가 진행하기")
                             .frame(minWidth: 0, maxWidth: .infinity)
@@ -53,6 +55,7 @@ struct HomeView: View {
                     .background(Color("SecondGreen"))
                     .cornerRadius(10)
                     .padding()
+                    }
                 }
             }
         }
