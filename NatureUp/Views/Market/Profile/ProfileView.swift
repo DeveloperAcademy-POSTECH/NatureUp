@@ -9,17 +9,14 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color("BackgroundGray")
-                    .navigationBarTitle("사용자 정보", displayMode: .inline)
-                VStack {
-                    ProfileStatus()
-                    ProfilePicture()
-                    NamePlate()
-                    Spacer()
-                    
-                }
+        ZStack {
+            Color("BackgroundGray")
+            VStack {
+                ProfileStatus()
+                ProfilePicture()
+                NamePlate()
+                Spacer()
+                
             }
         }
     }

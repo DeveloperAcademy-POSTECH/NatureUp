@@ -9,58 +9,74 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var selection = 0
+    enum Tabs {
+        case home, leaderBoard, market, profile
+    }
+    
+    @State var tabSelection:Tabs = .home
+    
+    func returnNaviBarTitle(tabSelection: Tabs) -> String{
+        switch tabSelection{
+        case .home: return "추천 활동"
+        case .leaderBoard: return "리더보드"
+        case .market: return "상점"
+        case .profile: return "사용자 정보"
+        }
+    }
     
     var body: some View {
-        TabView(selection: $selection) {
-            HomeView()
-                .tabItem {
-                    if selection == 0 {
-                        Image(systemName: "leaf")
-                    } else {
-                        Image(systemName: "leaf")
-                            .environment(\.symbolVariants, .none)
+        NavigationView {
+            TabView(selection: $tabSelection) {
+                HomeView()
+                    .tabItem {
+                        if tabSelection == Tabs.home {
+                            Image(systemName: "leaf")
+                        } else {
+                            Image(systemName: "leaf")
+                                .environment(\.symbolVariants, .none)
+                        }
+                        Text("추천 활동")
                     }
-                    Text("추천 활동")
-                }
-                .tag(0)
-            LeaderBoardView()
-                .tabItem {
-                    if selection == 1 {
-                        Image(systemName: "star")
-                    } else {
-                        Image(systemName: "star")
-                            .environment(\.symbolVariants, .none)
+                    .tag(Tabs.home)
+                LeaderBoardView()
+                    .tabItem {
+                        if tabSelection == Tabs.leaderBoard {
+                            Image(systemName: "star")
+                        } else {
+                            Image(systemName: "star")
+                                .environment(\.symbolVariants, .none)
+                        }
+                        Text("리더보드")
                     }
-                    Text("리더보드")
-                }
-                .tag(1)
-            MarketView()
-                .tabItem {
-                    if selection == 2 {
-                        Image(systemName: "cart")
-                    } else {
-                        Image(systemName: "cart")
-                            .environment(\.symbolVariants, .none)
+                    .tag(Tabs.leaderBoard)
+                MarketView()
+                    .tabItem {
+                        if tabSelection == Tabs.market {
+                            Image(systemName: "cart")
+                        } else {
+                            Image(systemName: "cart")
+                                .environment(\.symbolVariants, .none)
+                        }
+                        Text("상점")
+                        
                     }
-                    Text("상점")
-                    
-                }
-                .tag(2)
-            ProfileView()
-                .tabItem {
-                    if selection == 3 {
-                        Image(systemName: "person.crop.circle")
-                    } else {
-                        Image(systemName: "person.crop.circle")
-                            .environment(\.symbolVariants, .none)
+                    .tag(Tabs.market)
+                ProfileView()
+                    .tabItem {
+                        if tabSelection == Tabs.profile {
+                            Image(systemName: "person.crop.circle")
+                        } else {
+                            Image(systemName: "person.crop.circle")
+                                .environment(\.symbolVariants, .none)
+                        }
+                        Text("프로필")
+                        
                     }
-                    Text("프로필")
-                    
-                }
-                .tag(3)
+                    .tag(Tabs.profile)
+            }
+            .accentColor(Color("PrimaryGreen"))
+            .navigationBarTitle(returnNaviBarTitle(tabSelection: self.tabSelection), displayMode: .inline)
         }
-        .accentColor(Color("PrimaryGreen"))
     }
 }
 
