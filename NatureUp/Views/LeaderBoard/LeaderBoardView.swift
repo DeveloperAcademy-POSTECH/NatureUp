@@ -10,7 +10,7 @@ import SwiftUI
 struct LeaderBoardView: View {
     
     let no: String  = "10"
-    let point: String = "100"
+    let exp: String = "100"
     var body: some View {
         ZStack {
             Color("BackgroundGray")
@@ -19,25 +19,26 @@ struct LeaderBoardView: View {
                     HStack {
                         ZStack{
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color("SecondGreen"), lineWidth: 2)
-                                .frame(width:150, height:40)
-                            RoundedRectangle(cornerRadius:10)
-                                .fill(Color("SecondGreen"))
+                                .fill(Color.white)
                                 .opacity(0.1)
-                                .frame(width:150, height:40)
+                                .frame(width: 85, height: 27)
+                                .overlay(RoundedRectangle(cornerRadius: 8)
+                                    .stroke(Color(red: 112/255, green: 210/255, blue: 163/255), lineWidth: 2)
+                                )
                             Text("내등수 :  \(no)")
+                                .font(.system(size: 12))
                         }
                         Spacer()
-                            .frame(width:30)
                         ZStack{
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color("SecondGreen"), lineWidth: 2)
-                                .frame(width:150, height:40)
-                            RoundedRectangle(cornerRadius:10)
-                                .fill(Color("SecondGreen"))
+                                .fill(Color.white)
                                 .opacity(0.1)
-                                .frame(width:150, height:40)
-                            Text("포인트 : \(point)")
+                                .frame(width: 85, height: 27)
+                                .overlay(RoundedRectangle(cornerRadius: 8)
+                                    .stroke(Color(red: 112/255, green: 210/255, blue: 163/255), lineWidth: 2)
+                                )
+                            Text("경험치 :  \(exp)")
+                                .font(.system(size: 12))
                         }
                     }.padding()
                     
