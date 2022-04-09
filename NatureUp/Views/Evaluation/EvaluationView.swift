@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct EvaluationView: View {
+    @State var selection: Int? = nil
+    @State var progress = 1.0
+    
     var body: some View {
         ZStack {
             Color("BackgroundGray")
             VStack {
-                Text("다른 사람 평가하기")
-                    .font(.title)
-                    .padding(1)
+                Spacer()
                 Text("활동에 맞는 올바른 사진인지 평가해주세요")
-                    .font(.body)
-                    .padding(.bottom)
+                    .font(.headline)
                 HStack {
-                    ProgressView(value: 0.1)
+                    ProgressView(value: progress, total: 10)
                     Spacer()
                 }
                 .padding()
@@ -40,35 +40,52 @@ struct EvaluationView: View {
                     .frame(height: 400)
                     .cornerRadius(10)
                 HStack {
-                    Button(action: {}, label: {
-                        ZStack {
-                            Rectangle()
-                                .fill(.white)
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                .cornerRadius(10)
-                            Image(systemName: "xmark")
-                                .foregroundColor(.black)
-                                .font(.system(size: 30))
-                        }
-                    })
+                    NavigationLink(destination: EvaluationCompleteView()) {
+                        Button(action: {
+                            if progress < 10 {
+                                progress += 1
+                            } else {
+                                self.selection = 1
+                            }
+                        }, label: {
+                            ZStack {
+                                Rectangle()
+                                    .fill(.white)
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    .cornerRadius(10)
+                                Image(systemName: "xmark")
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 30))
+                            }
+                        })
+                    }
                     Spacer()
-                    Button(action: {}, label: {
-                        ZStack {
-                            Rectangle()
-                                .fill(Color(red: 102.0 / 255, green: 210.0 / 255, blue: 157.0 / 255))
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                .cornerRadius(10)
-                            Image(systemName: "checkmark")
-                                .foregroundColor(.white)
-                                .font(.system(size: 30))
-                        }
-                    })
+                    NavigationLink(destination: EvaluationCompleteView(), tag: 1, selection: $selection) {
+                        Button(action: {
+                            if progress < 10 {
+                                progress += 1
+                            } else {
+                                self.selection = 1
+                            }
+                        }, label: {
+                            ZStack {
+                                Rectangle()
+                                    .fill(Color(red: 102.0 / 255, green: 210.0 / 255, blue: 157.0 / 255))
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    .cornerRadius(10)
+                                Image(systemName: "checkmark")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 30))
+                            }
+                        })
+                    }
                 }
+                .padding(.bottom)
             }
             .padding()
         }
-        .navigationBarTitle("활동 인증하기", displayMode:.inline)
-        .accentColor(Color("PrimaryGreen"))
+        .ignoresSafeArea(.all, edges: .bottom)
+        .navigationBarTitle("랜덤평가", displayMode:.inline)
     }
 }
 
