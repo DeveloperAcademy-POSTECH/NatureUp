@@ -114,6 +114,7 @@
 			children = (
 				16B2F96E27FC78D300E83570 /* NatureUpApp.swift */,
 				16B2F98B27FD5EB600E83570 /* Views */,
+				34ADDA062801C0D00043658A /* Assets.xcassets */,
 				16B2F97427FC78D400E83570 /* Preview Content */,
 			);
 			path = NatureUp;
@@ -196,7 +197,6 @@
 				B50AEF792801FD6C00970B8E /* ActivityPicture.swift */,
 				B50AEF712801F2DC00970B8E /* ActivityShapeCell.swift */,
 				B50AEF7F28028F1500970B8E /* ActivityPictureCell.swift */,
-				34ADDA062801C0D00043658A /* Assets.xcassets */,
 			);
 			name = Profile;
 			path = Market/Profile;
