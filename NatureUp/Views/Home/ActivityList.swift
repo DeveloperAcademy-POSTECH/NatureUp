@@ -18,7 +18,7 @@ struct ActivityList: View {
                     .font(.title2)
                     .fontWeight(.semibold)
                     .foregroundColor(Color("PrimaryGreen"))
-                NavigationLink(destination: Text("상세 리스트 페이지"), tag: 1, selection: $selection) {
+                NavigationLink(destination: LocationListView(location: location), tag: 1, selection: $selection) {
                     Button(action: {
                         self.selection = 1
                     }) {
