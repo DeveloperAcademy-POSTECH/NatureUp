@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct AuthenticationSuccessView: View {
+    @Binding var shouldPopToRootView : Bool
+    
     var body: some View {
         NavigationLink(destination: ContentView()) {
+            Button(action: {self.shouldPopToRootView = false}, label: {
             ZStack {
                 Color("BackgroundGray")
                 VStack {
@@ -23,6 +26,7 @@ struct AuthenticationSuccessView: View {
                         .foregroundColor(Color("SecondGreen"))
                 }
             }
+            })
         }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
@@ -32,6 +36,6 @@ struct AuthenticationSuccessView: View {
 
 struct AuthenticationSuccessView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthenticationSuccessView()
+        AuthenticationSuccessView(shouldPopToRootView: .constant(true))
     }
 }

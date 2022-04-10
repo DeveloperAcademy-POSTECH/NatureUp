@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct Activity: View {
+    @State var isLinkActive : Bool = false
     let activity: String
     
     var body: some View {
-        NavigationLink(destination: AuthenticationView()) {
+        NavigationLink(destination: AuthenticationView(rootIsActive: $isLinkActive), isActive: $isLinkActive) {
+            Button(action: {self.isLinkActive = true}, label: {
             ZStack {
                 Color(.white)
                 HStack {
@@ -27,6 +29,8 @@ struct Activity: View {
             .overlay(
                 RoundedRectangle(cornerRadius: 1)
                     .stroke(Color(red: 151.0/255, green: 151.0/255, blue: 151.0/255), lineWidth: 0.4)
+                )
+            }
             )
             .frame(height: 50)
         }
