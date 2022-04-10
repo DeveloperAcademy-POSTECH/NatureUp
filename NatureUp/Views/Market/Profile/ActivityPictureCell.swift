@@ -9,17 +9,53 @@ import SwiftUI
 
 struct ActivityPictureCell: View {
     
-    static let coulmn = 3
-    static let row = 7
+    static let coulmn = 1
+    static let row = 1
     let width =
     (UIScreen.main.bounds.width/3)-25
     
     var body: some View {
-        Image("img05")
-            .resizable()
-            .frame(width: 99, height: 99)
-            .scaledToFill()
-            .clipShape(RoundedRectangle(cornerRadius: 8))
+        VStack{
+            HStack{
+                Image("img01")
+                    .resizable()
+                    .frame(width: 99, height: 99)
+                    .scaledToFill()
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                
+                Image("img02")
+                    .resizable()
+                    .frame(width: 99, height: 99)
+                    .scaledToFill()
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                
+                Image("img03")
+                    .resizable()
+                    .frame(width: 99, height: 99)
+                    .scaledToFill()
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+            }
+            HStack{
+                Image("img04")
+                    .resizable()
+                    .frame(width: 99, height: 99)
+                    .scaledToFill()
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                
+                Image("img05")
+                    .resizable()
+                    .frame(width: 99, height: 99)
+                    .scaledToFill()
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                
+                
+                Image("img06")
+                    .resizable()
+                    .frame(width: 99, height: 99)
+                    .scaledToFill()
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+            }
+        }
     }
 }
 
