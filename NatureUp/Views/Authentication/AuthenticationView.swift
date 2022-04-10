@@ -74,7 +74,7 @@ struct AuthenticationView: View {
                             Text("인증하기")
                                 .foregroundColor(Color(red: 4.0 / 255, green: 158.0 / 255, blue: 84.0 / 255))
                                 .font(.title3)
-                                .fontWeight(.semibold)
+                                .fontWeight(.bold)
                                 .padding(.vertical, 10)
                                 .padding(.horizontal, 20)
                                 .background(Color.white)
