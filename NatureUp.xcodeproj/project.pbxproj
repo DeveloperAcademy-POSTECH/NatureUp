@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050CE84F2803316B003C26E6 /* MyLeaderBoardStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CE84E2803316B003C26E6 /* MyLeaderBoardStatus.swift */; };
 		0518984628000E3400CFCB2D /* LeaderBoardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0518984528000E3400CFCB2D /* LeaderBoardRow.swift */; };
 		05447D0D280007950075EDB5 /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05447D0C280007940075EDB5 /* LeaderBoardView.swift */; };
 		160341A72802B96F00170408 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160341A62802B96F00170408 /* LocationListView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050CE84E2803316B003C26E6 /* MyLeaderBoardStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLeaderBoardStatus.swift; sourceTree = "<group>"; };
 		0518984528000E3400CFCB2D /* LeaderBoardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardRow.swift; sourceTree = "<group>"; };
 		05447D0C280007940075EDB5 /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
 		160341A62802B96F00170408 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				05447D0C280007940075EDB5 /* LeaderBoardView.swift */,
 				0518984528000E3400CFCB2D /* LeaderBoardRow.swift */,
+				050CE84E2803316B003C26E6 /* MyLeaderBoardStatus.swift */,
 			);
 			path = LeaderBoard;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				346EBAA328007CD60002B186 /* EvaluationView.swift in Sources */,
 				346EBA9F28000B880002B186 /* AuthenticationSuccessView.swift in Sources */,
+				050CE84F2803316B003C26E6 /* MyLeaderBoardStatus.swift in Sources */,
 				6F66F8AB27FED5A400901917 /* ItemList4.swift in Sources */,
 				B50AEF8028028F1500970B8E /* ActivityPictureCell.swift in Sources */,
 				34ADDA092801C6EE0043658A /* EvaluationCompleteView.swift in Sources */,
