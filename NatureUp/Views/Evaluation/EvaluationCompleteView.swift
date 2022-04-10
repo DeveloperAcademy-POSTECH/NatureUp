@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct EvaluationCompleteView: View {
+    @Binding var shouldPopToRootView : Bool
+    
     var body: some View {
-        NavigationLink(destination: ContentView()) {
+        Button(action: { self.shouldPopToRootView = false } ) {
             ZStack {
                 Color("BackgroundGray")
                 VStack {
@@ -37,6 +39,6 @@ struct EvaluationCompleteView: View {
 
 struct EvaluationCompleteView_Previews: PreviewProvider {
     static var previews: some View {
-        EvaluationCompleteView()
+        EvaluationCompleteView(shouldPopToRootView: .constant(true))
     }
 }
