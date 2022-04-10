@@ -10,16 +10,16 @@ import SwiftUI
 struct LeaderBoardRow: View {
 
     var body: some View {
-        
-        ForEach(1..<21) {number in
-        HStack {
-            Text("\(number)")
+        ForEach(4..<21) {number in
+            HStack {
+                Text("\(number)")
 
-            Image("userName1")
-                .resizable()
-                .frame(width: 200, height: 50)
+                Image("userName1")
+                    .resizable()
+                    .frame(width: 200, height: 50)
+                
+            }.padding()
             
-        }.padding()
         }
     }
 }

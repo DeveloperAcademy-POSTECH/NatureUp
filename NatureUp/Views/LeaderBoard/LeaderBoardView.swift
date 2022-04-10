@@ -13,8 +13,8 @@ struct LeaderBoardView: View {
     let exp: String = "100"
     var body: some View {
         ZStack {
-            Color("BackgroundGray")
             ScrollView {
+            Color("BackgroundGray")
                 VStack(spacing: -10) {
                     HStack {
                         ZStack{
@@ -91,10 +91,10 @@ struct LeaderBoardView: View {
                                     .resizable()
                                     .frame(width: 150, height: 40, alignment: .center)
                             }
-                            
-                            
-                        }
+                        } // HStack()
                         .padding()
+                } // VStack()
+                    VStack {
                         LeaderBoardRow()
                     }
                 }
