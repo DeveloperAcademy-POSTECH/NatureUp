@@ -11,13 +11,16 @@ struct ActivityPicture: View {
     var body: some View {
         
         ScrollView(.vertical, showsIndicators: false) {
-            ForEach(0..<ActivityPictureCell.row){ i in
+            ForEach(0..<ActivityPictureCell.row, id: \.self){ i in
                 HStack{
-                    
-                    ForEach(0..<ActivityPictureCell.coulmn){j in
+                    ForEach(0..<ActivityPictureCell.coulmn, id: \.self){j in
                         ActivityPictureCell()
                     }
+                    .padding(3)
+                    //사진 가로 사이
                 }
+                .padding(2)
+                //사진 세로 사이
             }
         }
     }

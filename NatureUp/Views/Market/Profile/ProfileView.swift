@@ -17,9 +17,11 @@ struct ProfileView: View {
                 NamePlate()
                 
                 Text("오늘 지구를 살린 활동")
-                    .font(.title3)
+                    .font(.title2)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.all)
+                    .padding(.leading, 30)
+                    .padding(.top, 35)
+                    .padding(.bottom, 5)
 
                 ActivityPicture()
                 Spacer()

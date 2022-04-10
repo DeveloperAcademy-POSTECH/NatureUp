@@ -11,8 +11,7 @@ struct ActivityPictureCell: View {
     static let coulmn = 3
     static let row = 7
     let width =
-    (UIScreen.main.bounds.width/3)-31
-    //전체 앱 화면 폭이 390, 각 셀의 폭이 99, 390/3-X=99, x=31
+    (UIScreen.main.bounds.width/3)-25
     
     var body: some View {
         ZStack{
