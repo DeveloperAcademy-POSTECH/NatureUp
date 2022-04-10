@@ -12,12 +12,21 @@ struct LeaderBoardRow: View {
     var body: some View {
         ForEach(4..<21) {number in
             HStack {
-                Text("\(number)")
-
-                Image("userName1")
-                    .resizable()
-                    .frame(width: 200, height: 50)
-                
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.black.opacity(0.05))
+                        .frame(width: 370, height: 70)
+                    
+                        
+                    HStack {
+                        Text("\(number)")
+                            .font(.system(size: 23))
+                        
+                    Spacer()
+                        .overlay(Image("userName1"))
+                            .frame(width: 300, height: 55)
+                    }
+                }
             }.padding()
             
         }
