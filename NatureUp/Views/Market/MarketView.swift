@@ -47,6 +47,7 @@ struct MarketView: View {
                     RoundedRectangle(cornerRadius : 10)
                         .fill(Color.white)
                         .frame(width:330, height:90)
+                    Text("Everett")
                 }
                 
                 
