@@ -10,8 +10,10 @@ import Foundation
 
 struct Item: Identifiable, Decodable {
     var id: Int
-    private var ImageName: String
+    var point: Int
+    var type: String
+    var imageName: String
     var image: Image{
-        Image(ImageName)
+        Image(imageName)
     }
 }
