@@ -9,21 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     
-    enum Tabs {
-        case home, leaderBoard, market, profile
+    enum Tabs: String {
+        case home = "추천 활동"
+        case leaderBoard = "리더보드"
+        case market = "상점"
+        case profile = "프로필"
     }
     
     @State private var showingNotifications = false
     @State var tabSelection:Tabs = .home
-    
-    func returnNaviBarTitle(tabSelection: Tabs) -> String{
-        switch tabSelection{
-        case .home: return "추천 활동"
-        case .leaderBoard: return "리더보드"
-        case .market: return "상점"
-        case .profile: return "사용자 정보"
-        }
-    }
     
     var body: some View {
         NavigationView {
@@ -36,7 +30,7 @@ struct ContentView: View {
                             Image(systemName: "leaf")
                                 .environment(\.symbolVariants, .none)
                         }
-                        Text("추천 활동")
+                        Text(Tabs.home.rawValue)
                     }
                     .tag(Tabs.home)
                 LeaderBoardView()
@@ -47,7 +41,7 @@ struct ContentView: View {
                             Image(systemName: "star")
                                 .environment(\.symbolVariants, .none)
                         }
-                        Text("리더보드")
+                        Text(Tabs.leaderBoard.rawValue)
                     }
                     .tag(Tabs.leaderBoard)
                 MarketView()
@@ -58,7 +52,7 @@ struct ContentView: View {
                             Image(systemName: "cart")
                                 .environment(\.symbolVariants, .none)
                         }
-                        Text("상점")
+                        Text(Tabs.market.rawValue)
                         
                     }
                     .tag(Tabs.market)
@@ -70,13 +64,13 @@ struct ContentView: View {
                             Image(systemName: "person.crop.circle")
                                 .environment(\.symbolVariants, .none)
                         }
-                        Text("프로필")
+                        Text(Tabs.profile.rawValue)
                         
                     }
                     .tag(Tabs.profile)
             }
             .accentColor(Color("PrimaryGreen"))
-            .navigationBarTitle(returnNaviBarTitle(tabSelection: self.tabSelection), displayMode: .inline)
+            .navigationBarTitle(self.tabSelection.rawValue, displayMode: .inline)
             .toolbar {
                 if tabSelection == Tabs.home {
                     Button {
