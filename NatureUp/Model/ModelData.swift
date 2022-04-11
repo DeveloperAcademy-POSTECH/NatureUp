@@ -8,8 +8,8 @@
 import Foundation
 
 var userRankings: [UserRanking] = load("leaderBoardData.json")
+var items: [Item] = load("ItemList1.json")
 var evaluations: [Evaluation] = load("EvaluationData.json")
-var items: [Item] = load("EvaluationData.json")
 
 
 func load<T: Decodable>(_ filename: String) -> T {

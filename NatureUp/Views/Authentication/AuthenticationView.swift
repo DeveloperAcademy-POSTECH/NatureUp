@@ -2,7 +2,7 @@
 //  AuthenticationView.swift
 //  NatureUp
 //
-//  Created by Jung Yunseong on 2022/04/07.
+//  Created by Jung Yunseong on 2022/04/11.
 //
 
 import SwiftUI
@@ -84,7 +84,6 @@ struct AuthenticationView: View {
                                 .clipShape(Capsule())
                             })
                         }
-                        
                     } else { Button(action: {
                         isCustomCameraViewPresented.toggle()
                     }, label: {
