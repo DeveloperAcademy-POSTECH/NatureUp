@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ItemCardList: View {
+    var ItemType: String
     var body: some View {
         ScrollView {
             LazyVGrid(columns: Array(repeating: .init(.flexible(), spacing:-5), count: 3)) {
-                ForEach(items){ item in
+                ForEach(items.filter({$0.type == ItemType})){ item in
                     ItemCardRow(item:item)
                 }
             }.padding(.top, 10)
@@ -23,6 +24,6 @@ struct ItemCardList: View {
 
 struct ItemCardList_Previews: PreviewProvider {
     static var previews: some View {
-        ItemCardList()
+        ItemCardList(ItemType: "border")
     }
 }
