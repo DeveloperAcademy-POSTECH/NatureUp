@@ -20,6 +20,10 @@ struct ItemList2: View {
                             RoundedRectangle(cornerRadius:10)
                                 .fill(Color.white)
                                 .frame(width:100, height:100)
+                            
+                            Image("dia")
+                                .resizable()
+                                .frame(width:60, height:62)
                         }
                         Spacer()
                             .frame(width:20)
@@ -30,6 +34,10 @@ struct ItemList2: View {
                             RoundedRectangle(cornerRadius:10)
                                 .fill(Color.white)
                                 .frame(width:100, height:100)
+                            
+                            Image("dia")
+                                .resizable()
+                                .frame(width:60, height:62)
                         }
                         Spacer()
                             .frame(width:20)
@@ -40,6 +48,10 @@ struct ItemList2: View {
                             RoundedRectangle(cornerRadius:10)
                                 .fill(Color.white)
                                 .frame(width:100, height:100)
+                            
+                            Image("dia")
+                                .resizable()
+                                .frame(width:60, height:62)
                         }
                     }.padding()
                     
