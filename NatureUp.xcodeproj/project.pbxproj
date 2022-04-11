@@ -35,6 +35,7 @@
 		34A220F82804346B00271609 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A220F72804346B00271609 /* AuthenticationView.swift */; };
 		34ADDA072801C0D00043658A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34ADDA062801C0D00043658A /* Assets.xcassets */; };
 		34ADDA092801C6EE0043658A /* EvaluationCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADDA082801C6EE0043658A /* EvaluationCompleteView.swift */; };
+		34F2F0772804417B004904C0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2F0762804417B004904C0 /* MapView.swift */; };
 		6F03321D28041D0C00C602A9 /* ItemCardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F03321C28041D0C00C602A9 /* ItemCardRow.swift */; };
 		6F0AED19280400DB00546379 /* ItemList1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F0AED18280400DB00546379 /* ItemList1.json */; };
 		6F0AED1F28040F5600546379 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AED1E28040F5600546379 /* Item.swift */; };
@@ -79,6 +80,7 @@
 		34A220F72804346B00271609 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		34ADDA062801C0D00043658A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34ADDA082801C6EE0043658A /* EvaluationCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationCompleteView.swift; sourceTree = "<group>"; };
+		34F2F0762804417B004904C0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		6F03321C28041D0C00C602A9 /* ItemCardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardRow.swift; sourceTree = "<group>"; };
 		6F0AED18280400DB00546379 /* ItemList1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ItemList1.json; sourceTree = "<group>"; };
 		6F0AED1E28040F5600546379 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				16B2F9C927FED10E00E83570 /* Activity.swift */,
 				16B2F9CB27FED13000E83570 /* ActivityList.swift */,
 				160341A62802B96F00170408 /* LocationListView.swift */,
+				34F2F0762804417B004904C0 /* MapView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				344571AC28040DD400459D14 /* Evaluation.swift in Sources */,
 				16B2F9CC27FED13000E83570 /* ActivityList.swift in Sources */,
 				16B2F9CA27FED10E00E83570 /* Activity.swift in Sources */,
+				34F2F0772804417B004904C0 /* MapView.swift in Sources */,
 				B5EA875828041030005FF2DB /* ActivityAlbum.swift in Sources */,
 				346EBA9427FF0B580002B186 /* CameraView.swift in Sources */,
 				B5C7FF7628000C530017C7AC /* ProfilePicture.swift in Sources */,
@@ -474,11 +478,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NatureUp/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K6B59X6MS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NatureUp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -489,7 +494,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iC5.NatureUp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Neis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -510,6 +515,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NatureUp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -520,7 +526,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iC5.NatureUp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Neis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
