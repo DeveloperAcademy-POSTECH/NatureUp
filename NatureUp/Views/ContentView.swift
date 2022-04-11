@@ -13,6 +13,7 @@ struct ContentView: View {
         case home, leaderBoard, market, profile
     }
     
+    @State private var showingNotifications = false
     @State var tabSelection:Tabs = .home
     
     func returnNaviBarTitle(tabSelection: Tabs) -> String{
@@ -76,6 +77,16 @@ struct ContentView: View {
             }
             .accentColor(Color("PrimaryGreen"))
             .navigationBarTitle(returnNaviBarTitle(tabSelection: self.tabSelection), displayMode: .inline)
+            .toolbar {
+                if tabSelection == Tabs.home {
+                    Button {
+                        showingNotifications.toggle()
+                    } label: {
+                        Label("Notifications", systemImage: "bell.badge")
+                    }
+                    .accentColor(Color("PrimaryGreen"))
+                }
+            }
         }
         .accentColor(Color("PrimaryGreen"))
     }
