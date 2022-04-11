@@ -8,21 +8,30 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @Environment(\.editMode) var editMode
+    
     var body: some View {
         ZStack {
             Color("BackgroundGray")
             VStack {
+                HStack{
+                    Spacer()
+                    EditButton()
+                        .padding(.trailing)
+                        .padding(.top)
+                }
                 ProfileStatus()
                 ProfilePicture()
                 NamePlate()
                 
                 Text("오늘 지구를 살린 활동")
                     .font(.title2)
+                    .fontWeight(.bold)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.leading, 40)
-                    .padding(.top, 35)
-                    .padding(.bottom, 5)
-
+                    .padding(.leading, 35)
+                    .padding(.top, 30)
+                    .padding(.bottom, -3)
+                
                 ActivityAlbum()
                 Spacer()
                 
