@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MarketView: View {
+    @State private var ItemType = "border"
     @State private var selectedNum = 1
     @State private var pickerColer = Color(.sRGB, red: 0.2510, green: 0.7804, blue: 0.5217)
     
@@ -54,25 +55,25 @@ struct MarketView: View {
                 Picker(selection: $selectedNum, label: Text("Item List")) {
                     Text("테두리")
                         .tag(1)
-                    Text("보석 장식")
+                    Text("장식")
                         .tag(2)
-                    Text("리본")
+                    Text("배경")
                         .tag(3)
-                    Text("기타")
+                    Text("효과")
                         .tag(4)
                 }.pickerStyle   (SegmentedPickerStyle())
                     .padding()
                 if (selectedNum == 1){
-                    ItemCardList()
+                    ItemCardList(ItemType: "border")
                 }
                 else if (selectedNum == 2){
-                    ItemList2()
+                    ItemCardList(ItemType:"decoration")
                 }
                 else if (selectedNum == 3){
-                    ItemList2()
+                    ItemCardList(ItemType:"background")
                 }
                 else if (selectedNum == 4){
-                    ItemList2()
+                    ItemCardList(ItemType: "effect")
                 }
                 Spacer()
             }
