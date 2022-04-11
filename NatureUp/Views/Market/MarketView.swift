@@ -72,7 +72,7 @@ struct MarketView: View {
                     ItemList3()
                 }
                 else if (selectedNum == 4){
-                    ItemList4()
+                    ItemList3()
                 }
                 Spacer()
             }
