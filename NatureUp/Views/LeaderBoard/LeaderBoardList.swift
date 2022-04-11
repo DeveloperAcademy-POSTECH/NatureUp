@@ -9,8 +9,13 @@ import SwiftUI
 
 struct LeaderBoardList: View {
     var body: some View {
-        List(userRankings) { userRanking in
-            LeaderBoardRow(userRanking: userRanking)
+        ScrollView {
+            VStack {
+                ForEach(userRankings) { userRanking in
+                    LeaderBoardRow(userRanking: userRanking)
+                        .padding(.horizontal)
+                }
+            }
         }
     }
 }
