@@ -19,11 +19,11 @@ struct ProfileView: View {
                 Text("오늘 지구를 살린 활동")
                     .font(.title2)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.leading, 30)
+                    .padding(.leading, 40)
                     .padding(.top, 35)
                     .padding(.bottom, 5)
 
-                ActivityPicture()
+                ActivityAlbum()
                 Spacer()
                 
             }
