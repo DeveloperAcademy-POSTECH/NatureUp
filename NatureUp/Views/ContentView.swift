@@ -80,6 +80,11 @@ struct ContentView: View {
                     .accentColor(Color("PrimaryGreen"))
                 }
             }
+            .toolbar {
+                if tabSelection == Tabs.profile {
+                    EditButton()
+                }
+            }
         }
         .accentColor(Color("PrimaryGreen"))
     }

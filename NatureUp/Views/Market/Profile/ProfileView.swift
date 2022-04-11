@@ -14,12 +14,7 @@ struct ProfileView: View {
         ZStack {
             Color("BackgroundGray")
             VStack {
-                HStack{
-                    Spacer()
-                    EditButton()
-                        .padding(.trailing)
-                        .padding(.top)
-                }
+
                 ProfileStatus()
                 ProfilePicture()
                 NamePlate()
