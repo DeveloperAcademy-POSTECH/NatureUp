@@ -8,7 +8,7 @@
 import Foundation
 
 var userRankings: [UserRanking] = load("leaderBoardData.json")
-var items: [Item] = load("ItemList1.json")
+var items: [Item] = load("ItemList.json")
 var evaluations: [Evaluation] = load("EvaluationData.json")
 
 

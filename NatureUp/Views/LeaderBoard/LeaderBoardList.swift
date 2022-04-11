@@ -11,8 +11,8 @@ struct LeaderBoardList: View {
     var body: some View {
         ScrollView {
             VStack {
-                ForEach(userRankings) { userRanking in
-                    LeaderBoardRow(userRanking: userRanking)
+                ForEach(3..<userRankings.count, id: \.self) { index in
+                    LeaderBoardRow(userRanking: userRankings[index])
                         .padding(.horizontal)
                 }
             }

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var showingNotifications = false
     @State var isLinkActive : Bool = false
     
     var body: some View {
@@ -16,14 +15,6 @@ struct HomeView: View {
             Color("BackgroundGray")
             VStack {
                 MyStatus()
-                    .toolbar {
-                        Button {
-                            showingNotifications.toggle()
-                        } label: {
-                            Label("Notifications", systemImage: "bell.badge")
-                        }
-                        .accentColor(Color("PrimaryGreen"))
-                    }
                 ScrollView {
                     ActivityList(location: "당신이 있는 건물 내", rootIsActive: $isLinkActive)
                     ActivityList(location: "창문 밖으로 보이는 바로 그 곳", rootIsActive: $isLinkActive)

@@ -14,8 +14,13 @@ struct ItemCardRow: View {
             ItemCardView()
             item.image
                 .resizable()
-                .frame(width: 80, height: 15.36)
-        }.padding(.bottom, 10)
+                .aspectRatio(contentMode: .fit)
+                .padding(.leading,10)
+                .padding(.trailing,10)
+                
+        }
+        .frame(width: 100, height: 100)
+        .padding(.bottom, 10)
     }
 }
 
