@@ -2,7 +2,7 @@
 //  EvaluationView.swift
 //  NatureUp
 //
-//  Created by Jung Yunseong on 2022/04/08.
+//  Created by Jung Yunseong on 2022/04/11.
 //
 
 import SwiftUI
@@ -11,6 +11,8 @@ struct EvaluationView: View {
     @State var selection: Int? = nil
     @State var progress = 1.0
     @Binding var rootIsActive : Bool
+    var evaluation: [Evaluation]
+    @State var currentNumber = 0
     
     var body: some View {
         ZStack {
@@ -32,19 +34,21 @@ struct EvaluationView: View {
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color("PrimaryGreen"), lineWidth: 1)
                         )
-                    
-                    Text("쓰레기 분리수거하기")
+                
+                    Text(evaluation[currentNumber].name)
                         .font(.title2)
                         .foregroundColor(Color("PrimaryGreen"))
                 }
-                Rectangle()
-                    .frame(height: 400)
+                evaluation[currentNumber].image
+                    .resizable()
+                    .scaledToFill()
                     .cornerRadius(10)
                 HStack {
                     NavigationLink(destination: EvaluationCompleteView(shouldPopToRootView: self.$rootIsActive)) {
                         Button(action: {
                             if progress < 10 {
                                 progress += 1
+                                currentNumber += 1
                             } else {
                                 self.selection = 1
                             }
@@ -65,6 +69,7 @@ struct EvaluationView: View {
                         Button(action: {
                             if progress < 10 {
                                 progress += 1
+                                currentNumber += 1
                             } else {
                                 self.selection = 1
                             }
@@ -92,6 +97,6 @@ struct EvaluationView: View {
 
 struct EvaluationView_Previews: PreviewProvider {
     static var previews: some View {
-        EvaluationView(rootIsActive: .constant(true))
+        EvaluationView(rootIsActive: .constant(true), evaluation: evaluations)
     }
 }

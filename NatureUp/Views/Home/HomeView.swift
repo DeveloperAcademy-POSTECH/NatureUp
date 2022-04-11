@@ -36,7 +36,7 @@ struct HomeView: View {
                             .padding()
                     }
                 }
-                NavigationLink(destination: EvaluationView(rootIsActive: $isLinkActive), isActive: $isLinkActive) {
+                NavigationLink(destination: EvaluationView(rootIsActive: $isLinkActive, evaluation: evaluations), isActive: $isLinkActive) {
                     Button(action: {
                         self.isLinkActive = true
                     }) {
