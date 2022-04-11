@@ -72,8 +72,9 @@ struct AuthenticationView: View {
                         .fill(.white)
                         .frame(height: 150)
                     if capturedImage != nil {
-                        NavigationLink(destination: AuthenticationSuccessView(shouldPopToRootView: self.$rootIsActive), tag: 1, selection: $selection) {
-                            Button(action: {self.selection = 1}, label: {
+                        NavigationLink(destination: AuthenticationSuccessView(
+                            shouldPopToRootView: self.$rootIsActive))
+                        {
                             Text("인증하기")
                                 .foregroundColor(Color(red: 4.0 / 255, green: 158.0 / 255, blue: 84.0 / 255))
                                 .font(.title3)
@@ -82,7 +83,6 @@ struct AuthenticationView: View {
                                 .padding(.horizontal, 20)
                                 .background(Color.white)
                                 .clipShape(Capsule())
-                            })
                         }
                     } else { Button(action: {
                         isCustomCameraViewPresented.toggle()

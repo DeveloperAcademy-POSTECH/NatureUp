@@ -11,8 +11,7 @@ struct AuthenticationSuccessView: View {
     @Binding var shouldPopToRootView : Bool
     
     var body: some View {
-        NavigationLink(destination: ContentView()) {
-            Button(action: {self.shouldPopToRootView = false}, label: {
+        Button(action: {self.shouldPopToRootView = false}, label: {
             ZStack {
                 Color("BackgroundGray")
                 VStack {
@@ -26,8 +25,7 @@ struct AuthenticationSuccessView: View {
                         .foregroundColor(Color("SecondGreen"))
                 }
             }
-            })
-        }
+        })
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
         .navigationBarTitle("인증완료")

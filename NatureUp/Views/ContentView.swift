@@ -65,7 +65,6 @@ struct ContentView: View {
                                 .environment(\.symbolVariants, .none)
                         }
                         Text(Tabs.profile.rawValue)
-                        
                     }
                     .tag(Tabs.profile)
             }

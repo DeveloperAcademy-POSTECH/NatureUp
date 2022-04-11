@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct Activity: View {
-    let activity: String
+struct ActivityRow: View {
+    let activityName: String
     
     var body: some View {
         ZStack {
             Color(.white)
             HStack {
-                Text(activity)
+                Text(activityName)
                     .font(.headline)
                     .fontWeight(.medium)
                     .foregroundColor(Color.black)
@@ -33,6 +33,6 @@ struct Activity: View {
 
 struct Activity_Previews: PreviewProvider {
     static var previews: some View {
-        Activity(activity: "쓰레기 분리수거 하기")
+        ActivityRow(activityName: "쓰레기 분리수거 하기")
     }
 }

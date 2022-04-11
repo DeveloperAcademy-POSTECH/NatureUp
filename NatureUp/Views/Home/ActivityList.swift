@@ -33,17 +33,17 @@ struct ActivityList: View {
             }
             NavigationLink(destination: AuthenticationView(rootIsActive: $rootIsActive), isActive: $rootIsActive) {
                 Button(action: {self.rootIsActive = true}) {
-                    Activity(activity: "쓰레기 분리수거 하기")
+                    ActivityRow(activityName: "쓰레기 분리수거 하기")
                 }
             }
             NavigationLink(destination: AuthenticationView(rootIsActive: $rootIsActive), isActive: $rootIsActive) {
                 Button(action: {self.rootIsActive = true}) {
-                    Activity(activity: "건물 내 쓰레기 줍기")
+                    ActivityRow(activityName: "건물 내 쓰레기 줍기")
                 }
             }
             NavigationLink(destination: AuthenticationView(rootIsActive: $rootIsActive), isActive: $rootIsActive) {
                 Button(action: {self.rootIsActive = true}) {
-                    Activity(activity: "수도꼭지 잠그기")
+                    ActivityRow(activityName: "수도꼭지 잠그기")
                 }
             }
         }
