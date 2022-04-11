@@ -63,16 +63,16 @@ struct MarketView: View {
                 }.pickerStyle   (SegmentedPickerStyle())
                     .padding()
                 if (selectedNum == 1){
-                    ItemList1()
+                    ItemCardList()
                 }
                 else if (selectedNum == 2){
                     ItemList2()
                 }
                 else if (selectedNum == 3){
-                    ItemList3()
+                    ItemList2()
                 }
                 else if (selectedNum == 4){
-                    ItemList3()
+                    ItemList2()
                 }
                 Spacer()
             }
