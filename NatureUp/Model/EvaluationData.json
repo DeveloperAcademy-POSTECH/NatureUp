@@ -1,0 +1,53 @@
+[
+    {
+        "name": "계단 사용하기",
+        "id": 1001,
+        "imageName": "Campaign"
+    },
+    {
+        "name": "계단 이용하기",
+        "id": 1002,
+        "imageName": "Cheer"
+    },
+    {
+        "name": "수도꼭지 잠그기",
+        "id": 1003,
+        "imageName": "Dog"
+    },
+    {
+        "name": "쓰레기 줍기",
+        "id": 1004,
+        "imageName": "PickingTrash"
+    },
+    {
+        "name": "대중교통 이용하기",
+        "id": 1005,
+        "imageName": "PublicTransportation"
+    },
+    {
+        "name": "재활용하기",
+        "id": 1006,
+        "imageName": "Recycle"
+    },
+    {
+        "name": "재활용하기",
+        "id": 1007,
+        "imageName": "RecyclePet"
+    },
+    {
+        "name": "음식물쓰레기 줄이기",
+        "id": 1008,
+        "imageName": "Sky"
+    },
+    {
+        "name": "텀블러 사용하기",
+        "id": 1009,
+        "imageName": "UsingTumblr"
+    },
+    {
+        "name": "가까운 길은 걸어가기",
+        "id": 1010,
+        "imageName": "Walking"
+    }
+]
+
