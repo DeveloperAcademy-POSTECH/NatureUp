@@ -28,10 +28,10 @@ struct LocationListView: View {
             }
             .navigationBarTitle(location, displayMode: .inline)
     }
-    
-    struct LocationListView_Previews: PreviewProvider {
-        static var previews: some View {
-            LocationListView(location: "당신이 있는 건물 내")
-        }
+}
+
+struct LocationListView_Previews: PreviewProvider {
+    static var previews: some View {
+        LocationListView(location: "당신이 있는 건물 내")
     }
 }
