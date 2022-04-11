@@ -14,69 +14,63 @@ struct LeaderBoardView: View {
             Color("BackgroundGray")
                 VStack {
                     MyLeaderBoardStatus()
-                    ScrollView {
-                        
-                        LazyVStack(alignment: .center) {
+                    HStack {
+                        VStack(alignment: .center) {
+                            Spacer()
                             Image(systemName: "crown.fill")
-                                .foregroundColor(.yellow)
+                                .foregroundColor(.gray)
                                 .font(.system(size: 30))
                             Image("user1")
                                 .resizable()
-                                .frame(width: 130, height: 130)
+                                .frame(width: 70, height: 70)
                                 .clipShape(Circle())
                                 .shadow(radius: 10)
                                 .overlay(Circle().stroke(Color.gray, lineWidth: 4))
                             Image("userName1")
                                 .resizable()
-                                .frame(width: 150, height: 40, alignment: .center)
-                        } // LazyVStack
+                                .aspectRatio(contentMode: .fit)
+                        }
+                        .frame(width: 110)
                         
                         VStack {
-                            HStack {
-                                VStack {
-                                    Image(systemName: "crown.fill")
-                                        .foregroundColor(.gray)
-                                        .font(.system(size: 30))
-                                    Image("user1")
-                                        .resizable()
-                                        .frame(width: 100, height: 100)
-                                        .clipShape(Circle())
-                                        .shadow(radius: 10)
-                                        .overlay(Circle().stroke(Color.gray, lineWidth: 4))
-                                    Image("userName1")
-                                        .resizable()
-                                        .frame(width: 150, height: 40, alignment: .center)
-                                }
+                            Image(systemName: "crown.fill")
+                                .foregroundColor(.yellow)
+                                .font(.system(size: 40))
+                                .padding(.bottom, 1)
+                            Image("user1")
+                                .resizable()
+                                .frame(width: 100, height: 100)
+                                .clipShape(Circle())
+                                .shadow(radius: 10)
+                                .overlay(Circle().stroke(Color.gray, lineWidth: 4))
+                            Image("userName1")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                        }
+                        .frame(width: 110)
                                 
-                                Spacer()
-                                
-                                VStack {
-                                    Image(systemName: "crown.fill")
-                                        .foregroundColor(.brown)
-                                        .font(.system(size: 30))
-                                    Image("user1")
-                                        .resizable()
-                                        .frame(width: 100, height: 100)
-                                        .clipShape(Circle())
-                                        .shadow(radius: 10)
-                                        .overlay(Circle().stroke(Color.gray, lineWidth: 4))
-                                    Image("userName1")
-                                        .resizable()
-                                        .frame(width: 150, height: 40, alignment: .center)
-                                }
-                            } // HStack
-                            .padding(.vertical, -40)
-                        } // VStack
-                        .padding()
-                        Spacer()
-                        LazyVStack(alignment: .center, spacing: 10) {
+                        VStack {
                             Spacer()
-                                
-                            }
-                        
-                } // ScrollView
-                    Spacer()
+                            Image(systemName: "crown.fill")
+                                .foregroundColor(.brown)
+                                .font(.system(size: 30))
+                                .padding(.bottom, 1)
+                            Image("user1")
+                                .resizable()
+                                .frame(width: 70, height: 70)
+                                .clipShape(Circle())
+                                .shadow(radius: 10)
+                                .overlay(Circle().stroke(Color.gray, lineWidth: 4))
+                            Image("userName1")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                        } // VStack
+                        .frame(width: 110)
+                    } // HStack
+                    .padding(.bottom)
+
                     LeaderBoardList()
+                        .padding(.top)
                     Spacer()
             } // VStack
         } // ZStack
