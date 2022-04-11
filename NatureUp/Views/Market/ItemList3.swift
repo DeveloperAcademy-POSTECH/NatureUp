@@ -16,11 +16,11 @@ struct ItemList3: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 10) {
-                ForEach(items, id: \.id) { i  in
-                    ZStack{
-                        ItemCardView()
-                    }
-                }.padding(15)
+//                ForEach(items, id: \.id) { i  in
+//                    ZStack{
+//                        ItemCardView()
+//                    }
+//                }.padding(15)
             }
         }
     }
@@ -29,6 +29,6 @@ struct ItemList3: View {
 struct ItemList3_Previews: PreviewProvider {
     static var previews: some View {
         ItemList3()
-            .environmentObject()
+//            .environmentObject()
     }
 }

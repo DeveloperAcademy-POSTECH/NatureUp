@@ -143,6 +143,7 @@
 				344571A82803F26600459D14 /* Info.plist */,
 				16B2F96E27FC78D300E83570 /* NatureUpApp.swift */,
 				16B2F98B27FD5EB600E83570 /* Views */,
+				050CE884280415C7003C26E6 /* Model */,
 				34ADDA062801C0D00043658A /* Assets.xcassets */,
 				16B2F97427FC78D400E83570 /* Preview Content */,
 			);
@@ -159,7 +160,6 @@
 		16B2F98B27FD5EB600E83570 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				050CE884280415C7003C26E6 /* Model */,
 				16B2F97027FC78D300E83570 /* ContentView.swift */,
 				16B2F9C227FEAB3B00E83570 /* Home */,
 				34E46B5427FDD76100B2CA60 /* Authentication */,
@@ -294,7 +294,6 @@
 				B552DAB72802CCAE0045A3F5 /* activityData.json in Resources */,
 				34ADDA072801C0D00043658A /* Assets.xcassets in Resources */,
 				6F0AED19280400DB00546379 /* ItemList1.json in Resources */,
-				B5A32A7E280334E40019D73D /* leaderBoard.json in Resources */,
 				050CE87F28040807003C26E6 /* leaderBoardData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
