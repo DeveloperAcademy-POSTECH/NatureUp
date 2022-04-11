@@ -10,6 +10,7 @@ import SwiftUI
 struct EvaluationView: View {
     @State var selection: Int? = nil
     @State var progress = 1.0
+    @Binding var rootIsActive : Bool
     
     var body: some View {
         ZStack {
@@ -40,7 +41,7 @@ struct EvaluationView: View {
                     .frame(height: 400)
                     .cornerRadius(10)
                 HStack {
-                    NavigationLink(destination: EvaluationCompleteView()) {
+                    NavigationLink(destination: EvaluationCompleteView(shouldPopToRootView: self.$rootIsActive)) {
                         Button(action: {
                             if progress < 10 {
                                 progress += 1
@@ -60,7 +61,7 @@ struct EvaluationView: View {
                         })
                     }
                     Spacer()
-                    NavigationLink(destination: EvaluationCompleteView(), tag: 1, selection: $selection) {
+                    NavigationLink(destination: EvaluationCompleteView(shouldPopToRootView: self.$rootIsActive), tag: 1, selection: $selection) {
                         Button(action: {
                             if progress < 10 {
                                 progress += 1
@@ -91,6 +92,6 @@ struct EvaluationView: View {
 
 struct EvaluationView_Previews: PreviewProvider {
     static var previews: some View {
-        EvaluationView()
+        EvaluationView(rootIsActive: .constant(true))
     }
 }

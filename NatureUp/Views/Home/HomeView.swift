@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var showingNotifications = false
-    @State var selection: Int? = nil
+    @State var isLinkActive : Bool = false
     
     var body: some View {
         ZStack {
@@ -36,9 +36,9 @@ struct HomeView: View {
                             .padding()
                     }
                 }
-                NavigationLink(destination: EvaluationView(), tag: 1, selection: $selection) {
+                NavigationLink(destination: EvaluationView(rootIsActive: $isLinkActive), isActive: $isLinkActive) {
                     Button(action: {
-                        self.selection = 1
+                        self.isLinkActive = true
                     }) {
                         Text("랜덤평가 진행하기")
                             .frame(minWidth: 0, maxWidth: .infinity)
