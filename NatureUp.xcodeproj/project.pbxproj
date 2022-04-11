@@ -17,6 +17,8 @@
 		16B2F9CA27FED10E00E83570 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F9C927FED10E00E83570 /* Activity.swift */; };
 		16B2F9CC27FED13000E83570 /* ActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F9CB27FED13000E83570 /* ActivityList.swift */; };
 		16B2F9CE27FED1C100E83570 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F9CD27FED1C100E83570 /* HomeView.swift */; };
+		344571AA280403A800459D14 /* EvaluationData.json in Resources */ = {isa = PBXBuildFile; fileRef = 344571A9280403A800459D14 /* EvaluationData.json */; };
+		344571AC28040DD400459D14 /* Evaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344571AB28040DD400459D14 /* Evaluation.swift */; };
 		346EBA9227FF03AC0002B186 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EBA9127FF03AC0002B186 /* CameraService.swift */; };
 		346EBA9427FF0B580002B186 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EBA9327FF0B580002B186 /* CameraView.swift */; };
 		346EBA9827FF2C820002B186 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EBA9727FF2C820002B186 /* CustomCameraView.swift */; };
@@ -54,6 +56,8 @@
 		16B2F9CB27FED13000E83570 /* ActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityList.swift; sourceTree = "<group>"; };
 		16B2F9CD27FED1C100E83570 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		344571A82803F26600459D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		344571A9280403A800459D14 /* EvaluationData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = EvaluationData.json; path = NatureUp/Views/Home/EvaluationData.json; sourceTree = SOURCE_ROOT; };
+		344571AB28040DD400459D14 /* Evaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluation.swift; sourceTree = "<group>"; };
 		346EBA9127FF03AC0002B186 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		346EBA9327FF0B580002B186 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		346EBA9727FF2C820002B186 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
@@ -165,8 +169,10 @@
 		346EBAA128007CA40002B186 /* Evaluation */ = {
 			isa = PBXGroup;
 			children = (
+				344571A9280403A800459D14 /* EvaluationData.json */,
 				346EBAA228007CD60002B186 /* EvaluationView.swift */,
 				34ADDA082801C6EE0043658A /* EvaluationCompleteView.swift */,
+				344571AB28040DD400459D14 /* Evaluation.swift */,
 			);
 			path = Evaluation;
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B552DAB72802CCAE0045A3F5 /* activityData.json in Resources */,
+				344571AA280403A800459D14 /* EvaluationData.json in Resources */,
 				34ADDA072801C0D00043658A /* Assets.xcassets in Resources */,
 				B5A32A7E280334E40019D73D /* leaderBoard.json in Resources */,
 			);
@@ -290,6 +297,7 @@
 				6F66F8A927FED59A00901917 /* ItemList3.swift in Sources */,
 				346EBA9227FF03AC0002B186 /* CameraService.swift in Sources */,
 				346EBA9A27FF2F040002B186 /* AuthenticationView.swift in Sources */,
+				344571AC28040DD400459D14 /* Evaluation.swift in Sources */,
 				16B2F9CC27FED13000E83570 /* ActivityList.swift in Sources */,
 				16B2F9CA27FED10E00E83570 /* Activity.swift in Sources */,
 				346EBA9427FF0B580002B186 /* CameraView.swift in Sources */,
