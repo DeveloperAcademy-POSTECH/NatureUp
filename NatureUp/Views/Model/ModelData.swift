@@ -7,7 +7,7 @@
 
 import Foundation
 
-var userRankings: [UserRanking] = load("leaderBoard.json")
+var userRankings: [UserRanking] = load("leaderBoardData.json")
 
 
 func load<T: Decodable>(_ filename: String) -> T {
