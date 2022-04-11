@@ -2,121 +2,121 @@
     {
         "name": "Everret",
         "id": 1001,
-        "ranking": "4",
+        "ranking": "1",
         "imageName": "EverretName"
     },
     {
         "name": "Hyukey",
         "id": 1002,
-        "ranking": "5",
+        "ranking": "2",
         "imageName": "HyukeyName"
     },
     {
         "name": "Neis",
         "id": 1003,
-        "ranking": "6",
+        "ranking": "3",
         "imageName": "NeisName"
     },
     {
         "name": "Nia",
         "id": 1004,
-        "ranking": "7",
+        "ranking": "4",
         "imageName": "NiaName"
     },
     {
         "name": "Mize",
         "id": 1005,
-        "ranking": "8",
+        "ranking": "5",
         "imageName": "MizeName"
     },
     {
         "name": "Lingo",
         "id": 1006,
-        "ranking": "9",
+        "ranking": "6",
         "imageName": "LingoName"
     },
     {
         "name": "Young",
         "id": 1007,
-        "ranking": "10",
+        "ranking": "7",
         "imageName": "YoungName"
     },
     {
         "name": "Nia",
         "id": 1008,
-        "ranking": "11",
+        "ranking": "8",
         "imageName": "NiaName"
     },
     {
         "name": "Mize",
         "id": 1009,
-        "ranking": "12",
+        "ranking": "9",
         "imageName": "MizeName"
     },
     {
         "name": "Lingo",
         "id": 1010,
-        "ranking": "13",
+        "ranking": "10",
         "imageName": "LingoName"
     },
     {
         "name": "Neis",
         "id": 1011,
-        "ranking": "14",
+        "ranking": "11",
         "imageName": "NeisName"
     },
     {
         "name": "Nia",
         "id": 1012,
-        "ranking": "15",
+        "ranking": "12",
         "imageName": "NiaName"
     },
     {
         "name": "Mize",
         "id": 10013,
-        "ranking": "16",
+        "ranking": "13",
         "imageName": "MizeName"
     },
     {
         "name": "Lingo",
         "id": 1014,
-        "ranking": "17",
+        "ranking": "14",
         "imageName": "LingoName"
     },
     {
         "name": "Neis",
         "id": 1015,
-        "ranking": "18",
+        "ranking": "15",
         "imageName": "NeisName"
     },
     {
         "name": "Nia",
         "id": 1016,
-        "ranking": "19",
+        "ranking": "16",
         "imageName": "NiaName"
     },
     {
         "name": "Mize",
         "id": 10017,
-        "ranking": "20",
+        "ranking": "17",
         "imageName": "MizeName"
     },
     {
         "name": "Lingo",
         "id": 1018,
-        "ranking": "21",
+        "ranking": "18",
         "imageName": "LingoName"
     },
     {
         "name": "Neis",
         "id": 1019,
-        "ranking": "22",
+        "ranking": "19",
         "imageName": "NeisName"
     },
     {
         "name": "Nia",
         "id": 1020,
-        "ranking": "23",
+        "ranking": "20",
         "imageName": "NiaName"
     }
 ]
