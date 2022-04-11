@@ -10,6 +10,7 @@ import SwiftUI
 struct ActivityList: View {
     @State var selection: Int? = nil
     let location: String
+    @Binding var rootIsActive : Bool
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -30,9 +31,21 @@ struct ActivityList: View {
                     }
                 }
             }
-            Activity(activity: "쓰레기 분리수거 하기")
-            Activity(activity: "건물 내 쓰레기 줍기")
-            Activity(activity: "수도꼭지 잠그기")
+            NavigationLink(destination: AuthenticationView(rootIsActive: $rootIsActive), isActive: $rootIsActive) {
+                Button(action: {self.rootIsActive = true}) {
+                    Activity(activity: "쓰레기 분리수거 하기")
+                }
+            }
+            NavigationLink(destination: AuthenticationView(rootIsActive: $rootIsActive), isActive: $rootIsActive) {
+                Button(action: {self.rootIsActive = true}) {
+                    Activity(activity: "건물 내 쓰레기 줍기")
+                }
+            }
+            NavigationLink(destination: AuthenticationView(rootIsActive: $rootIsActive), isActive: $rootIsActive) {
+                Button(action: {self.rootIsActive = true}) {
+                    Activity(activity: "수도꼭지 잠그기")
+                }
+            }
         }
         .padding()
     }
@@ -40,6 +53,6 @@ struct ActivityList: View {
 
 struct ActivityList_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityList(location: "당신이 있는 건물 내")
+        ActivityList(location: "당신이 있는 건물 내", rootIsActive: .constant(true))
     }
 }

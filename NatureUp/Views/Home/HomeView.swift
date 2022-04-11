@@ -25,8 +25,8 @@ struct HomeView: View {
                         .accentColor(Color("PrimaryGreen"))
                     }
                 ScrollView {
-                    ActivityList(location: "당신이 있는 건물 내")
-                    ActivityList(location: "창문 밖으로 보이는 바로 그 곳")
+                    ActivityList(location: "당신이 있는 건물 내", rootIsActive: $isLinkActive)
+                    ActivityList(location: "창문 밖으로 보이는 바로 그 곳", rootIsActive: $isLinkActive)
                     HStack {
                         Spacer()
                         Text("반경 20m내 오차범위가 있을 수 있습니다.")
