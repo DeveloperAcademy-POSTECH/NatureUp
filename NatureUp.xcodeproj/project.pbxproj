@@ -31,9 +31,11 @@
 		3483A46A28008D990046E9A9 /* NamePlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3483A46928008D990046E9A9 /* NamePlate.swift */; };
 		34ADDA072801C0D00043658A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34ADDA062801C0D00043658A /* Assets.xcassets */; };
 		34ADDA092801C6EE0043658A /* EvaluationCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADDA082801C6EE0043658A /* EvaluationCompleteView.swift */; };
+		6F0AED172803F95600546379 /* ItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AED162803F95600546379 /* ItemCardView.swift */; };
+		6F0AED19280400DB00546379 /* ItemList1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F0AED18280400DB00546379 /* ItemList1.json */; };
+		6F0AED1F28040F5600546379 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AED1E28040F5600546379 /* Item.swift */; };
 		6F66F8A727FED48E00901917 /* ItemList2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F66F8A627FED48E00901917 /* ItemList2.swift */; };
 		6F66F8A927FED59A00901917 /* ItemList3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F66F8A827FED59A00901917 /* ItemList3.swift */; };
-		6F66F8AB27FED5A400901917 /* ItemList4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F66F8AA27FED5A400901917 /* ItemList4.swift */; };
 		6F6EAD9927FD6284007B2130 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EAD9827FD6284007B2130 /* MarketView.swift */; };
 		6F6EAD9C27FD79A5007B2130 /* ItemList1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EAD9B27FD79A5007B2130 /* ItemList1.swift */; };
 		B50AEF722801F2DC00970B8E /* ActivityShapeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50AEF712801F2DC00970B8E /* ActivityShapeCell.swift */; };
@@ -71,9 +73,11 @@
 		3483A46928008D990046E9A9 /* NamePlate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePlate.swift; sourceTree = "<group>"; };
 		34ADDA062801C0D00043658A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34ADDA082801C6EE0043658A /* EvaluationCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationCompleteView.swift; sourceTree = "<group>"; };
+		6F0AED162803F95600546379 /* ItemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardView.swift; sourceTree = "<group>"; };
+		6F0AED18280400DB00546379 /* ItemList1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ItemList1.json; sourceTree = "<group>"; };
+		6F0AED1E28040F5600546379 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6F66F8A627FED48E00901917 /* ItemList2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList2.swift; sourceTree = "<group>"; };
 		6F66F8A827FED59A00901917 /* ItemList3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList3.swift; sourceTree = "<group>"; };
-		6F66F8AA27FED5A400901917 /* ItemList4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList4.swift; sourceTree = "<group>"; };
 		6F6EAD9827FD6284007B2130 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
 		6F6EAD9B27FD79A5007B2130 /* ItemList1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList1.swift; sourceTree = "<group>"; };
 		B50AEF712801F2DC00970B8E /* ActivityShapeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityShapeCell.swift; sourceTree = "<group>"; };
@@ -207,7 +211,9 @@
 				6F6EAD9B27FD79A5007B2130 /* ItemList1.swift */,
 				6F66F8A627FED48E00901917 /* ItemList2.swift */,
 				6F66F8A827FED59A00901917 /* ItemList3.swift */,
-				6F66F8AA27FED5A400901917 /* ItemList4.swift */,
+				6F0AED162803F95600546379 /* ItemCardView.swift */,
+				6F0AED18280400DB00546379 /* ItemList1.json */,
+				6F0AED1E28040F5600546379 /* Item.swift */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -287,6 +293,8 @@
 			files = (
 				B552DAB72802CCAE0045A3F5 /* activityData.json in Resources */,
 				34ADDA072801C0D00043658A /* Assets.xcassets in Resources */,
+				6F0AED19280400DB00546379 /* ItemList1.json in Resources */,
+				B5A32A7E280334E40019D73D /* leaderBoard.json in Resources */,
 				050CE87F28040807003C26E6 /* leaderBoardData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +310,7 @@
 				050CE88328041286003C26E6 /* LeaderBoardList.swift in Sources */,
 				346EBA9F28000B880002B186 /* AuthenticationSuccessView.swift in Sources */,
 				050CE84F2803316B003C26E6 /* MyLeaderBoardStatus.swift in Sources */,
-				6F66F8AB27FED5A400901917 /* ItemList4.swift in Sources */,
+				6F0AED172803F95600546379 /* ItemCardView.swift in Sources */,
 				B50AEF8028028F1500970B8E /* ActivityPictureCell.swift in Sources */,
 				34ADDA092801C6EE0043658A /* EvaluationCompleteView.swift in Sources */,
 				6F66F8A927FED59A00901917 /* ItemList3.swift in Sources */,
@@ -321,6 +329,7 @@
 				3483A46A28008D990046E9A9 /* NamePlate.swift in Sources */,
 				16B2F9C427FEB44200E83570 /* MyStatus.swift in Sources */,
 				346EBA9827FF2C820002B186 /* CustomCameraView.swift in Sources */,
+				6F0AED1F28040F5600546379 /* Item.swift in Sources */,
 				16B2F96F27FC78D300E83570 /* NatureUpApp.swift in Sources */,
 				B50AEF7A2801FD6C00970B8E /* ActivityPicture.swift in Sources */,
 				05447D0D280007950075EDB5 /* LeaderBoardView.swift in Sources */,

@@ -47,6 +47,7 @@ struct MarketView: View {
                     RoundedRectangle(cornerRadius : 10)
                         .fill(Color.white)
                         .frame(width:330, height:90)
+                    Text("Everett")
                 }
                 
                 
@@ -71,7 +72,7 @@ struct MarketView: View {
                     ItemList3()
                 }
                 else if (selectedNum == 4){
-                    ItemList4()
+                    ItemList3()
                 }
                 Spacer()
             }
