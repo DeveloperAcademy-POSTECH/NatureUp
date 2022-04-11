@@ -12,6 +12,7 @@ import SwiftUI
 struct UserRanking: Identifiable, Decodable {
     var id: Int
     var name: String
+    var ranking: String
     
     var imageName: String
     var image: Image {

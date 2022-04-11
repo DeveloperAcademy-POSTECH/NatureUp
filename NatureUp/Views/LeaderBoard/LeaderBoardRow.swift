@@ -33,12 +33,22 @@ struct LeaderBoardRow: View {
 //        }
 //    }
             HStack {
+                Text(userRanking.ranking)
+                    .font(.system(size: 20))
+                    .padding()
+                Spacer()
                 userRanking.image
                     .resizable()
                     .frame(width: 200, height: 50, alignment: .center)
+                Spacer()
                 
-                Text(userRanking.name)
             }
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color(.gray), lineWidth: 0.1)
+                    .shadow(color: .gray, radius: 1, x: 1, y: 1)
+            )
+            .frame(height: 50)
         }
     }
 
