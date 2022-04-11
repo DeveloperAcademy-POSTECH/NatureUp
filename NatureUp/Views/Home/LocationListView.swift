@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LocationListView: View {
-    
+    @State var isLinkActive : Bool = false
     let location: String
     
     var activities: [String] = [
@@ -19,16 +19,14 @@ struct LocationListView: View {
     ]
     
     var body: some View {
-        NavigationView {
             List(activities, id: \.self) { activity in
                 NavigationLink {
-                    AuthenticationView()
+                    AuthenticationView(rootIsActive: $isLinkActive)
                 } label: {
                     Text(activity)
                 }
             }
             .navigationBarTitle(location, displayMode: .inline)
-        }
     }
     
     struct LocationListView_Previews: PreviewProvider {
