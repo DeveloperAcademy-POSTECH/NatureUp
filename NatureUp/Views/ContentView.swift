@@ -77,13 +77,18 @@ struct ContentView: View {
             .navigationBarTitle(self.tabSelection.rawValue, displayMode: .inline)
             .toolbar {
                 if tabSelection == Tabs.home {
-                    
                     Button {
                         showingNotifications.toggle()
                     } label: {
                         Label("Notifications", systemImage: "bell.badge")
                     }
                     .accentColor(Color("PrimaryGreen"))
+                    .sheet(
+                        isPresented: $showingNotifications,
+                        content: {
+                            NotificationView()
+                        }
+                    )
                 } else if tabSelection == Tabs.profile {
                     EditButton()
                 }
