@@ -25,10 +25,11 @@ struct MarketView: View {
                             .frame(width:150, height:40)
                         RoundedRectangle(cornerRadius:10)
                             .fill(Color("SecondGreen"))
-                            .opacity(0.1)
+                            .opacity(0.05)
                             .frame(width:150, height:40)
                         HStack{
-                            Image(systemName: "leaf")
+                            Image(systemName: "leaf.fill")
+                                .foregroundColor(Color("PrimaryGreen"))
                             Text(String("\(pnt)"))
                                 .fontWeight(.heavy)
                         }
@@ -42,10 +43,11 @@ struct MarketView: View {
                             .frame(width:150, height:40)
                         RoundedRectangle(cornerRadius:10)
                             .fill(Color("SecondGreen"))
-                            .opacity(0.1)
+                            .opacity(0.05)
                             .frame(width:150, height:40)
                         HStack{
                             Image(systemName:"sparkles")
+                                .foregroundColor(Color("PrimaryGreen"))
                             Text(String("\(exp)"))
                                 .fontWeight(.heavy)
                         }
