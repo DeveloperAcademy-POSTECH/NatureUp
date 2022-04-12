@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct AuthenticationSuccessView: View {
-    @Binding var shouldPopToRootView : Bool
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        Button(action: {self.shouldPopToRootView = false}, label: {
+        Button(action: {
+            dismiss()
+            dismiss()
+        }) {
             ZStack {
                 Color("BackgroundGray")
                 VStack {
@@ -25,7 +28,7 @@ struct AuthenticationSuccessView: View {
                         .foregroundColor(Color("SecondGreen"))
                 }
             }
-        })
+        }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
         .navigationBarTitle("인증완료")
@@ -34,6 +37,6 @@ struct AuthenticationSuccessView: View {
 
 struct AuthenticationSuccessView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthenticationSuccessView(shouldPopToRootView: .constant(true))
+        AuthenticationSuccessView()
     }
 }

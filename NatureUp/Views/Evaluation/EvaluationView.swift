@@ -10,7 +10,6 @@ import SwiftUI
 struct EvaluationView: View {
     @State var selection: Int? = nil
     @State var progress = 1.0
-    @Binding var rootIsActive : Bool
     var evaluation: [Evaluation]
     @State var currentNumber = 0
     
@@ -44,7 +43,11 @@ struct EvaluationView: View {
                     .scaledToFill()
                     .cornerRadius(10)
                 HStack {
-                    NavigationLink(destination: EvaluationCompleteView(shouldPopToRootView: self.$rootIsActive)) {
+                    NavigationLink(
+                        destination: EvaluationCompleteView(),
+                        tag: 1,
+                        selection: $selection)
+                    {
                         Button(action: {
                             if progress < 10 {
                                 progress += 1
@@ -52,7 +55,7 @@ struct EvaluationView: View {
                             } else {
                                 self.selection = 1
                             }
-                        }, label: {
+                        }) {
                             ZStack {
                                 Rectangle()
                                     .fill(.white)
@@ -62,10 +65,14 @@ struct EvaluationView: View {
                                     .foregroundColor(.black)
                                     .font(.system(size: 30))
                             }
-                        })
+                        }
                     }
                     Spacer()
-                    NavigationLink(destination: EvaluationCompleteView(shouldPopToRootView: self.$rootIsActive), tag: 1, selection: $selection) {
+                    NavigationLink(
+                        destination: EvaluationCompleteView(),
+                        tag: 1,
+                        selection: $selection)
+                    {
                         Button(action: {
                             if progress < 10 {
                                 progress += 1
@@ -73,7 +80,7 @@ struct EvaluationView: View {
                             } else {
                                 self.selection = 1
                             }
-                        }, label: {
+                        }) {
                             ZStack {
                                 Rectangle()
                                     .fill(Color(red: 102.0 / 255, green: 210.0 / 255, blue: 157.0 / 255))
@@ -83,7 +90,7 @@ struct EvaluationView: View {
                                     .foregroundColor(.white)
                                     .font(.system(size: 30))
                             }
-                        })
+                        }
                     }
                 }
                 .padding(.bottom)
@@ -97,6 +104,6 @@ struct EvaluationView: View {
 
 struct EvaluationView_Previews: PreviewProvider {
     static var previews: some View {
-        EvaluationView(rootIsActive: .constant(true), evaluation: evaluations)
+        EvaluationView(evaluation: evaluations)
     }
 }

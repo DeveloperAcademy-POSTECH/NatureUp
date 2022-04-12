@@ -78,10 +78,7 @@ struct ContentView: View {
                         Label("Notifications", systemImage: "bell.badge")
                     }
                     .accentColor(Color("PrimaryGreen"))
-                }
-            }
-            .toolbar {
-                if tabSelection == Tabs.profile {
+                } else if tabSelection == Tabs.profile {
                     EditButton()
                 }
             }

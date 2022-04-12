@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct LocationListView: View {
-    @State var isLinkActive : Bool = false
     let location: String
     
     var activities: [String] = [
@@ -19,14 +18,14 @@ struct LocationListView: View {
     ]
     
     var body: some View {
-            List(activities, id: \.self) { activity in
-                NavigationLink {
-                    AuthenticationView(rootIsActive: $isLinkActive)
-                } label: {
-                    Text(activity)
-                }
+        List(activities, id: \.self) { activity in
+            NavigationLink(destination: AuthenticationView()) {
+                Text(activity)
+                    .foregroundColor(.black)
             }
-            .navigationBarTitle(location, displayMode: .inline)
+            .isDetailLink(false)
+        }
+        .navigationBarTitle(location, displayMode: .inline)
     }
 }
 

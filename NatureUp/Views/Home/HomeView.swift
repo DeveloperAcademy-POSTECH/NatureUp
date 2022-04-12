@@ -8,16 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State var isLinkActive : Bool = false
-    
     var body: some View {
         ZStack {
             Color("BackgroundGray")
             VStack {
                 MyStatus()
                 ScrollView {
-                    ActivityList(location: "당신이 있는 건물 내", rootIsActive: $isLinkActive)
-                    ActivityList(location: "창문 밖으로 보이는 바로 그 곳", rootIsActive: $isLinkActive)
+                    ActivityList(location: "당신이 있는 건물 내")
+                    ActivityList(location: "창문 밖으로 보이는 바로 그 곳")
                     HStack {
                         Spacer()
                         Text("반경 20m내 오차범위가 있을 수 있습니다.")
@@ -28,8 +26,7 @@ struct HomeView: View {
                     }
                 }
                 NavigationLink(
-                    destination: EvaluationView(rootIsActive: self.$isLinkActive, evaluation: evaluations),
-                    isActive: self.$isLinkActive
+                    destination: EvaluationView(evaluation: evaluations)
                 ) {
                     Text("랜덤평가 진행하기")
                         .frame(minWidth: 0, maxWidth: .infinity)

@@ -10,7 +10,6 @@ import SwiftUI
 struct AuthenticationView: View {
     @State private var capturedImage: UIImage? = nil
     @State private var isCustomCameraViewPresented = false
-    @Binding var rootIsActive : Bool
     @State var selection: Int? = nil
     
     var body: some View {
@@ -72,8 +71,7 @@ struct AuthenticationView: View {
                         .fill(.white)
                         .frame(height: 150)
                     if capturedImage != nil {
-                        NavigationLink(destination: AuthenticationSuccessView(
-                            shouldPopToRootView: self.$rootIsActive))
+                        NavigationLink(destination: AuthenticationSuccessView())
                         {
                             Text("인증하기")
                                 .foregroundColor(Color(red: 4.0 / 255, green: 158.0 / 255, blue: 84.0 / 255))
@@ -84,20 +82,24 @@ struct AuthenticationView: View {
                                 .background(Color.white)
                                 .clipShape(Capsule())
                         }
-                    } else { Button(action: {
-                        isCustomCameraViewPresented.toggle()
-                    }, label: {
-                        Image(systemName: "camera.fill")
-                            .font(.largeTitle)
-                            .padding()
-                            .background(Color("SecondGreen"))
-                            .foregroundColor(.white)
-                            .clipShape(Circle())
-                    })
-                    .padding(.bottom)
-                    .sheet(isPresented: $isCustomCameraViewPresented, content: {
-                        CustomCameraView(capturedImage: $capturedImage)
-                    })
+                    } else {
+                        Button(action: {
+                            isCustomCameraViewPresented.toggle()
+                        }) {
+                            Image(systemName: "camera.fill")
+                                .font(.largeTitle)
+                                .padding()
+                                .background(Color("SecondGreen"))
+                                .foregroundColor(.white)
+                                .clipShape(Circle())
+                        }
+                        .padding(.bottom)
+                        .sheet(
+                            isPresented: $isCustomCameraViewPresented,
+                            content: {
+                                CustomCameraView(capturedImage: $capturedImage)
+                            }
+                        )
                     }
                 }
             }
@@ -108,6 +110,6 @@ struct AuthenticationView: View {
 
 struct AuthenticationView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthenticationView(rootIsActive: .constant(true))
+        AuthenticationView()
     }
 }
