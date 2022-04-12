@@ -22,7 +22,8 @@ struct ItemCardRow: View {
             }
             .frame(width: 100, height: 100)
             HStack{
-                Image(systemName: "leaf")
+                Image(systemName: "leaf.fill")
+                    .foregroundColor(Color("PrimaryGreen"))
                 Text(String(item.point))
                     .fontWeight(.medium)
             }

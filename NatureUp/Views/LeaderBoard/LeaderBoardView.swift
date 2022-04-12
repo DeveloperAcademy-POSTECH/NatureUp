@@ -74,7 +74,7 @@ struct LeaderBoardView: View {
                         
                         
                     } // HStack
-                    .padding(.vertical, 60)
+                    .padding(.bottom, 60)
                     VStack {
                     LeaderBoardList()
                         .padding(.vertical, -60)
