@@ -18,11 +18,11 @@ struct LeaderBoardView: View {
                         VStack(alignment: .center) {
                             Spacer()
                             Image(systemName: "crown.fill")
-                                .foregroundColor(.gray)
+                                .foregroundColor(Color(red: 192, green: 192, blue: 192, opacity: 100))
                                 .font(.system(size: 30))
                             Image("user1")
                                 .resizable()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 80, height: 80)
                                 .clipShape(Circle())
                                 .shadow(radius: 10)
                                 .overlay(Circle().stroke(Color.gray, lineWidth: 4))
@@ -37,17 +37,20 @@ struct LeaderBoardView: View {
                                 .foregroundColor(.yellow)
                                 .font(.system(size: 40))
                                 .padding(.bottom, 1)
+                                .padding(.top, -70)
                             Image("user1")
                                 .resizable()
                                 .frame(width: 100, height: 100)
                                 .clipShape(Circle())
                                 .shadow(radius: 10)
                                 .overlay(Circle().stroke(Color.gray, lineWidth: 4))
+                                .padding(.top, -25)
                             Image("userName1")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                         }
                         .frame(width: 110)
+                        
                                 
                         VStack {
                             Spacer()
@@ -66,11 +69,13 @@ struct LeaderBoardView: View {
                                 .aspectRatio(contentMode: .fit)
                         } // VStack
                         .frame(width: 110)
+                        
+                        
                     } // HStack
-                    .padding(.bottom)
+                    .padding(.vertical, 60)
 
                     LeaderBoardList()
-                        .padding(.top)
+                        .padding(.vertical, -60)
                     Spacer()
             } // VStack
         } // ZStack
