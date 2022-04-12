@@ -17,6 +17,7 @@ struct ContentView: View {
     }
     
     @State private var showingNotifications = false
+    @State private var showingProfileEditor = false
     @State var tabSelection:Tabs = .home
     
     let appearance: UITabBarAppearance = UITabBarAppearance()
@@ -91,7 +92,19 @@ struct ContentView: View {
                         }
                     )
                 } else if tabSelection == Tabs.profile {
-                    EditButton()
+                    Button {
+                        showingProfileEditor.toggle()
+                    } label: {
+                        Text("Edit")
+                    }
+                    .accentColor(Color("PrimaryGreen"))
+                    .sheet(
+                        isPresented: $showingProfileEditor,
+                        content: {
+                            
+                            ProfileEditor()
+                        }
+                    )
                 }
             }
         }
