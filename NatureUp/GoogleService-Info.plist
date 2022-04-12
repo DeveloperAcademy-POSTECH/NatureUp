@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>298227017667-u8eo7bbeg8mpra9viihjhu02t8e3r08k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.298227017667-u8eo7bbeg8mpra9viihjhu02t8e3r08k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAYQwPxnGQnJMfpUhNF4pITE08mYV6YU_c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>298227017667</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.iC5.NatureUp</string>
+	<key>PROJECT_ID</key>
+	<string>natureup-6405d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>natureup-6405d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:298227017667:ios:9a1c02b3b64906bd78bf76</string>
+</dict>
+</plist>

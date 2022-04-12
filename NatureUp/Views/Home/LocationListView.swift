@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct LocationListView: View {
+    @ObservedObject var model = ActivityViewModel()
     let location: String
     
-    var activities: [String] = [
-        "쓰레기 분리수거 하기",
-        "건물 내 쓰레기 줍기",
-        "수도꼭지 잠그기",
-        "멀티탭 끄기"
-    ]
+    init(location: String) {
+        self.location = location
+        model.getQueryData(type: location)
+    }
     
     var body: some View {
-        List(activities, id: \.self) { activity in
+        List(model.list) { activity in
             NavigationLink(destination: AuthenticationView()) {
-                Text(activity)
+                Text(activity.name)
                     .foregroundColor(.black)
             }
             .isDetailLink(false)
