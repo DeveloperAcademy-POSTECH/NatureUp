@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "icon.png",
+      "filename" : "Nia.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "icon-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "icon-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

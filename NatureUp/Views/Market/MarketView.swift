@@ -45,7 +45,7 @@ struct MarketView: View {
                     RoundedRectangle(cornerRadius : 10)
                         .fill(Color.white)
                         .frame(height:100)
-                    Image("userName1")
+                    Image("EverettName")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 }
