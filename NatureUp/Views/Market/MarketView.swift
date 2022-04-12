@@ -41,11 +41,13 @@ struct MarketView: View {
                 ZStack{
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(Color("SecondGreen"), lineWidth: 2)
-                        .frame(height:90)
+                        .frame(height:100)
                     RoundedRectangle(cornerRadius : 10)
                         .fill(Color.white)
-                        .frame(height:90)
+                        .frame(height:100)
                     Image("userName1")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
                 }
                 .padding()
                 

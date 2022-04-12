@@ -1,13 +1,13 @@
 //
-//  ProfileView.swift
+//  userProfileViewLingo.swift
 //  NatureUp
 //
-//  Created by Minyoung Kim on 2022/04/08.
+//  Created by Jung Yunseong on 2022/04/13.
 //
 
 import SwiftUI
 
-struct userProfileView: View {
+struct userProfileViewLingo: View {
     @Environment(\.editMode) var editMode
     
     var body: some View {
@@ -15,9 +15,9 @@ struct userProfileView: View {
             Color("BackgroundGray")
             ScrollView {
                 VStack {
-                    userProfileStatus()
-                    userProfilePicture()
-                    Image("EverretName")
+                    userProfileStatusLingo()
+                    userProfilePictureLingo()
+                    Image("LingoName")
                         .resizable()
                         .frame(width:230, height: 70)
                     HStack {
@@ -36,9 +36,10 @@ struct userProfileView: View {
     }
 }
 
-struct userProfileView_Previews: PreviewProvider {
+struct userProfileViewLingo_Previews: PreviewProvider {
     static var previews: some View {
         userProfileView()
         
     }
 }
+

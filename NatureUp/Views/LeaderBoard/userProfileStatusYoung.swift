@@ -1,13 +1,13 @@
 //
-//  ProfileStatus.swift
+//  userProfileStatusYoung.swift
 //  NatureUp
 //
-//  Created by Jung Yunseong on 2022/04/09.
+//  Created by Jung Yunseong on 2022/04/13.
 //
 
 import SwiftUI
 
-struct userProfileStatus: View {
+struct userProfileStatusYoung: View {
     var body: some View {
         HStack {
             ZStack{
@@ -19,7 +19,7 @@ struct userProfileStatus: View {
                         RoundedRectangle(cornerRadius: 5)
                             .stroke(Color(red: 112/255, green: 210/255, blue: 163/255), lineWidth: 1)
                     )
-                Text("사용자 등수 : 1")
+                Text("사용자 등수 : 3")
                     .font(.system(size: 14))
             }
             Spacer()
@@ -35,7 +35,7 @@ struct userProfileStatus: View {
                 HStack {
                     Image(systemName: "leaf.fill")
                         .foregroundColor(Color("PrimaryGreen"))
-                    Text("632")
+                    Text("234")
                         .font(.system(size: 14))
                 }
             }
@@ -44,7 +44,7 @@ struct userProfileStatus: View {
     }
 }
 
-struct userProfileStatus_Previews: PreviewProvider {
+struct userProfileStatusYoung_Previews: PreviewProvider {
     static var previews: some View {
         userProfileStatus()
     }

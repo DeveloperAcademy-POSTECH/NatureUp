@@ -39,7 +39,7 @@ struct MyLeaderBoardStatus: View {
                         .stroke(Color(red: 112/255, green: 210/255, blue: 163/255), lineWidth: 2)
                     )
                 HStack {
-                    Image(systemName:"sparkles")
+                    Image(systemName:"star.circle.fill")
                         .foregroundColor(Color("PrimaryGreen"))
                     Text("\(exp)")
                         .font(.system(size: 14))
