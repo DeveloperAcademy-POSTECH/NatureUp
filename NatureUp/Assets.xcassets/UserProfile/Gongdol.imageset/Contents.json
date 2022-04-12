@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "Gongdol.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Everett.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
