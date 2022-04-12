@@ -8,16 +8,21 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @Environment(\.editMode) var editMode
     
     var body: some View {
         ZStack {
             Color("BackgroundGray")
             VStack {
-
+                
                 ProfileStatus()
                 ProfilePicture()
-                NamePlate()
+                ZStack{
+                    NamePlate()
+                    Text("Everett")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .padding(.top,13)
+                }
                 
                 Text("오늘 지구를 살린 활동")
                     .font(.title2)
