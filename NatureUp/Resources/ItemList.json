@@ -109,91 +109,91 @@
     },
     {
       "id" : 19,
-      "point" : 100,
+      "point" : 50,
       "imageName" : "dia",
       "type" : "decoration"
     },
     {
       "id" : 20,
-      "point" : 100,
+      "point" : 50,
       "imageName" : "dia",
       "type" : "decoration"
     },
     {
       "id" : 21,
-      "point" : 100,
+      "point" : 50,
       "imageName" : "dia",
       "type" : "decoration"
     },
     {
       "id" : 22,
-      "point" : 100,
+      "point" : 50,
       "imageName" : "dia",
       "type" : "decoration"
     },
     {
       "id" : 23,
-      "point" : 100,
+      "point" : 50,
       "imageName" : "dia",
       "type" : "decoration"
     },
     {
       "id" : 24,
-      "point" : 100,
+      "point" : 50,
       "imageName" : "dia",
       "type" : "decoration"
     },
     {
       "id" : 25,
-      "point" : 100,
+      "point" : 50,
       "imageName" : "dia",
       "type" : "decoration"
     },
     {
       "id" : 26,
-      "point" : 100,
+      "point" : 50,
       "imageName" : "dia",
       "type" : "decoration"
     },
     {
         "id" : 27,
-        "point" : 100,
+        "point" : 200,
         "imageName" : "background_forest1",
         "type" : "background"
     },
     {
         "id" : 28,
-        "point" : 100,
+        "point" : 200,
         "imageName" : "background_forest2",
         "type" : "background"
     },
     {
         "id" : 29,
-        "point" : 100,
+        "point" : 200,
         "imageName" : "background_forest3",
         "type" : "background"
     },
     {
         "id" : 30,
-        "point" : 100,
+        "point" : 200,
         "imageName" : "background_mountains",
         "type" : "background"
     },
     {
         "id" : 31,
-        "point" : 100,
+        "point" : 300,
         "imageName" : "background_natural",
         "type" : "background"
     },
     {
         "id" : 32,
-        "point" : 100,
+        "point" : 300,
         "imageName" : "background_winter",
         "type" : "background"
     },
     {
         "id" : 33,
-        "point" : 100,
+        "point" : 150,
         "imageName" : "Smoke-effect",
         "type" : "effect"
     }

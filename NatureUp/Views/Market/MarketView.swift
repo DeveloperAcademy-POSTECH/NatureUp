@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MarketView: View {
+    let exp = 700
+    let pnt = 150
     @State private var ItemType = "border"
     @State private var selectedNum = 1
     @State private var pickerColer = Color(.sRGB, red: 0.2510, green: 0.7804, blue: 0.5217)
@@ -25,7 +27,12 @@ struct MarketView: View {
                             .fill(Color("SecondGreen"))
                             .opacity(0.1)
                             .frame(width:150, height:40)
-                        Text("포인트 : 100pt")
+                        HStack{
+                            Image(systemName: "leaf")
+                            Text(String("\(pnt)"))
+                                .fontWeight(.heavy)
+                        }
+                        
                     }
                     Spacer()
                         .frame(width:30)
@@ -37,7 +44,12 @@ struct MarketView: View {
                             .fill(Color("SecondGreen"))
                             .opacity(0.1)
                             .frame(width:150, height:40)
-                        Text("경험치 : 100exp")
+                        HStack{
+                            Image(systemName:"sparkles")
+                            Text(String("\(exp)"))
+                                .fontWeight(.heavy)
+                        }
+                        
                     }
                 }.padding()
                 
@@ -48,7 +60,7 @@ struct MarketView: View {
                     RoundedRectangle(cornerRadius : 10)
                         .fill(Color.white)
                         .frame(width:330, height:90)
-                    Text("Everett")
+                    Image("userName1")
                 }
                 
                 
