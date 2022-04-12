@@ -3,121 +3,141 @@
         "name": "Everett",
         "id": 1001,
         "ranking": "1",
-        "imageName": "EverretName"
-    },
-    {
-        "name": "Curry",
-        "id": 1002,
-        "ranking": "2",
-        "imageName": "CurryName"
+        "imageName": "EverettName",
+        "exp": "823"
     },
     {
         "name": "Lingo",
+        "id": 1002,
+        "ranking": "2",
+        "imageName": "LingoName",
+        "exp": "813"
+    },
+    {
+        "name": "Young",
         "id": 1003,
         "ranking": "3",
-        "imageName": "LingoName"
+        "imageName": "YoungName",
+        "exp": "788"
     },
     {
         "name": "Gongdol",
         "id": 1004,
         "ranking": "4",
-        "imageName": "GongdolName"
+        "imageName": "GongdolName",
+        "exp": "763"
     },
     {
         "name": "Mize",
         "id": 1005,
         "ranking": "5",
-        "imageName": "MizeName"
+        "imageName": "MizeName",
+        "exp": "743"
     },
     {
         "name": "MINCHO",
         "id": 1006,
         "ranking": "6",
-        "imageName": "MINCHOName"
+        "imageName": "MINCHOName",
+        "exp": "741"
     },
     {
-        "name": "Young",
+        "name": "Curry",
         "id": 1007,
         "ranking": "7",
-        "imageName": "YoungName"
+        "imageName": "CurryName",
+        "exp": "725"
     },
     {
         "name": "Vivi",
         "id": 1008,
         "ranking": "8",
-        "imageName": "ViviName"
+        "imageName": "ViviName",
+        "exp": "632"
     },
     {
         "name": "Hoaxer",
         "id": 1009,
         "ranking": "9",
-        "imageName": "HoaxerName"
+        "imageName": "HoaxerName",
+        "exp": "632"
     },
     {
         "name": "Hyukey",
         "id": 1010,
         "ranking": "10",
-        "imageName": "HyukeyName"
+        "imageName": "HyukeyName",
+        "exp": "623"
     },
     {
         "name": "Ocean",
         "id": 1011,
         "ranking": "11",
-        "imageName": "OceanName"
+        "imageName": "OceanName",
+        "exp": "523"
     },
     {
         "name": "Nia",
         "id": 1012,
         "ranking": "12",
-        "imageName": "NiaName"
+        "imageName": "NiaName",
+        "exp": "492"
     },
     {
         "name": "Rang",
         "id": 10013,
         "ranking": "13",
-        "imageName": "RangName"
+        "imageName": "RangName",
+        "exp": "487"
     },
     {
         "name": "Felix",
         "id": 1014,
         "ranking": "14",
-        "imageName": "FelixName"
+        "imageName": "FelixName",
+        "exp": "453"
     },
     {
         "name": "Leeo",
         "id": 1015,
         "ranking": "15",
-        "imageName": "LeeoName"
+        "imageName": "LeeoName",
+        "exp": "443"
     },
     {
         "name": "Sasha",
         "id": 1016,
         "ranking": "16",
-        "imageName": "SashaName"
+        "imageName": "SashaName",
+        "exp": "421"
     },
     {
         "name": "Robin",
         "id": 10017,
         "ranking": "17",
-        "imageName": "RobinName"
+        "imageName": "RobinName",
+        "exp": "323"
     },
     {
         "name": "YungSix",
         "id": 1018,
         "ranking": "18",
-        "imageName": "YungSixName"
+        "imageName": "YungSixName",
+        "exp": "234"
     },
     {
         "name": "Leticia",
         "id": 1019,
         "ranking": "19",
-        "imageName": "LeticiaName"
+        "imageName": "LeticiaName",
+        "exp": "219"
     },
     {
         "name": "Neis",
         "id": 1020,
         "ranking": "20",
-        "imageName": "NeisName"
+        "imageName": "NeisName",
+        "exp": "173"
     }
 ]
 

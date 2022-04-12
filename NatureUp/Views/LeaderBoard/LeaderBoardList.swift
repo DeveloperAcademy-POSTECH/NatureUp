@@ -13,7 +13,7 @@ struct LeaderBoardList: View {
             ScrollView {
                 VStack {
                     ForEach(3..<userRankings.count, id: \.self) { index in
-                        NavigationLink(destination: userProfileView()) {
+                        NavigationLink(destination: userProfileView(userRanking: userRankings[index])) {
                             LeaderBoardRow(userRanking: userRankings[index])
                                 .padding(.horizontal)
                         }
