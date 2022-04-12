@@ -11,14 +11,16 @@ struct ProfileEditor: View {
     
     @State var username: String = ""
     @State private var status = true
+    @State private var showingAlert = false
     
     var body: some View {
         
         VStack{
         List {
             VStack {
-                Text("Profile Picture")
-                    .bold()
+                Text("Profile")
+                    .font(.title)
+                    .fontWeight(.bold)
                     .padding()
                 
                 ProfilePicture()
@@ -49,12 +51,17 @@ struct ProfileEditor: View {
             }
             
         }
-        Button(action: {
-        }, label: {
-            Text("Save")
-                .fontWeight(.bold)
-                .padding(.all, 5)
-        })
+            
+            Button(action: {
+                self.showingAlert.toggle()
+            }) {
+                Text("Save")
+                    .padding(.all, 5)
+                    .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("저장하시겠습니까?"), message: Text("취소 버튼을 누르면 저장되지 않습니다."), primaryButton: .destructive(Text("취소"), action: {
+                        }), secondaryButton: .cancel(Text("저장")))
+                    }
+            }
         }
     }
     
