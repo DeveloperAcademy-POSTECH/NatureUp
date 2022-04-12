@@ -80,8 +80,8 @@
 		346EBA9327FF0B580002B186 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		346EBA9727FF2C820002B186 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		346EBA9E28000B880002B186 /* AuthenticationSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationSuccessView.swift; sourceTree = "<group>"; };
-		3483A467280089020046E9A9 /* ProfileStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStatus.swift; sourceTree = "<group>"; };
-		3483A46928008D990046E9A9 /* NamePlate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePlate.swift; sourceTree = "<group>"; };
+		3483A467280089020046E9A9 /* ProfileStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileStatus.swift; path = ../../Profile/ProfileStatus.swift; sourceTree = "<group>"; };
+		3483A46928008D990046E9A9 /* NamePlate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NamePlate.swift; path = ../../Profile/NamePlate.swift; sourceTree = "<group>"; };
 		34A220F52804343B00271609 /* EvaluationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationView.swift; sourceTree = "<group>"; };
 		34A220F72804346B00271609 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		34ADDA062801C0D00043658A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,12 +92,12 @@
 		6F0AED1E28040F5600546379 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6F66451C28043354007C21CD /* ItemCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardList.swift; sourceTree = "<group>"; };
 		6F6EAD9827FD6284007B2130 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
-		B50AEF712801F2DC00970B8E /* ActivityShapeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityShapeCell.swift; sourceTree = "<group>"; };
-		B542311B2804C55E00D6AB92 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
+		B50AEF712801F2DC00970B8E /* ActivityShapeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityShapeCell.swift; path = ../../Profile/ActivityShapeCell.swift; sourceTree = "<group>"; };
+		B542311B2804C55E00D6AB92 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileEditor.swift; path = ../../Profile/ProfileEditor.swift; sourceTree = "<group>"; };
 		B552DAB62802CCAE0045A3F5 /* activityData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = activityData.json; sourceTree = "<group>"; };
-		B5C7FF7228000A050017C7AC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		B5C7FF7528000C530017C7AC /* ProfilePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicture.swift; sourceTree = "<group>"; };
-		B5EA875728041030005FF2DB /* ActivityAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAlbum.swift; sourceTree = "<group>"; };
+		B5C7FF7228000A050017C7AC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = ../../Profile/ProfileView.swift; sourceTree = "<group>"; };
+		B5C7FF7528000C530017C7AC /* ProfilePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfilePicture.swift; path = ../../Profile/ProfilePicture.swift; sourceTree = "<group>"; };
+		B5EA875728041030005FF2DB /* ActivityAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityAlbum.swift; path = ../../Profile/ActivityAlbum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
