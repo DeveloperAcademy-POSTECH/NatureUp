@@ -80,7 +80,7 @@ class UserViewModel: ObservableObject {
         let db = Firestore.firestore()
         
         // Read the documents at a specific path
-        db.collection("users").document(id).getDocument { snapshot, error in
+        db.collection("users").document(id).addSnapshotListener { snapshot, error in
             
             // Check for errors
             if error == nil {
@@ -128,7 +128,7 @@ class UserViewModel: ObservableObject {
         let db = Firestore.firestore()
         
         // Read the documents at a specific path
-        db.collection("users").document(id).getDocument { snapshot, error in
+        db.collection("users").document(id).addSnapshotListener { snapshot, error in
             
             // Check for errors
             if error == nil {
