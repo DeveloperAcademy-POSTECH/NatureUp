@@ -12,6 +12,7 @@ struct ProfileEditor: View {
     @State var username: String = ""
     
     var body: some View {
+        VStack{
         List {
             VStack {
                 Text("Profile Picture")
@@ -22,9 +23,8 @@ struct ProfileEditor: View {
                     .padding(.bottom)
                 
                 Divider()
-                    .frame(width: 320, height: 0.25)
-                    .background(Color.gray
-                    )
+                    .frame(width: 320, height: 0.3)
+                
                 
                 HStack{
                     Text("Username")
@@ -37,8 +37,7 @@ struct ProfileEditor: View {
                 }
                 
                 Divider()
-                    .frame(width: 320, height: 0.25)
-                    .background(Color.gray)
+                    .frame(width: 320, height: 0.3)
                 
                 Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
                     Text("Enable Notification")
@@ -46,6 +45,14 @@ struct ProfileEditor: View {
                         .padding(.all, 3)
                 }
             }
+            
+        }
+        Button(action: {
+        }, label: {
+            Text("Save")
+                .fontWeight(.bold)
+                .padding(.all, 5)
+        })
         }
     }
     
