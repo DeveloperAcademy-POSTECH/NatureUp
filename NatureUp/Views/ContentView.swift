@@ -77,6 +77,7 @@ struct ContentView: View {
             .navigationBarTitle(self.tabSelection.rawValue, displayMode: .inline)
             .toolbar {
                 if tabSelection == Tabs.home {
+                    
                     Button {
                         showingNotifications.toggle()
                     } label: {

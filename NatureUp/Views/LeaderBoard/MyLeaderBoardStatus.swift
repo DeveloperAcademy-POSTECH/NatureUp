@@ -22,8 +22,9 @@ struct MyLeaderBoardStatus: View {
                     .overlay(RoundedRectangle(cornerRadius: 8)
                         .stroke(Color(red: 112/255, green: 210/255, blue: 163/255), lineWidth: 2)
                     )
-                Text("내등수 :  \(no)")
-                    .font(.system(size: 12))
+                Text("내등수 : \(no)")
+                    .font(.system(size: 14))
+                    
     
             }
             
@@ -41,6 +42,7 @@ struct MyLeaderBoardStatus: View {
                     Image(systemName:"sparkles")
                         .foregroundColor(Color("PrimaryGreen"))
                     Text("\(exp)")
+                        .font(.system(size: 14))
                 }
             }
         } // HStack 등수, 경험치

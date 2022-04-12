@@ -11,7 +11,6 @@ struct userProfileView: View {
     @Environment(\.editMode) var editMode
     
     var body: some View {
-        NavigationView {
         ZStack {
             Color("BackgroundGray")
             VStack {
@@ -34,9 +33,6 @@ struct userProfileView: View {
                 
             }
         }
-        
-        }
-        
     }
 }
 
