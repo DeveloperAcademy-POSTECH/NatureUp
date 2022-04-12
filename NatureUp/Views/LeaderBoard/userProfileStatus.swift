@@ -35,7 +35,7 @@ struct userProfileStatus: View {
                             .stroke(Color(red: 112/255, green: 210/255, blue: 163/255), lineWidth: 1)
                     )
                 HStack {
-                    Image(systemName: "leaf.fill")
+                    Image(systemName: "star.circle.fill")
                         .foregroundColor(Color("PrimaryGreen"))
                     Text(userRanking.exp)
                         .font(.system(size: 14))

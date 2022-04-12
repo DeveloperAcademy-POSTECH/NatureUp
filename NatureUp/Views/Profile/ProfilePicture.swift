@@ -17,7 +17,6 @@ struct ProfilePicture: View {
             .clipShape(Circle())
             .overlay {
                 Circle().stroke(.white, lineWidth: 5)
-                
             }
     }
 }

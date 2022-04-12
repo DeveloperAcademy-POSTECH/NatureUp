@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NamePlate: View {
     var body: some View {
-        Image("NameplateExample")
+        Image("EverettName")
             .resizable()
             .frame(width:230, height: 70)
     }

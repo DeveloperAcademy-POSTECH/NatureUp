@@ -18,7 +18,6 @@ struct ItemCardRow: View {
                     .aspectRatio(contentMode: .fit)
                     .padding(.leading,10)
                     .padding(.trailing,10)
-                    
             }
             .frame(width: 100, height: 100)
             HStack{

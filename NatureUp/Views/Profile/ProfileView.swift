@@ -26,7 +26,6 @@ struct ProfileView: View {
                     .padding([.top, .leading])
                     ActivityAlbum()
                     Spacer()
-                    
                 }
             }
         }
