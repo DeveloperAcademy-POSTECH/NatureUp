@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ActivityList: View {
+    @ObservedObject var model = ActivityViewModel()
     let location: String
     
-    let activityList : [String] = [
-        "쓰레기 분리수거 하기",
-        "건물 내 쓰레기 줍기",
-        "수도꼭지 잠그기"
-    ]
+    init(location: String) {
+        self.location = location
+        model.getQueryData(type: location)
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -33,12 +33,22 @@ struct ActivityList: View {
                         .frame(width: 20.0, height: 20.0)
                 }
             }
-            ForEach(activityList, id: \.self) { activityName in
-                NavigationLink(destination: AuthenticationView()) {
-                    ActivityRow(activityName: activityName)
+            if model.list.count > 3 {
+                ForEach(model.list[0...2]) { activity in
+                    NavigationLink(destination: AuthenticationView()) {
+                        ActivityRow(activityName: activity.name)
+                    }
+                    .isDetailLink(false)
                 }
-                .isDetailLink(false)
+            } else {
+                ForEach(model.list) { activity in
+                    NavigationLink(destination: AuthenticationView()) {
+                        ActivityRow(activityName: activity.name)
+                    }
+                    .isDetailLink(false)
+                }
             }
+            
         }
         .padding()
     }
@@ -46,6 +56,6 @@ struct ActivityList: View {
 
 struct ActivityList_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityList(location: "당신이 있는 건물 내")
+        ActivityList(location: "road")
     }
 }

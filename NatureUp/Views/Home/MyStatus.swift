@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct MyStatus: View {
+    @ObservedObject var userVM = UserViewModel()
+    
+    init() {
+        userVM.getUser(id: "cVP4ck6CvPzRaOp4NE7c")
+    }
+    
     var body: some View {
         HStack {
             Spacer()
@@ -15,7 +21,7 @@ struct MyStatus: View {
                 Image(systemName:"text.badge.star")
                     .foregroundColor(Color("PrimaryGreen"))
                     .padding(5)
-                Text("131")
+                Text("\(userVM.user.exp)")
             }
             Spacer()
             Divider()
@@ -27,7 +33,7 @@ struct MyStatus: View {
                 Image(systemName:"star.circle.fill")
                     .foregroundColor(Color("PrimaryGreen"))
                     .padding(5)
-                Text("100")
+                Text("\(userVM.user.points)")
             }
             Spacer()
         }
