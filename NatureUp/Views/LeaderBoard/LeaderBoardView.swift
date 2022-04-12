@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LeaderBoardView: View {
     
+
+    
     var body: some View {
         ZStack {
             Color("BackgroundGray")
@@ -73,12 +75,15 @@ struct LeaderBoardView: View {
                         
                     } // HStack
                     .padding(.vertical, 60)
-
+                    VStack {
                     LeaderBoardList()
                         .padding(.vertical, -60)
+                    }
                     Spacer()
-            } // VStack
+                } // VStack
+                .padding(.bottom, 60)
         } // ZStack
+            
     }
 }
 
