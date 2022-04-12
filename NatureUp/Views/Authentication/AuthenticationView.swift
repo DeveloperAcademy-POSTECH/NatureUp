@@ -33,7 +33,7 @@ struct AuthenticationView: View {
                                     .clipShape(Capsule())
                             })
                             .padding(.trailing)
-                            .sheet(isPresented: $isCustomCameraViewPresented, content: {
+                            .fullScreenCover(isPresented: $isCustomCameraViewPresented, content: {
                                 CustomCameraView(capturedImage: $capturedImage)
                             })
                             Spacer()
@@ -94,12 +94,9 @@ struct AuthenticationView: View {
                                 .clipShape(Circle())
                         }
                         .padding(.bottom)
-                        .sheet(
-                            isPresented: $isCustomCameraViewPresented,
-                            content: {
-                                CustomCameraView(capturedImage: $capturedImage)
-                            }
-                        )
+                        .fullScreenCover(isPresented: $isCustomCameraViewPresented, content: {
+                            CustomCameraView(capturedImage: $capturedImage)
+                        })
                     }
                 }
             }
