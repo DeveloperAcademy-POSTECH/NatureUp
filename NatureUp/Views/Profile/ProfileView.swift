@@ -12,29 +12,22 @@ struct ProfileView: View {
     var body: some View {
         ZStack {
             Color("BackgroundGray")
-            VStack {
-                
-                ProfileStatus()
-                ProfilePicture()
-                ZStack{
+            ScrollView {
+                VStack {
+                    ProfileStatus()
+                    ProfilePicture()
                     NamePlate()
-                    Text("Everett")
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                        .padding(.top,13)
+                    HStack {
+                        Text("오늘 지구를 살린 활동")
+                            .font(.headline)
+                            .fontWeight(.heavy)
+                        Spacer()
+                    }
+                    .padding([.top, .leading])
+                    ActivityAlbum()
+                    Spacer()
+                    
                 }
-                
-                Text("오늘 지구를 살린 활동")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.leading, 35)
-                    .padding(.top, 30)
-                    .padding(.bottom, -3)
-                
-                ActivityAlbum()
-                Spacer()
-                
             }
         }
     }

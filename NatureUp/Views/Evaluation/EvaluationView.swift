@@ -17,31 +17,30 @@ struct EvaluationView: View {
         ZStack {
             Color("BackgroundGray")
             VStack {
-                Spacer()
                 Text("활동에 맞는 올바른 사진인지 평가해주세요")
                     .font(.headline)
                 HStack {
                     ProgressView(value: progress, total: 10)
                     Spacer()
                 }
-                .padding()
+                .padding(5)
                 ZStack {
                     Rectangle()
                         .foregroundColor(.white)
-                        .frame(height: 50)
+                        .frame(height: 30)
                         .overlay(
-                            RoundedRectangle(cornerRadius: 10)
+                            RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color("PrimaryGreen"), lineWidth: 1)
                         )
                 
                     Text(evaluation[currentNumber].name)
-                        .font(.title2)
+                        .font(.title3)
                         .foregroundColor(Color("PrimaryGreen"))
                 }
                 evaluation[currentNumber].image
                     .resizable()
                     .scaledToFill()
-                    .cornerRadius(10)
+                    .cornerRadius(5)
                 HStack {
                     NavigationLink(
                         destination: EvaluationCompleteView(),

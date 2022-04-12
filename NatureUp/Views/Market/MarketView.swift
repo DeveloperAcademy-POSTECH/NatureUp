@@ -19,51 +19,35 @@ struct MarketView: View {
             Color("BackgroundGray")
             VStack {
                 HStack {
+                    Spacer()
                     ZStack{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color("SecondGreen"), lineWidth: 2)
-                            .frame(width:150, height:40)
-                        RoundedRectangle(cornerRadius:10)
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color("SecondGreen"), lineWidth: 1)
+                            .frame(width:100, height:30)
+                        RoundedRectangle(cornerRadius:5)
                             .fill(Color("SecondGreen"))
                             .opacity(0.05)
-                            .frame(width:150, height:40)
+                            .frame(width:100, height:30)
                         HStack{
                             Image(systemName: "leaf.fill")
                                 .foregroundColor(Color("PrimaryGreen"))
                             Text(String("\(pnt)"))
-                                .fontWeight(.heavy)
+                                .fontWeight(.medium)
                         }
                         
                     }
-                    Spacer()
-                        .frame(width:30)
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color("SecondGreen"), lineWidth: 2)
-                            .frame(width:150, height:40)
-                        RoundedRectangle(cornerRadius:10)
-                            .fill(Color("SecondGreen"))
-                            .opacity(0.05)
-                            .frame(width:150, height:40)
-                        HStack{
-                            Image(systemName:"sparkles")
-                                .foregroundColor(Color("PrimaryGreen"))
-                            Text(String("\(exp)"))
-                                .fontWeight(.heavy)
-                        }
-                        
-                    }
-                }.padding()
+                }.padding([.top, .trailing])
                 
                 ZStack{
                     RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color("SecondGreen"), lineWidth: 3)
-                        .frame(width:330, height:90)
+                        .stroke(Color("SecondGreen"), lineWidth: 2)
+                        .frame(height:90)
                     RoundedRectangle(cornerRadius : 10)
                         .fill(Color.white)
-                        .frame(width:330, height:90)
+                        .frame(height:90)
                     Image("userName1")
                 }
+                .padding()
                 
                 
                 Picker(selection: $selectedNum, label: Text("Item List")) {
