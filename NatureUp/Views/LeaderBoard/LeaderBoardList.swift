@@ -17,8 +17,9 @@ struct LeaderBoardList: View {
                             LeaderBoardRow(userRanking: userRankings[index])
                             
                                 .padding(.horizontal)
+                                
                         }
-                        .navigationBarHidden(true)
+                        
                     }
                     
                 }
