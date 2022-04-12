@@ -11,15 +11,17 @@ struct LeaderBoardRow: View {
     var userRanking: UserRanking
     
     var body: some View {
+        ZStack{
             HStack {
                 Text(userRanking.ranking)
                     .font(.system(size: 20))
                     .padding()
                 Spacer()
+            }
+            HStack {
                 userRanking.image
                     .resizable()
                     .frame(width: 200, height: 50, alignment: .center)
-                Spacer()
                 
             }
             .overlay(
@@ -31,6 +33,7 @@ struct LeaderBoardRow: View {
             .padding(.vertical, 5)
         }
     }
+}
 
 struct LeaderBoardRow_Previews: PreviewProvider {
     static var previews: some View {

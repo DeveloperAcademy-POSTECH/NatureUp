@@ -15,13 +15,9 @@ struct LeaderBoardList: View {
                     ForEach(3..<userRankings.count, id: \.self) { index in
                         NavigationLink(destination: userProfileView()) {
                             LeaderBoardRow(userRanking: userRankings[index])
-                            
                                 .padding(.horizontal)
-                                
                         }
-                        
                     }
-                    
                 }
             }
         }
