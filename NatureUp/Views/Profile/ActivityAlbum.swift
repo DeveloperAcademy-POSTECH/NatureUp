@@ -15,22 +15,21 @@ struct ActivityAlbum: View {
     
     var columns: [GridItem] =
     Array(repeating: .init(.flexible(maximum:105)), count: 3)
-
+    
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: columns, spacing: 15) {
-                ForEach(imageList, id: \.self){ index in
-                    Image(index)
-                        .resizable()
-                        .frame(width: 99, height: 99)
-                        .scaledToFill()
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                    
-                    }
-                }
-            }.padding()
+        LazyVGrid(columns: Array(repeating: .init(.flexible(), spacing:-15), count: 3)) {
+            ForEach(imageList, id: \.self){ index in
+                Image(index)
+                    .resizable()
+                    .frame(width: 110, height: 110)
+                    .scaledToFill()
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                
+            }
         }
+        
+    }
 }
 
 struct ActivityAlbum_Previews: PreviewProvider {

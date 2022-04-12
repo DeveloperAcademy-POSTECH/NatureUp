@@ -86,6 +86,7 @@ struct ContentView: View {
                     .sheet(
                         isPresented: $showingNotifications,
                         content: {
+                            
                             NotificationView()
                         }
                     )

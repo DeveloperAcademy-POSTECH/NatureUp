@@ -14,11 +14,9 @@ struct userProfileView: View {
         ZStack {
             Color("BackgroundGray")
             VStack {
-                
                 userProfileStatus()
                 userProfilePicture()
                 NamePlate()
-                
                 Text("오늘 지구를 살린 활동")
                     .font(.title2)
                     .fontWeight(.bold)
