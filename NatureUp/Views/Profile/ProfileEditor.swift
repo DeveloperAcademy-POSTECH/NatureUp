@@ -10,8 +10,10 @@ import SwiftUI
 struct ProfileEditor: View {
     
     @State var username: String = ""
+    @State private var status = true
     
     var body: some View {
+        
         VStack{
         List {
             VStack {
@@ -39,7 +41,7 @@ struct ProfileEditor: View {
                 Divider()
                     .frame(width: 320, height: 0.3)
                 
-                Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
+                Toggle(isOn: $status) {
                     Text("Enable Notification")
                         .fontWeight(.bold)
                         .padding(.all, 3)
