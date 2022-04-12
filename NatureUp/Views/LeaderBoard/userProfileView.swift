@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct userProfileView: View {
+    var userRanking: UserRanking
     @Environment(\.editMode) var editMode
     
     var body: some View {
@@ -15,11 +16,11 @@ struct userProfileView: View {
             Color("BackgroundGray")
             ScrollView {
                 VStack {
-                    userProfileStatus()
-                    userProfilePicture()
-                    Image("EverretName")
+                    userProfileStatus(userRanking: userRanking)
+                    userProfilePicture(userRanking: userRanking)
+                    Image("\(userRanking.name)Name")
                         .resizable()
-                        .frame(width:230, height: 70)
+                        .frame(width:230, height: 60)
                     HStack {
                         Text("오늘 지구를 살린 활동")
                             .font(.headline)
@@ -38,7 +39,7 @@ struct userProfileView: View {
 
 struct userProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        userProfileView()
+        userProfileView(userRanking: userRankings[0])
         
     }
 }

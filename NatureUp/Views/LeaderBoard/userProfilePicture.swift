@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct userProfilePicture: View {
+    var userRanking: UserRanking
+    
     var body: some View {
-        Image("Everett")
+        Image(userRanking.name)
             .resizable()
             .frame(width: 142, height: 142)
             .scaledToFill()
@@ -24,6 +26,6 @@ struct userProfilePicture: View {
 
 struct userProfilePicture_Previews: PreviewProvider {
     static var previews: some View {
-        userProfilePicture()
+        userProfilePicture(userRanking: userRankings[0])
     }
 }

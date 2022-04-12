@@ -14,6 +14,7 @@ struct UserRanking: Identifiable, Decodable {
     var name: String
     var ranking: String
     var imageName: String
+    var exp: String
     var image: Image {
         Image(imageName)
     }

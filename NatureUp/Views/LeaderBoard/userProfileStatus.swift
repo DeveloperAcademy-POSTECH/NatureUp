@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct userProfileStatus: View {
+    var userRanking: UserRanking
+    
     var body: some View {
         HStack {
             ZStack{
@@ -19,7 +21,7 @@ struct userProfileStatus: View {
                         RoundedRectangle(cornerRadius: 5)
                             .stroke(Color(red: 112/255, green: 210/255, blue: 163/255), lineWidth: 1)
                     )
-                Text("사용자 등수 : 1")
+                Text("사용자 등수 : \(userRanking.ranking)")
                     .font(.system(size: 14))
             }
             Spacer()
@@ -35,7 +37,7 @@ struct userProfileStatus: View {
                 HStack {
                     Image(systemName: "leaf.fill")
                         .foregroundColor(Color("PrimaryGreen"))
-                    Text("632")
+                    Text(userRanking.exp)
                         .font(.system(size: 14))
                 }
             }
@@ -46,6 +48,6 @@ struct userProfileStatus: View {
 
 struct userProfileStatus_Previews: PreviewProvider {
     static var previews: some View {
-        userProfileStatus()
+        userProfileStatus(userRanking: userRankings[0])
     }
 }

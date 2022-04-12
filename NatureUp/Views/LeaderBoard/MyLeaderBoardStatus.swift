@@ -9,8 +9,8 @@ import SwiftUI
 
 struct MyLeaderBoardStatus: View {
     
-    let no: String  = "10"
-    let exp: String = "100"
+    let no: String  = "1"
+    let exp: String = "823"
     
     var body: some View {
         HStack {

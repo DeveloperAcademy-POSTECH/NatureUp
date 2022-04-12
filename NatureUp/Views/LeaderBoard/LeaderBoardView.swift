@@ -9,21 +9,19 @@ import SwiftUI
 
 struct LeaderBoardView: View {
     
-    
-    
     var body: some View {
         ZStack {
             Color("BackgroundGray")
             VStack {
                 MyLeaderBoardStatus()
                 HStack {
-                    NavigationLink(destination: userProfileViewLingo()) {
+                    NavigationLink(destination: userProfileView(userRanking: userRankings[1])) {
                         VStack(alignment: .center) {
                             Spacer()
                             Image(systemName: "crown.fill")
                                 .foregroundColor(Color(red: 192/255, green: 192/255, blue: 192/255, opacity: 100))
                                 .font(.system(size: 30))
-                            Image("lingo")
+                            Image("Lingo")
                                 .resizable()
                                 .frame(width: 80, height: 80)
                                 .clipShape(Circle())
@@ -35,7 +33,7 @@ struct LeaderBoardView: View {
                         }
                         .frame(width: 110)
                     }
-                    NavigationLink(destination: userProfileView())
+                    NavigationLink(destination: userProfileView(userRanking: userRankings[0]))
                     {
                         VStack {
                             Image(systemName: "crown.fill")
@@ -50,20 +48,20 @@ struct LeaderBoardView: View {
                                 .shadow(radius: 10)
                                 .overlay(Circle().stroke(Color.gray, lineWidth: 4))
                                 .padding(.top, -25)
-                            Image("EverretName")
+                            Image("EverettName")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                         }
                         .frame(width: 110)
                     }
-                    NavigationLink(destination: userProfileViewYoung()) {
+                    NavigationLink(destination: userProfileView(userRanking: userRankings[2])) {
                         VStack {
                             Spacer()
                             Image(systemName: "crown.fill")
                                 .foregroundColor(Color(red: 159/255, green: 122/255, blue: 52/255))
                                 .font(.system(size: 30))
                                 .padding(.bottom, 1)
-                            Image("young")
+                            Image("Young")
                                 .resizable()
                                 .frame(width: 70, height: 70)
                                 .clipShape(Circle())
