@@ -1,27 +1,27 @@
 [
     {
-        "name": "Everret",
+        "name": "Everett",
         "id": 1001,
         "ranking": "1",
         "imageName": "EverretName"
     },
     {
-        "name": "Hyukey",
+        "name": "Curry",
         "id": 1002,
         "ranking": "2",
-        "imageName": "HyukeyName"
+        "imageName": "CurryName"
     },
     {
-        "name": "Neis",
+        "name": "Lingo",
         "id": 1003,
         "ranking": "3",
-        "imageName": "NeisName"
+        "imageName": "LingoName"
     },
     {
-        "name": "Nia",
+        "name": "Gongdol",
         "id": 1004,
         "ranking": "4",
-        "imageName": "NiaName"
+        "imageName": "GongdolName"
     },
     {
         "name": "Mize",
@@ -30,10 +30,10 @@
         "imageName": "MizeName"
     },
     {
-        "name": "Lingo",
+        "name": "MINCHO",
         "id": 1006,
         "ranking": "6",
-        "imageName": "LingoName"
+        "imageName": "MINCHOName"
     },
     {
         "name": "Young",
@@ -42,28 +42,28 @@
         "imageName": "YoungName"
     },
     {
-        "name": "Nia",
+        "name": "Vivi",
         "id": 1008,
         "ranking": "8",
-        "imageName": "NiaName"
+        "imageName": "ViviName"
     },
     {
-        "name": "Mize",
+        "name": "Hoaxer",
         "id": 1009,
         "ranking": "9",
-        "imageName": "MizeName"
+        "imageName": "HoaxerName"
     },
     {
-        "name": "Lingo",
+        "name": "Hyukey",
         "id": 1010,
         "ranking": "10",
-        "imageName": "LingoName"
+        "imageName": "HyukeyName"
     },
     {
-        "name": "Neis",
+        "name": "Ocean",
         "id": 1011,
         "ranking": "11",
-        "imageName": "NeisName"
+        "imageName": "OceanName"
     },
     {
         "name": "Nia",
@@ -72,52 +72,52 @@
         "imageName": "NiaName"
     },
     {
-        "name": "Mize",
+        "name": "Rang",
         "id": 10013,
         "ranking": "13",
-        "imageName": "MizeName"
+        "imageName": "RangName"
     },
     {
-        "name": "Lingo",
+        "name": "Felix",
         "id": 1014,
         "ranking": "14",
-        "imageName": "LingoName"
+        "imageName": "FelixName"
     },
     {
-        "name": "Neis",
+        "name": "Leeo",
         "id": 1015,
         "ranking": "15",
-        "imageName": "NeisName"
+        "imageName": "LeeoName"
     },
     {
-        "name": "Nia",
+        "name": "Sasha",
         "id": 1016,
         "ranking": "16",
-        "imageName": "NiaName"
+        "imageName": "SashaName"
     },
     {
-        "name": "Mize",
+        "name": "Robin",
         "id": 10017,
         "ranking": "17",
-        "imageName": "MizeName"
+        "imageName": "RobinName"
     },
     {
-        "name": "Lingo",
+        "name": "YungSix",
         "id": 1018,
         "ranking": "18",
-        "imageName": "LingoName"
+        "imageName": "YungSixName"
+    },
+    {
+        "name": "Leticia",
+        "id": 1019,
+        "ranking": "19",
+        "imageName": "LeticiaName"
     },
     {
         "name": "Neis",
-        "id": 1019,
-        "ranking": "19",
-        "imageName": "NeisName"
-    },
-    {
-        "name": "Nia",
         "id": 1020,
         "ranking": "20",
-        "imageName": "NiaName"
+        "imageName": "NeisName"
     }
 ]
 

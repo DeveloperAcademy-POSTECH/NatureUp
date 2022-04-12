@@ -1,13 +1,13 @@
 //
-//  ProfileView.swift
+//  userProfileViewYoung.swift
 //  NatureUp
 //
-//  Created by Minyoung Kim on 2022/04/08.
+//  Created by Jung Yunseong on 2022/04/13.
 //
 
 import SwiftUI
 
-struct userProfileView: View {
+struct userProfileViewYoung: View {
     @Environment(\.editMode) var editMode
     
     var body: some View {
@@ -15,9 +15,9 @@ struct userProfileView: View {
             Color("BackgroundGray")
             ScrollView {
                 VStack {
-                    userProfileStatus()
-                    userProfilePicture()
-                    Image("EverretName")
+                    userProfileStatusYoung()
+                    userProfilePictureYoung()
+                    Image("YoungName")
                         .resizable()
                         .frame(width:230, height: 70)
                     HStack {
@@ -36,7 +36,7 @@ struct userProfileView: View {
     }
 }
 
-struct userProfileView_Previews: PreviewProvider {
+struct userProfileViewYoung_Previews: PreviewProvider {
     static var previews: some View {
         userProfileView()
         

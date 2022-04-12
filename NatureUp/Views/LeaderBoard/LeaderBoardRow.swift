@@ -12,6 +12,11 @@ struct LeaderBoardRow: View {
     
     var body: some View {
         ZStack{
+            RoundedRectangle(cornerRadius: 10)
+                .foregroundColor(.white)
+                .shadow(color: .gray, radius: 4, x: 1, y: 1)
+                .frame(height: 60)
+                .padding(.vertical, 5)
             HStack {
                 Text(userRanking.ranking)
                     .font(.system(size: 20))
@@ -22,15 +27,7 @@ struct LeaderBoardRow: View {
                 userRanking.image
                     .resizable()
                     .frame(width: 200, height: 50, alignment: .center)
-                
             }
-            .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color(.gray), lineWidth: 0.1)
-                    .shadow(color: .gray, radius: 4, x: 1, y: 1)
-            )
-            .frame(height: 50)
-            .padding(.vertical, 5)
         }
     }
 }
