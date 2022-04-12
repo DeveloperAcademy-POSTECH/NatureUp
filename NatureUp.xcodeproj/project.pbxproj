@@ -12,6 +12,9 @@
 		050CE85D2803FE86003C26E6 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CE85C2803FE86003C26E6 /* ModelData.swift */; };
 		050CE87F28040807003C26E6 /* leaderBoardData.json in Resources */ = {isa = PBXBuildFile; fileRef = 050CE87E28040807003C26E6 /* leaderBoardData.json */; };
 		050CE88328041286003C26E6 /* LeaderBoardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CE88228041286003C26E6 /* LeaderBoardList.swift */; };
+		050CE886280552B3003C26E6 /* userProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CE885280552B2003C26E6 /* userProfileView.swift */; };
+		050CE88A280554AF003C26E6 /* userProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CE889280554AF003C26E6 /* userProfilePicture.swift */; };
+		050CE88E28055605003C26E6 /* userProfileStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CE88D28055605003C26E6 /* userProfileStatus.swift */; };
 		0518984628000E3400CFCB2D /* LeaderBoardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0518984528000E3400CFCB2D /* LeaderBoardRow.swift */; };
 		05447D0D280007950075EDB5 /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05447D0C280007940075EDB5 /* LeaderBoardView.swift */; };
 		160341A72802B96F00170408 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160341A62802B96F00170408 /* LocationListView.swift */; };
@@ -55,6 +58,9 @@
 		050CE85C2803FE86003C26E6 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		050CE87E28040807003C26E6 /* leaderBoardData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = leaderBoardData.json; sourceTree = "<group>"; };
 		050CE88228041286003C26E6 /* LeaderBoardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardList.swift; sourceTree = "<group>"; };
+		050CE885280552B2003C26E6 /* userProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfileView.swift; sourceTree = "<group>"; };
+		050CE889280554AF003C26E6 /* userProfilePicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfilePicture.swift; sourceTree = "<group>"; };
+		050CE88D28055605003C26E6 /* userProfileStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfileStatus.swift; sourceTree = "<group>"; };
 		0518984528000E3400CFCB2D /* LeaderBoardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardRow.swift; sourceTree = "<group>"; };
 		05447D0C280007940075EDB5 /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
 		160341A62802B96F00170408 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
@@ -119,6 +125,9 @@
 		05447D0B2800077D0075EDB5 /* LeaderBoard */ = {
 			isa = PBXGroup;
 			children = (
+				050CE88D28055605003C26E6 /* userProfileStatus.swift */,
+				050CE889280554AF003C26E6 /* userProfilePicture.swift */,
+				050CE885280552B2003C26E6 /* userProfileView.swift */,
 				05447D0C280007940075EDB5 /* LeaderBoardView.swift */,
 				050CE84E2803316B003C26E6 /* MyLeaderBoardStatus.swift */,
 				050CE88228041286003C26E6 /* LeaderBoardList.swift */,
@@ -336,6 +345,7 @@
 				34F2F0772804417B004904C0 /* MapView.swift in Sources */,
 				B5EA875828041030005FF2DB /* ActivityAlbum.swift in Sources */,
 				346EBA9427FF0B580002B186 /* CameraView.swift in Sources */,
+				050CE886280552B3003C26E6 /* userProfileView.swift in Sources */,
 				B5C7FF7628000C530017C7AC /* ProfilePicture.swift in Sources */,
 				34A220F62804343B00271609 /* EvaluationView.swift in Sources */,
 				B542311C2804C55E00D6AB92 /* ProfileEditor.swift in Sources */,
@@ -346,6 +356,7 @@
 				B5C7FF7328000A050017C7AC /* ProfileView.swift in Sources */,
 				3483A468280089020046E9A9 /* ProfileStatus.swift in Sources */,
 				16B2F97127FC78D300E83570 /* ContentView.swift in Sources */,
+				050CE88A280554AF003C26E6 /* userProfilePicture.swift in Sources */,
 				3483A46A28008D990046E9A9 /* NamePlate.swift in Sources */,
 				16B2F9C427FEB44200E83570 /* MyStatus.swift in Sources */,
 				346EBA9827FF2C820002B186 /* CustomCameraView.swift in Sources */,
@@ -356,6 +367,7 @@
 				B50AEF722801F2DC00970B8E /* ActivityShapeCell.swift in Sources */,
 				34A220F82804346B00271609 /* AuthenticationView.swift in Sources */,
 				160341A72802B96F00170408 /* LocationListView.swift in Sources */,
+				050CE88E28055605003C26E6 /* userProfileStatus.swift in Sources */,
 				160341B928043F1800170408 /* ItemCardView.swift in Sources */,
 				6F6EAD9927FD6284007B2130 /* MarketView.swift in Sources */,
 			);

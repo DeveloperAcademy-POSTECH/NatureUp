@@ -9,17 +9,18 @@ import SwiftUI
 
 struct LeaderBoardList: View {
     var body: some View {
-        NavigationView {
+        VStack{
             ScrollView {
                 VStack {
                     ForEach(3..<userRankings.count, id: \.self) { index in
-                        NavigationLink(destination: Text("Detail")) {
+                        NavigationLink(destination: userProfileView()) {
                             LeaderBoardRow(userRanking: userRankings[index])
-                                .padding(.horizontal)
                             
+                                .padding(.horizontal)
                         }
                         .navigationBarHidden(true)
                     }
+                    
                 }
             }
         }

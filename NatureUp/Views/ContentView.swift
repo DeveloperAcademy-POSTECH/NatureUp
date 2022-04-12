@@ -19,6 +19,11 @@ struct ContentView: View {
     @State private var showingNotifications = false
     @State var tabSelection:Tabs = .home
     
+    let appearance: UITabBarAppearance = UITabBarAppearance()
+    init() {
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
     var body: some View {
         NavigationView {
             TabView(selection: $tabSelection) {
