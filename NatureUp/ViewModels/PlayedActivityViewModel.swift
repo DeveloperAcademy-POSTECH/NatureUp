@@ -1,5 +1,5 @@
 //
-//  UserViewModel.swift
+//  PlayedActivityViewModel.swift
 //  NatureUp
 //
 //  Created by Wonhyuk Choi on 2022/04/13.
@@ -8,18 +8,21 @@
 import Foundation
 import Firebase
 
-class UserViewModel: ObservableObject {
+class PlayedActivityViewModel: ObservableObject {
     
-    @Published var list = [User]()
-    @Published var user = User(id: "", name: "", exp: 0, points: 0, userPic: "")
+    @Published var list = [PlayedActivity]()
+    
+    func shuffleData() {
+        self.list.shuffle()
+    }
     
     //MARK: - Create
     
-    func addData(name: String, userPic: String) {
+    func addData(name: String, picture: String, userId: String) {
         
         let db = Firestore.firestore()
         
-        db.collection("users").addDocument(data: ["name":name, "exp":0, "points": 0, "userPic": userPic]) { error in
+        db.collection("playedActivities").addDocument(data: ["name":name, "picture":picture, "score": 0, "timestamp": NSDate().timeIntervalSince1970, "userId": userId]) { error in
             
             // Check for errors
             if error == nil {
@@ -42,7 +45,7 @@ class UserViewModel: ObservableObject {
         let db = Firestore.firestore()
         
         // Read the documents at a specific path
-        db.collection("users").order(by: "exp", descending: true).addSnapshotListener { snapshot, error in
+        db.collection("playedActivities").getDocuments { snapshot, error in
             
             // Check for errors
             if error == nil {
@@ -57,12 +60,12 @@ class UserViewModel: ObservableObject {
                         self.list = snapshot.documents.map { d in
                             
                             // Create a Todo item for each document returned
-                            return User(
+                            return PlayedActivity(
                                 id: d.documentID,
                                 name: d["name"] as? String ?? "",
-                                exp: d["exp"] as? Int ?? 0,
-                                points: d["points"] as? Int ?? 0,
-                                userPic: d["userPic"] as? String ?? ""
+                                timestamp: d["timestamp"] as? Timestamp ?? Timestamp.init(),
+                                score : d["score"] as? Int ?? 0,
+                                userId: d["userId"] as? String ?? ""
                             )
                         }
                     }
@@ -74,30 +77,35 @@ class UserViewModel: ObservableObject {
         }
     }
     
-    func getUser(id: String) {
+    func getQueryData(userId: String) {
         
         // Get a reference to the database
         let db = Firestore.firestore()
         
         // Read the documents at a specific path
-        db.collection("users").document(id).addSnapshotListener { snapshot, error in
+        db.collection("playedActivities").whereField("userId", isNotEqualTo: userId).getDocuments { snapshot, error in
             
             // Check for errors
             if error == nil {
                 // No errors
                 
-                if let snapshot = snapshot, snapshot.exists {
+                if let snapshot = snapshot {
                     
                     // Update the list property in the main thread
                     DispatchQueue.main.async {
-                        let snapshotData = snapshot.data()
-                        self.user = User(
-                            id: id,
-                            name: snapshotData!["name"] as? String ?? "",
-                            exp: snapshotData!["exp"] as? Int ?? 0,
-                            points: snapshotData!["points"] as? Int ?? 0,
-                            userPic: snapshotData!["userPic"] as? String ?? ""
-                        )
+                        // Get all the documents and create Todos
+                        self.list = snapshot.documents.map { d in
+                            
+                            // Create a Todo item for each document returned
+                            return PlayedActivity(
+                                id: d.documentID,
+                                name: d["name"] as? String ?? "",
+                                timestamp: d["timestamp"] as? Timestamp ?? Timestamp.init(),
+                                score : d["score"] as? Int ?? 0,
+                                userId: d["userId"] as? String ?? ""
+                            )
+                        }
+                        .shuffled()
                     }
                 }
             }
@@ -109,12 +117,12 @@ class UserViewModel: ObservableObject {
     
     //MARK: - Update
     
-    func updateData(userToUpdate: User, field: Any) {
+    func updateData(playedActivityToUpdate: PlayedActivity, field: Any) {
         
         let db = Firestore.firestore()
         
         // Set the data to update
-        db.collection("users").document(userToUpdate.id).setData(["\(field)": field], merge: true) { error in
+        db.collection("playedActivities").document(playedActivityToUpdate.id).setData(["\(field)": field], merge: true) { error in
             
             // Check for errors
             if error == nil {
@@ -124,29 +132,15 @@ class UserViewModel: ObservableObject {
         }
     }
     
-    func updateUser(id: String, info: [AnyHashable : Any]) {
-        let db = Firestore.firestore()
-        
-        // Set the data to update
-        db.collection("users").document(id).updateData(info) { error in
-            
-            // Check for errors
-            if error == nil {
-                // Get the new data
-                self.getUser(id: id)
-            }
-        }
-    }
-    
     //MARK: - Delete
     
-    func deleteData(userToDelete: User) {
+    func deleteData(playedActivityToDelete: PlayedActivity) {
         
         // Get a reference to the database
         let db = Firestore.firestore()
         
         // Specify the document to delete
-        db.collection("users").document(userToDelete.id).delete { error in
+        db.collection("plyedActivities").document(playedActivityToDelete.id).delete { error in
             
             // Check for errors
             if error == nil {
@@ -156,14 +150,12 @@ class UserViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     
                     // Remove the todo that was just deleted
-                    self.list.removeAll { user in
+                    self.list.removeAll { activity in
                         
                         // Check for the todo to remove
-                        return user.id == userToDelete.id
+                        return activity.id == playedActivityToDelete.id
                     }
                 }
-                
-                
             }
         }
         

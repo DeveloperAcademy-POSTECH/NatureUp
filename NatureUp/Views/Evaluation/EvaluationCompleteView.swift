@@ -9,11 +9,18 @@ import SwiftUI
 
 struct EvaluationCompleteView: View {
     @Environment(\.dismiss) var dismiss
+    @ObservedObject var userVM = UserViewModel()
+    let myId = "cVP4ck6CvPzRaOp4NE7c"
+    
+    init() {
+        userVM.getUser(id: myId)
+    }
     
     var body: some View {
         Button(action: {
             dismiss()
             dismiss()
+            userVM.updateUser(id: myId, info: ["exp": userVM.user.exp + 10])
         } ) {
             ZStack {
                 Color("BackgroundGray")

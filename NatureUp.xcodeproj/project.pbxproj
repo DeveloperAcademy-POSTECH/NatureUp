@@ -27,6 +27,8 @@
 		16A6722A2805D5DE009A7DE0 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A672292805D5DE009A7DE0 /* Activity.swift */; };
 		16A6722C2805F7BA009A7DE0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6722B2805F7BA009A7DE0 /* User.swift */; };
 		16A6722E2805F88C009A7DE0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6722D2805F88C009A7DE0 /* UserViewModel.swift */; };
+		16A6723028067585009A7DE0 /* PlayedActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6722F28067585009A7DE0 /* PlayedActivityViewModel.swift */; };
+		16A6723228067595009A7DE0 /* PlayedActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6723128067595009A7DE0 /* PlayedActivity.swift */; };
 		16B2F96F27FC78D300E83570 /* NatureUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F96E27FC78D300E83570 /* NatureUpApp.swift */; };
 		16B2F97127FC78D300E83570 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F97027FC78D300E83570 /* ContentView.swift */; };
 		16B2F9C427FEB44200E83570 /* MyStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F9C327FEB44200E83570 /* MyStatus.swift */; };
@@ -80,6 +82,8 @@
 		16A672292805D5DE009A7DE0 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		16A6722B2805F7BA009A7DE0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		16A6722D2805F88C009A7DE0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		16A6722F28067585009A7DE0 /* PlayedActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayedActivityViewModel.swift; sourceTree = "<group>"; };
+		16A6723128067595009A7DE0 /* PlayedActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayedActivity.swift; sourceTree = "<group>"; };
 		16B2F96B27FC78D300E83570 /* NatureUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatureUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B2F96E27FC78D300E83570 /* NatureUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureUpApp.swift; sourceTree = "<group>"; };
 		16B2F97027FC78D300E83570 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				6F0AED1E28040F5600546379 /* Item.swift */,
 				16A672292805D5DE009A7DE0 /* Activity.swift */,
 				16A6722B2805F7BA009A7DE0 /* User.swift */,
+				16A6723128067595009A7DE0 /* PlayedActivity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			children = (
 				16A672272805D559009A7DE0 /* ActivityViewModel.swift */,
 				16A6722D2805F88C009A7DE0 /* UserViewModel.swift */,
+				16A6722F28067585009A7DE0 /* PlayedActivityViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -385,6 +391,7 @@
 				344571AC28040DD400459D14 /* Evaluation.swift in Sources */,
 				16B2F9CC27FED13000E83570 /* ActivityList.swift in Sources */,
 				16B2F9CA27FED10E00E83570 /* ActivityRow.swift in Sources */,
+				16A6723228067595009A7DE0 /* PlayedActivity.swift in Sources */,
 				34F2F0772804417B004904C0 /* MapView.swift in Sources */,
 				B5EA875828041030005FF2DB /* ActivityAlbum.swift in Sources */,
 				346EBA9427FF0B580002B186 /* CameraView.swift in Sources */,
@@ -410,6 +417,7 @@
 				16B2F96F27FC78D300E83570 /* NatureUpApp.swift in Sources */,
 				05447D0D280007950075EDB5 /* LeaderBoardView.swift in Sources */,
 				050CE85D2803FE86003C26E6 /* ModelData.swift in Sources */,
+				16A6723028067585009A7DE0 /* PlayedActivityViewModel.swift in Sources */,
 				B50AEF722801F2DC00970B8E /* ActivityShapeCell.swift in Sources */,
 				34A220F82804346B00271609 /* AuthenticationView.swift in Sources */,
 				160341A72802B96F00170408 /* LocationListView.swift in Sources */,
