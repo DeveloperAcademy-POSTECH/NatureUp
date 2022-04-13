@@ -10,9 +10,19 @@ import MapKit
 
 struct MapView: View {
     @State private var viewModel = ContentViewModel()
+    let location : [Location]
+    
+    init(location: [Location]) {
+        self.location = location
+    }
     
     var body: some View {
-        Map(coordinateRegion: $viewModel.region,showsUserLocation: true)
+        Map(coordinateRegion: $viewModel.region,showsUserLocation: true, annotationItems: location) { location in
+            MapAnnotation(coordinate: location.coordinate) {
+                Image(systemName: "leaf")
+                    .foregroundColor(Color("PrimaryGreen"))
+            }
+        }
             .accentColor(Color("PrimaryGreen"))
             .ignoresSafeArea()
             .onAppear {
@@ -23,7 +33,7 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(location: locations)
     }
 }
 

@@ -18,7 +18,6 @@
 		0518984628000E3400CFCB2D /* LeaderBoardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0518984528000E3400CFCB2D /* LeaderBoardRow.swift */; };
 		05447D0D280007950075EDB5 /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05447D0C280007940075EDB5 /* LeaderBoardView.swift */; };
 		160341A72802B96F00170408 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160341A62802B96F00170408 /* LocationListView.swift */; };
-		160341B728041CD700170408 /* mapInfoData.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 160341B628041CD700170408 /* mapInfoData.geojson */; };
 		160341B928043F1800170408 /* ItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160341B828043F1800170408 /* ItemCardView.swift */; };
 		16A672202805C54F009A7DE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16A6721F2805C54F009A7DE0 /* GoogleService-Info.plist */; };
 		16A672232805C5CD009A7DE0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 16A672222805C5CD009A7DE0 /* FirebaseFirestore */; };
@@ -37,6 +36,8 @@
 		16B2F9CE27FED1C100E83570 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F9CD27FED1C100E83570 /* HomeView.swift */; };
 		344571AA280403A800459D14 /* EvaluationData.json in Resources */ = {isa = PBXBuildFile; fileRef = 344571A9280403A800459D14 /* EvaluationData.json */; };
 		344571AC28040DD400459D14 /* Evaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344571AB28040DD400459D14 /* Evaluation.swift */; };
+		34575EE528076321005748F8 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 34575EE428076321005748F8 /* locations.json */; };
+		34575EE72807698E005748F8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34575EE62807698E005748F8 /* Location.swift */; };
 		346EBA9227FF03AC0002B186 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EBA9127FF03AC0002B186 /* CameraService.swift */; };
 		346EBA9427FF0B580002B186 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EBA9327FF0B580002B186 /* CameraView.swift */; };
 		346EBA9827FF2C820002B186 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EBA9727FF2C820002B186 /* CustomCameraView.swift */; };
@@ -75,7 +76,6 @@
 		0518984528000E3400CFCB2D /* LeaderBoardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardRow.swift; sourceTree = "<group>"; };
 		05447D0C280007940075EDB5 /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
 		160341A62802B96F00170408 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
-		160341B628041CD700170408 /* mapInfoData.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mapInfoData.geojson; sourceTree = "<group>"; };
 		160341B828043F1800170408 /* ItemCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCardView.swift; sourceTree = "<group>"; };
 		16A6721F2805C54F009A7DE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16A672272805D559009A7DE0 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
@@ -94,6 +94,8 @@
 		344571A82803F26600459D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		344571A9280403A800459D14 /* EvaluationData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = EvaluationData.json; path = NatureUp/Resources/EvaluationData.json; sourceTree = SOURCE_ROOT; };
 		344571AB28040DD400459D14 /* Evaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluation.swift; sourceTree = "<group>"; };
+		34575EE428076321005748F8 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		34575EE62807698E005748F8 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		346EBA9127FF03AC0002B186 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		346EBA9327FF0B580002B186 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		346EBA9727FF2C820002B186 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				16A672292805D5DE009A7DE0 /* Activity.swift */,
 				16A6722B2805F7BA009A7DE0 /* User.swift */,
 				16A6723128067595009A7DE0 /* PlayedActivity.swift */,
+				34575EE62807698E005748F8 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,7 +248,7 @@
 				344571A9280403A800459D14 /* EvaluationData.json */,
 				050CE87E28040807003C26E6 /* leaderBoardData.json */,
 				B552DAB62802CCAE0045A3F5 /* activityData.json */,
-				160341B628041CD700170408 /* mapInfoData.geojson */,
+				34575EE428076321005748F8 /* locations.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -362,9 +365,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34575EE528076321005748F8 /* locations.json in Resources */,
 				B552DAB72802CCAE0045A3F5 /* activityData.json in Resources */,
 				344571AA280403A800459D14 /* EvaluationData.json in Resources */,
-				160341B728041CD700170408 /* mapInfoData.geojson in Resources */,
 				34ADDA072801C0D00043658A /* Assets.xcassets in Resources */,
 				6F0AED19280400DB00546379 /* ItemList.json in Resources */,
 				050CE87F28040807003C26E6 /* leaderBoardData.json in Resources */,
@@ -393,6 +396,7 @@
 				16B2F9CA27FED10E00E83570 /* ActivityRow.swift in Sources */,
 				16A6723228067595009A7DE0 /* PlayedActivity.swift in Sources */,
 				34F2F0772804417B004904C0 /* MapView.swift in Sources */,
+				34575EE72807698E005748F8 /* Location.swift in Sources */,
 				B5EA875828041030005FF2DB /* ActivityAlbum.swift in Sources */,
 				346EBA9427FF0B580002B186 /* CameraView.swift in Sources */,
 				050CE886280552B3003C26E6 /* userProfileView.swift in Sources */,
