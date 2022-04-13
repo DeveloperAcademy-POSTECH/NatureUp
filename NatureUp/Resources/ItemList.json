@@ -2,199 +2,343 @@
     {
         "id" : 1,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_1",
         "type" : "border"
     },
     {
         "id" : 2,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_2",
         "type" : "border"
     },
     {
         "id" : 3,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_3",
         "type" : "border"
     },
     {
         "id" : 4,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_4",
         "type" : "border"
     },
     {
         "id" : 5,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_5",
         "type" : "border"
     },
     {
         "id" : 6,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_6",
         "type" : "border"
     },
     {
         "id" : 7,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_7",
         "type" : "border"
     },
     {
         "id" : 8,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_8",
         "type" : "border"
     },
     {
         "id" : 9,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_9",
         "type" : "border"
     },
     {
         "id" : 10,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_10",
         "type" : "border"
     },
     {
         "id" : 11,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_11",
         "type" : "border"
     },
     {
         "id" : 12,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_12",
         "type" : "border"
     },
     {
         "id" : 13,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_13",
         "type" : "border"
     },
     {
         "id" : 14,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_14",
         "type" : "border"
     },
     {
         "id" : 15,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_15",
         "type" : "border"
     },
     {
         "id" : 16,
         "point" : 100,
-        "imageName" : "border",
+        "imageName" : "Border_16",
         "type" : "border"
     },
     {
         "id" : 17,
-        "point" : 100,
-        "imageName" : "border",
-        "type" : "border"
+        "point" : 150,
+        "imageName" : "Effect_1",
+        "type" : "effect"
     },
     {
         "id" : 18,
-        "point" : 100,
-        "imageName" : "border",
-        "type" : "border"
+        "point" : 150,
+        "imageName" : "Effect_2",
+        "type" : "effect"
     },
     {
       "id" : 19,
-      "point" : 50,
-      "imageName" : "dia",
-      "type" : "decoration"
+      "point" : 150,
+      "imageName" : "Effect_3",
+      "type" : "effect"
     },
     {
       "id" : 20,
-      "point" : 50,
-      "imageName" : "dia",
-      "type" : "decoration"
+      "point" : 150,
+      "imageName" : "Effect_4",
+      "type" : "effect"
     },
     {
       "id" : 21,
-      "point" : 50,
-      "imageName" : "dia",
-      "type" : "decoration"
+      "point" : 150,
+      "imageName" : "Effect_5",
+      "type" : "effect"
     },
     {
       "id" : 22,
-      "point" : 50,
-      "imageName" : "dia",
-      "type" : "decoration"
+      "point" : 150,
+      "imageName" : "Effect_6",
+      "type" : "effect"
     },
     {
       "id" : 23,
-      "point" : 50,
-      "imageName" : "dia",
-      "type" : "decoration"
+      "point" : 150,
+      "imageName" : "Effect_7",
+      "type" : "effect"
     },
     {
       "id" : 24,
-      "point" : 50,
-      "imageName" : "dia",
-      "type" : "decoration"
+      "point" : 150,
+      "imageName" : "Effect_8",
+      "type" : "effect"
     },
     {
       "id" : 25,
-      "point" : 50,
-      "imageName" : "dia",
-      "type" : "decoration"
+      "point" : 150,
+      "imageName" : "Effect_9",
+      "type" : "effect"
     },
     {
       "id" : 26,
-      "point" : 50,
-      "imageName" : "dia",
-      "type" : "decoration"
+      "point" : 150,
+      "imageName" : "Effect_10",
+      "type" : "effect"
     },
     {
         "id" : 27,
-        "point" : 200,
-        "imageName" : "background_forest1",
-        "type" : "background"
+        "point" : 150,
+        "imageName" : "Effect_11",
+        "type" : "effect"
     },
     {
         "id" : 28,
-        "point" : 200,
-        "imageName" : "background_forest2",
-        "type" : "background"
+        "point" : 150,
+        "imageName" : "Effect_12",
+        "type" : "effect"
     },
     {
         "id" : 29,
-        "point" : 200,
-        "imageName" : "background_forest3",
-        "type" : "background"
+        "point" : 150,
+        "imageName" : "Effect_13",
+        "type" : "effect"
     },
     {
         "id" : 30,
-        "point" : 200,
-        "imageName" : "background_mountains",
-        "type" : "background"
+        "point" : 150,
+        "imageName" : "Effect_14",
+        "type" : "effect"
     },
     {
         "id" : 31,
-        "point" : 300,
-        "imageName" : "background_natural",
-        "type" : "background"
+        "point" : 150,
+        "imageName" : "Effect_15",
+        "type" : "effect"
     },
     {
         "id" : 32,
-        "point" : 300,
-        "imageName" : "background_winter",
-        "type" : "background"
+        "point" : 150,
+        "imageName" : "Effect_16",
+        "type" : "effect"
     },
     {
         "id" : 33,
         "point" : 150,
-        "imageName" : "Smoke-effect",
+        "imageName" : "Effect_17",
         "type" : "effect"
+    },
+    {
+        "id" : 34,
+        "point" : 150,
+        "imageName" : "Effect_18",
+        "type" : "effect"
+    },
+    {
+        "id" : 35,
+        "point" : 250,
+        "imageName" : "Background_1",
+        "type" : "background"
+    },
+    {
+        "id" : 36,
+        "point" : 300,
+        "imageName" : "Background_2",
+        "type" : "background"
+    },
+    {
+        "id" : 37,
+        "point" : 300,
+        "imageName" : "Background_3",
+        "type" : "background"
+    },
+    {
+        "id" : 38,
+        "point" : 400,
+        "imageName" : "Background_4",
+        "type" : "background"
+    },
+    {
+        "id" : 39,
+        "point" : 450,
+        "imageName" : "Background_5",
+        "type" : "background"
+    },
+    {
+        "id" : 40,
+        "point" : 150,
+        "imageName" : "Accessory_1",
+        "type" : "accessory"
+    },
+    {
+        "id" : 41,
+        "point" : 150,
+        "imageName" : "Accessory_2",
+        "type" : "accessory"
+    },
+    {
+        "id" : 42,
+        "point" : 150,
+        "imageName" : "Accessory_3",
+        "type" : "accessory"
+    },
+    {
+        "id" : 43,
+        "point" : 150,
+        "imageName" : "Accessory_4",
+        "type" : "accessory"
+    },
+    {
+        "id" : 44,
+        "point" : 150,
+        "imageName" : "Accessory_5",
+        "type" : "accessory"
+    },
+    {
+        "id" : 45,
+        "point" : 150,
+        "imageName" : "Accessory_6",
+        "type" : "accessory"
+    },
+    {
+        "id" : 46,
+        "point" : 150,
+        "imageName" : "Accessory_7",
+        "type" : "accessory"
+    },
+    {
+        "id" : 47,
+        "point" : 150,
+        "imageName" : "Accessory_8",
+        "type" : "accessory"
+    },
+    {
+        "id" : 48,
+        "point" : 150,
+        "imageName" : "Accessory_9",
+        "type" : "accessory"
+    },
+    {
+        "id" : 49,
+        "point" : 150,
+        "imageName" : "Accessory_10",
+        "type" : "accessory"
+    },
+    {
+        "id" : 50,
+        "point" : 150,
+        "imageName" : "Accessory_11",
+        "type" : "accessory"
+    },
+    {
+        "id" : 51,
+        "point" : 150,
+        "imageName" : "Accessory_12",
+        "type" : "accessory"
+    },
+    {
+        "id" : 52,
+        "point" : 150,
+        "imageName" : "Accessory_13",
+        "type" : "accessory"
+    },
+    {
+        "id" : 53,
+        "point" : 150,
+        "imageName" : "Accessory_14",
+        "type" : "accessory"
+    },
+    {
+        "id" : 54,
+        "point" : 150,
+        "imageName" : "Accessory_15",
+        "type" : "accessory"
+    },
+    {
+        "id" : 55,
+        "point" : 150,
+        "imageName" : "Accessory_16",
+        "type" : "accessory"
+    },
+    {
+        "id" : 56,
+        "point" : 150,
+        "imageName" : "Accessory_17",
+        "type" : "accessory"
+    },
+    {
+        "id" : 57,
+        "point" : 150,
+        "imageName" : "Accessory_18",
+        "type" : "accessory"
     }
  ]
