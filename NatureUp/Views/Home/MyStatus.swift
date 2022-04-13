@@ -25,6 +25,7 @@ struct MyStatus: View {
                     .padding(5)
                 Text("\((userVM.list.firstIndex(where: { $0.id == myId }) ?? -1) + 1)")
             }
+            .frame(width: 150)
             Spacer()
             Divider()
                 .background(Color("PrimaryGreen"))
@@ -37,6 +38,7 @@ struct MyStatus: View {
                     .padding(5)
                 Text("\(userVM.user.exp)")
             }
+            .frame(width: 150)
             Spacer()
         }
         .frame(height: 40)
