@@ -74,7 +74,7 @@ struct MarketView: View {
                     ItemCardList(ItemType: "border")
                 }
                 else if (selectedNum == 2){
-                    ItemCardList(ItemType:"decoration")
+                    ItemCardList(ItemType:"accessory")
                 }
                 else if (selectedNum == 3){
                     ItemCardList(ItemType:"background")
