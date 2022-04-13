@@ -42,7 +42,7 @@ class UserViewModel: ObservableObject {
         let db = Firestore.firestore()
         
         // Read the documents at a specific path
-        db.collection("users").getDocuments { snapshot, error in
+        db.collection("users").order(by: "exp", descending: true).addSnapshotListener { snapshot, error in
             
             // Check for errors
             if error == nil {

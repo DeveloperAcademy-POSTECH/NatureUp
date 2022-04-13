@@ -9,9 +9,11 @@ import SwiftUI
 
 struct MyStatus: View {
     @ObservedObject var userVM = UserViewModel()
+    let myId = "cVP4ck6CvPzRaOp4NE7c"
     
     init() {
-        userVM.getUser(id: "cVP4ck6CvPzRaOp4NE7c")
+        userVM.getUser(id: myId)
+        userVM.getAllData()
     }
     
     var body: some View {
@@ -21,7 +23,7 @@ struct MyStatus: View {
                 Image(systemName:"text.badge.star")
                     .foregroundColor(Color("PrimaryGreen"))
                     .padding(5)
-                Text("\(userVM.user.exp)")
+                Text("\((userVM.list.firstIndex(where: { $0.id == myId }) ?? -1) + 1)")
             }
             Spacer()
             Divider()
@@ -33,7 +35,7 @@ struct MyStatus: View {
                 Image(systemName:"star.circle.fill")
                     .foregroundColor(Color("PrimaryGreen"))
                     .padding(5)
-                Text("\(userVM.user.points)")
+                Text("\(userVM.user.exp)")
             }
             Spacer()
         }

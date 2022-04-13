@@ -8,11 +8,8 @@
 import SwiftUI
 
 struct MyLeaderBoardStatus: View {
-    @ObservedObject var userVM = UserViewModel()
-    
-    init() {
-        userVM.getUser(id: "cVP4ck6CvPzRaOp4NE7c")
-    }
+    @State var myRank: Int?
+    @State var myExp: Int?
     
     var body: some View {
         HStack {
@@ -24,7 +21,7 @@ struct MyLeaderBoardStatus: View {
                     .overlay(RoundedRectangle(cornerRadius: 8)
                         .stroke(Color(red: 112/255, green: 210/255, blue: 163/255), lineWidth: 2)
                     )
-                Text("내등수 : \(userVM.user.exp)")
+                Text("내등수 : \((myRank ?? -1) + 1)")
                     .font(.system(size: 14))
                     
     
@@ -43,7 +40,7 @@ struct MyLeaderBoardStatus: View {
                 HStack {
                     Image(systemName:"star.circle.fill")
                         .foregroundColor(Color("PrimaryGreen"))
-                    Text("\(userVM.user.exp)")
+                    Text("\(myExp ?? 0)")
                         .font(.system(size: 14))
                 }
             }
@@ -54,6 +51,6 @@ struct MyLeaderBoardStatus: View {
 
 struct MyLeaderBoardStatus_Previews: PreviewProvider {
     static var previews: some View {
-        MyLeaderBoardStatus()
+        MyLeaderBoardStatus(myRank: 0, myExp: 0)
     }
 }

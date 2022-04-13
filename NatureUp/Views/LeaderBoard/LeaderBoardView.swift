@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct LeaderBoardView: View {
+    @ObservedObject var userVM = UserViewModel()
+    let myId = "cVP4ck6CvPzRaOp4NE7c"
+    
+    init() {
+        userVM.getUser(id: myId)
+        userVM.getAllData()
+    }
     
     var body: some View {
         ZStack {
             Color("BackgroundGray")
             VStack {
-                MyLeaderBoardStatus()
+                MyLeaderBoardStatus(myRank: userVM.list.firstIndex(where: { $0.id == myId }), myExp: userVM.user.exp)
                 HStack {
                     NavigationLink(destination: userProfileView(userRanking: userRankings[1])) {
                         VStack(alignment: .center) {

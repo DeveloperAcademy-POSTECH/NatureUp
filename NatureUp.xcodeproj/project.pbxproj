@@ -371,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				050CE88328041286003C26E6 /* LeaderBoardList.swift in Sources */,
-				348D12552805F0FF00850766 /* userProfilePictureLingo.swift in Sources */,
 				16A6722C2805F7BA009A7DE0 /* User.swift in Sources */,
 				34F2F07D2805654A004904C0 /* NotificationView.swift in Sources */,
 				346EBA9F28000B880002B186 /* AuthenticationSuccessView.swift in Sources */,
@@ -391,7 +390,6 @@
 				B542311C2804C55E00D6AB92 /* ProfileEditor.swift in Sources */,
 				050CE85B2803F6AB003C26E6 /* userRanking.swift in Sources */,
 				0518984628000E3400CFCB2D /* LeaderBoardRow.swift in Sources */,
-				348D12532805F0F300850766 /* userProfilePictureYoung.swift in Sources */,
 				16A672282805D559009A7DE0 /* ActivityViewModel.swift in Sources */,
 				16A6722E2805F88C009A7DE0 /* UserViewModel.swift in Sources */,
 				6F66451D28043354007C21CD /* ItemCardList.swift in Sources */,
@@ -404,7 +402,6 @@
 				16B2F9C427FEB44200E83570 /* MyStatus.swift in Sources */,
 				346EBA9827FF2C820002B186 /* CustomCameraView.swift in Sources */,
 				6F0AED1F28040F5600546379 /* Item.swift in Sources */,
-				348D12592805F18F00850766 /* userProfileStatusYoung.swift in Sources */,
 				16A6722A2805D5DE009A7DE0 /* Activity.swift in Sources */,
 				16B2F96F27FC78D300E83570 /* NatureUpApp.swift in Sources */,
 				05447D0D280007950075EDB5 /* LeaderBoardView.swift in Sources */,

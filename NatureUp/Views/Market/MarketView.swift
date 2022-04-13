@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct MarketView: View {
+    @ObservedObject var userVM = UserViewModel()
+    let myId = "cVP4ck6CvPzRaOp4NE7c"
+    
+    init() {
+        userVM.getUser(id: myId)
+    }
+    
     let exp = 700
     let pnt = 150
     @State private var ItemType = "border"
@@ -31,7 +38,7 @@ struct MarketView: View {
                         HStack{
                             Image(systemName: "leaf.fill")
                                 .foregroundColor(Color("PrimaryGreen"))
-                            Text(String("\(pnt)"))
+                            Text(String("\(userVM.user.points)"))
                                 .fontWeight(.medium)
                         }
                         
