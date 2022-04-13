@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MarketView: View {
+    
     @ObservedObject var userVM = UserViewModel()
     let myId = "cVP4ck6CvPzRaOp4NE7c"
     
@@ -21,9 +22,13 @@ struct MarketView: View {
     @State private var selectedNum = 1
     @State private var pickerColer = Color(.sRGB, red: 0.2510, green: 0.7804, blue: 0.5217)
     
+    var item: Item?
+    
+    
     var body: some View {
         ZStack{
             Color("BackgroundGray")
+                .ignoresSafeArea()
             VStack {
                 HStack {
                     Spacer()
@@ -48,16 +53,13 @@ struct MarketView: View {
                 ZStack{
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(Color("SecondGreen"), lineWidth: 2)
-                        .frame(height:100)
+                        .aspectRatio(3.5, contentMode: .fit)
                     RoundedRectangle(cornerRadius : 10)
                         .fill(Color.white)
-                        .frame(height:100)
-                    Image("EverettName")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                        .aspectRatio(3.5, contentMode: .fit)
+                    NamePlatePreview(item: item!, effect: "Effect_1", border: "Border_1", background: "Background_1", accessory: "Accessory_1")
                 }
                 .padding()
-                
                 
                 Picker(selection: $selectedNum, label: Text("Item List")) {
                     Text("테두리")
@@ -87,6 +89,7 @@ struct MarketView: View {
         }
     }
 }
+
 
 struct MarketView_Previews: PreviewProvider {
     static var previews: some View {

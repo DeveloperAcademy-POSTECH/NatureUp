@@ -13,12 +13,12 @@ struct ItemCardList: View {
         ScrollView {
             LazyVGrid(columns: Array(repeating: .init(.flexible(), spacing:-5), count: 3)) {
                 ForEach(items.filter({$0.type == ItemType})){ item in
-                    ItemCardRow(item:item)
+                    Button(action: {}, label: {
+                        ItemCardRow(item: item)
+                    })
                 }
-            }.padding(.top, 10)
-                .padding(.bottom, 10)
+            }.padding(.vertical, 10)
         }
-        
     }
 }
 

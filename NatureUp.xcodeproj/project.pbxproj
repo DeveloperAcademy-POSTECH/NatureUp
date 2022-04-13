@@ -41,6 +41,7 @@
 		346EBA9F28000B880002B186 /* AuthenticationSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EBA9E28000B880002B186 /* AuthenticationSuccessView.swift */; };
 		3483A468280089020046E9A9 /* ProfileStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3483A467280089020046E9A9 /* ProfileStatus.swift */; };
 		3483A46A28008D990046E9A9 /* NamePlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3483A46928008D990046E9A9 /* NamePlate.swift */; };
+		34A1B4212806E81600EF9E7E /* NamePlatePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1B4202806E81600EF9E7E /* NamePlatePreview.swift */; };
 		34A220F62804343B00271609 /* EvaluationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A220F52804343B00271609 /* EvaluationView.swift */; };
 		34A220F82804346B00271609 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A220F72804346B00271609 /* AuthenticationView.swift */; };
 		34ADDA072801C0D00043658A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34ADDA062801C0D00043658A /* Assets.xcassets */; };
@@ -95,6 +96,7 @@
 		346EBA9E28000B880002B186 /* AuthenticationSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationSuccessView.swift; sourceTree = "<group>"; };
 		3483A467280089020046E9A9 /* ProfileStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStatus.swift; sourceTree = "<group>"; };
 		3483A46928008D990046E9A9 /* NamePlate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePlate.swift; sourceTree = "<group>"; };
+		34A1B4202806E81600EF9E7E /* NamePlatePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePlatePreview.swift; sourceTree = "<group>"; };
 		34A220F52804343B00271609 /* EvaluationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationView.swift; sourceTree = "<group>"; };
 		34A220F72804346B00271609 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		34ADDA062801C0D00043658A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				160341B828043F1800170408 /* ItemCardView.swift */,
 				6F03321C28041D0C00C602A9 /* ItemCardRow.swift */,
 				6F66451C28043354007C21CD /* ItemCardList.swift */,
+				34A1B4202806E81600EF9E7E /* NamePlatePreview.swift */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				050CE84F2803316B003C26E6 /* MyLeaderBoardStatus.swift in Sources */,
 				34ADDA092801C6EE0043658A /* EvaluationCompleteView.swift in Sources */,
 				346EBA9227FF03AC0002B186 /* CameraService.swift in Sources */,
+				34A1B4212806E81600EF9E7E /* NamePlatePreview.swift in Sources */,
 				344571AC28040DD400459D14 /* Evaluation.swift in Sources */,
 				16B2F9CC27FED13000E83570 /* ActivityList.swift in Sources */,
 				16B2F9CA27FED10E00E83570 /* ActivityRow.swift in Sources */,
