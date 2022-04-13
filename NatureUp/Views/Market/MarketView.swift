@@ -24,6 +24,10 @@ struct MarketView: View {
     
     var item: Item?
     
+    @State var effect: String = "Effect_1"
+    @State var border: String = "Border_1"
+    @State var background: String = "Background_1"
+    @State var accessory: String = "Accessory_1"
     
     var body: some View {
         ZStack{
@@ -57,7 +61,12 @@ struct MarketView: View {
                     RoundedRectangle(cornerRadius : 10)
                         .fill(Color.white)
                         .aspectRatio(3.5, contentMode: .fit)
-                    NamePlatePreview(item: item!, effect: "Effect_1", border: "Border_1", background: "Background_1", accessory: "Accessory_1")
+                    NamePlatePreview(
+                        effect: $effect,
+                        border: $border,
+                        background: $background,
+                        accessory: $accessory
+                    )
                 }
                 .padding()
                 
@@ -73,16 +82,28 @@ struct MarketView: View {
                 }.pickerStyle   (SegmentedPickerStyle())
                     .padding()
                 if (selectedNum == 1){
-                    ItemCardList(ItemType: "border")
+                    ItemCardList(
+                        ItemType: "border",
+                        itemName: $border
+                    )
                 }
                 else if (selectedNum == 2){
-                    ItemCardList(ItemType:"accessory")
+                    ItemCardList(
+                        ItemType:"accessory",
+                        itemName: $accessory
+                    )
                 }
                 else if (selectedNum == 3){
-                    ItemCardList(ItemType:"background")
+                    ItemCardList(
+                        ItemType:"background",
+                        itemName: $background
+                    )
                 }
                 else if (selectedNum == 4){
-                    ItemCardList(ItemType: "effect")
+                    ItemCardList(
+                        ItemType: "effect",
+                        itemName: $effect
+                    )
                 }
                 Spacer()
             }

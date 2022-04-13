@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct NamePlatePreview: View {
-    var item: Item
-    @State var effect: String
-    @State var border: String
-    @State var background: String
-    @State var accessory: String
-    
+    @Binding var effect: String
+    @Binding var border: String
+    @Binding var background: String
+    @Binding var accessory: String
     
     var body: some View {
         VStack {
@@ -49,6 +47,11 @@ extension UIScreen{
 
 struct NamePlatePreview_Previews: PreviewProvider {
     static var previews: some View {
-        NamePlatePreview(item: items[0], effect: "Effect_1", border: "Border_1", background: "Background_1", accessory: "Accessory_1")
+        NamePlatePreview(
+            effect: .constant("Effect_1"),
+            border: .constant("Border_1"),
+            background: .constant("Background_1"),
+            accessory: .constant("Accessory_1")
+        )
     }
 }
