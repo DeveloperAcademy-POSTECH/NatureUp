@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ProfileStatus: View {
+    @ObservedObject var userVM = UserViewModel()
+    
+    init() {
+        userVM.getUser(id: "cVP4ck6CvPzRaOp4NE7c")
+    }
+    
     var body: some View {
         HStack {
             ZStack{
@@ -19,7 +25,7 @@ struct ProfileStatus: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(Color(red: 112/255, green: 210/255, blue: 163/255), lineWidth: 2)
                     )
-                Text("내등수 :  131")
+                Text("내등수 : \(userVM.user.exp)")
                     .font(.system(size: 12))
             }
             Spacer()
@@ -35,9 +41,9 @@ struct ProfileStatus: View {
                 HStack {
                     Image(systemName: "star.circle.fill")
                         .foregroundColor(Color("PrimaryGreen"))
-                    Text("100")
                         .font(.system(size: 14))
                 }
+                    Text("100")
             }
         }
         .padding()

@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct MyLeaderBoardStatus: View {
+    @ObservedObject var userVM = UserViewModel()
     
-    let no: String  = "1"
-    let exp: String = "823"
+    init() {
+        userVM.getUser(id: "cVP4ck6CvPzRaOp4NE7c")
+    }
     
     var body: some View {
         HStack {
@@ -22,7 +24,7 @@ struct MyLeaderBoardStatus: View {
                     .overlay(RoundedRectangle(cornerRadius: 8)
                         .stroke(Color(red: 112/255, green: 210/255, blue: 163/255), lineWidth: 2)
                     )
-                Text("내등수 : \(no)")
+                Text("내등수 : \(userVM.user.exp)")
                     .font(.system(size: 14))
                     
     
@@ -41,7 +43,7 @@ struct MyLeaderBoardStatus: View {
                 HStack {
                     Image(systemName:"star.circle.fill")
                         .foregroundColor(Color("PrimaryGreen"))
-                    Text("\(exp)")
+                    Text("\(userVM.user.exp)")
                         .font(.system(size: 14))
                 }
             }
