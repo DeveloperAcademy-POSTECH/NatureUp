@@ -10,8 +10,17 @@ import SwiftUI
 struct EvaluationView: View {
     @State var selection: Int? = nil
     @State var progress = 1.0
-    var evaluation: [Evaluation]
+    let evaluation: [Evaluation]
     @State var currentNumber = 0
+    let myId = "cVP4ck6CvPzRaOp4NE7c"
+    
+    @ObservedObject var model = PlayedActivityViewModel()
+    @ObservedObject var userVM = UserViewModel()
+    
+    init(evaluation: [Evaluation]) {
+        self.evaluation = evaluation
+        model.getQueryData(userId: myId)
+    }
     
     var body: some View {
         ZStack {
@@ -33,7 +42,9 @@ struct EvaluationView: View {
                                 .stroke(Color("PrimaryGreen"), lineWidth: 1)
                         )
                 
-                    Text(evaluation[currentNumber].name)
+                    Text(model.list.count > currentNumber ?
+                          model.list[currentNumber].name
+                        : evaluation[currentNumber].name)
                         .font(.title3)
                         .foregroundColor(Color("PrimaryGreen"))
                 }
@@ -53,6 +64,7 @@ struct EvaluationView: View {
                                 currentNumber += 1
                             } else {
                                 self.selection = 1
+                                model.shuffleData()
                             }
                         }) {
                             ZStack {
@@ -78,6 +90,7 @@ struct EvaluationView: View {
                                 currentNumber += 1
                             } else {
                                 self.selection = 1
+                                model.shuffleData()
                             }
                         }) {
                             ZStack {
