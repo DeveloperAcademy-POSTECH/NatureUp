@@ -20,7 +20,9 @@ struct LeaderBoardView: View {
         ZStack {
             Color("BackgroundGray")
             VStack {
-                MyLeaderBoardStatus(myRank: userVM.list.firstIndex(where: { $0.id == myId }), myExp: userVM.user.exp)
+                MyLeaderBoardStatus(
+                    myRank: .constant(userVM.list.firstIndex(where: { $0.id == myId }) ?? 0),
+                    myExp: $userVM.user.exp)
                 HStack {
                     NavigationLink(destination: userProfileView(userRanking: userRankings[1])) {
                         VStack(alignment: .center) {

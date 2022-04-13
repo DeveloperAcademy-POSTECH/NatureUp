@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MyLeaderBoardStatus: View {
-    @State var myRank: Int?
-    @State var myExp: Int?
+    @Binding var myRank: Int
+    @Binding var myExp: Int
     
     var body: some View {
         HStack {
@@ -21,7 +21,7 @@ struct MyLeaderBoardStatus: View {
                     .overlay(RoundedRectangle(cornerRadius: 8)
                         .stroke(Color(red: 112/255, green: 210/255, blue: 163/255), lineWidth: 2)
                     )
-                Text("내등수 : \((myRank ?? -1) + 1)")
+                Text("내등수 : \(myRank + 1)")
                     .font(.system(size: 14))
                     
     
@@ -40,7 +40,7 @@ struct MyLeaderBoardStatus: View {
                 HStack {
                     Image(systemName:"star.circle.fill")
                         .foregroundColor(Color("PrimaryGreen"))
-                    Text("\(myExp ?? 0)")
+                    Text("\(myExp)")
                         .font(.system(size: 14))
                 }
             }
@@ -51,6 +51,6 @@ struct MyLeaderBoardStatus: View {
 
 struct MyLeaderBoardStatus_Previews: PreviewProvider {
     static var previews: some View {
-        MyLeaderBoardStatus(myRank: 0, myExp: 0)
+        MyLeaderBoardStatus(myRank: .constant(0), myExp: .constant(0))
     }
 }
