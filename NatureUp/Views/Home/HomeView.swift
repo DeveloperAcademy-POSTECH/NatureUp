@@ -9,33 +9,46 @@ import SwiftUI
 import MapKit
 
 struct HomeView: View {
-    @StateObject var locationManager = LocationManager()
+    @State var locationManager = LocationManager()
+    @State var nearestPin : Location?
+    @State var secondestPin : Location?
     
-    var userLatitude: String {
-        return "\(locationManager.lastLocation?.coordinate.latitude ?? 0)"
-    }
+    //MARK: - nearest pin searching algorithm
     
-    var userLongitude: String {
-        return "\(locationManager.lastLocation?.coordinate.longitude ?? 0)"
+    func getNearestPins() {
+        let curLocation = CLLocation(latitude: locationManager.lastLocation?.coordinate.latitude ?? 0, longitude: locationManager.lastLocation?.coordinate.longitude ?? 0)
+        
+        // nearest pin
+        self.nearestPin = locations.reduce((CLLocationDistanceMax, nil as Location?)) { nearest, location in
+            
+            let loc = CLLocation(latitude: location.lat, longitude: location.lon)
+            let distance = curLocation.distance(from: loc)
+            
+            return distance < nearest.0 ? (distance, location) : nearest
+        }.1
+        
+        // second nearest pin
+        self.secondestPin = locations.reduce((CLLocationDistanceMax, nil as Location?)) { nearest, location in
+            
+            let loc = CLLocation(latitude: location.lat, longitude: location.lon)
+            var distance = curLocation.distance(from: loc)
+            
+            if location.lat == nearestPin?.lat && location.lon == nearestPin?.lon || location.type == nearestPin?.type {
+                distance = CLLocationDistanceMax
+            }
+            
+            return distance < nearest.0 ? (distance, location) : nearest
+        }.1
     }
-    // TODO: 1. 자기위치 가져오기
-    // TODO: 2. 자기위치와 가장 가까운 핀 2개 찾기
-    // TODO: 3. 가까운 핀 2개의 타입이 서로 다르면 출력
-    // TODO: 4. 같으면 다를때까지 찾고 출력
     
     var body: some View {
         ZStack {
             Color("BackgroundGray")
             VStack {
                 MyStatus()
-//                HStack {
-//                    Text("latitude: \(userLatitude)")
-//                    Text("longitude: \(userLongitude)")
-//
-//                }
                 ScrollView {
-                    ActivityList(location: "ocean")
-                    ActivityList(location: "building")
+                    ActivityList(location: nearestPin?.type ?? "")
+                    ActivityList(location: secondestPin?.type ?? "")
                     HStack {
                         Spacer()
                         Text("반경 20m내 오차범위가 있을 수 있습니다.")
@@ -64,6 +77,9 @@ struct HomeView: View {
                 .isDetailLink(false)
             }
         }
+        .onAppear(
+            perform: getNearestPins
+        )
     }
 }
 
