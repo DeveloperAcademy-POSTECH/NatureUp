@@ -802,5 +802,413 @@
    "type": "road",
    "lon": 129.32158648967743,
    "lat": 36.01704485280998
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32083010673523,
+   "lat" :36.012799059105824
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32070538401604,
+   "lat": 36.012729631861184
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32043179869652,
+   "lat": 36.01257125073047
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32083010673523,
+   "lat" :36.012799059105824
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32030841708183,
+   "lat": 36.01260379482439
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32190030813217,
+   "lat": 36.015619489215624
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.3218493461609,
+   "lat": 36.0154741310536
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32180643081665,
+   "lat": 36.015361315578915
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32177156209946,
+   "lat": 36.0152376522769
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.3217635154724,
+   "lat": 36.01510531063349
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32184129953384,
+   "lat": 36.015009850949475
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32192981243134,
+   "lat": 36.01492306931823
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32184129953384,
+   "lat": 36.015009850949475
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32192981243134,
+   "lat": 36.01492306931823
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32184129953384,
+   "lat": 36.015009850949475
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32204246520996,
+   "lat": 36.014855813488296
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32216316461563,
+   "lat": 36.01481893123462
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.3223026394844,
+   "lat": 36.01477120123363
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.3224635720253,
+   "lat": 36.01472781029858
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.3226057291031,
+   "lat": 36.01471262346567
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.322769343853,
+   "lat": 36.0146952670816
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32293832302094,
+   "lat": 36.01472347120375
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.3230590224266,
+   "lat": 36.01479940532861
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32316094636917,
+   "lat": 36.01491656069204
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.3232226371765,
+   "lat": 36.015070598034505
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32316094636917,
+   "lat": 36.01491656069204
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.3232226371765,
+   "lat": 36.015070598034505
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32308852672577,
+   "lat": 36.01539602804986
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32286590337753,
+   "lat": 36.01541555380806
+ },
+ {
+   "name" : "POSTECH road",
+   "type": "road",
+   "lon": 129.32276129722592,
+   "lat": 36.01543507956141
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32296514511108,
+   "lat": 36.01553270825563
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32296246290204,
+   "lat": 36.015654201572886
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32319045066833,
+   "lat": 36.01520944833874
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32215377688408,
+   "lat": 36.015298399186335
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32222351431847,
+   "lat": 36.01533853551153
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32231202721596,
+   "lat": 36.015336365980964
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.3223991990089,
+   "lat": 36.01528755152738
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32253062725067,
+   "lat": 36.015224635075924
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32262852787971,
+   "lat": 36.015194261598616
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.3227156996727,
+   "lat": 36.015179074855595
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32281628251076,
+   "lat": 36.01517690532062
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.3229342997074,
+   "lat": 36.01514870136073
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32299062609673,
+   "lat": 36.0150478178831
+ },
+ {
+   "name" : "jigok pondd",
+   "type": "river",
+   "lon": 129.32301342487335,
+   "lat": 36.01500008802073
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32286858558655,
+   "lat": 36.01494259519358
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32252794504166,
+   "lat": 36.01496103629366
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.3221028149128,
+   "lat": 36.015235482743535
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.3223911523819,
+   "lat": 36.01502503772512
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32213231921196,
+   "lat": 36.015171481482966
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32218730449677,
+   "lat": 36.015122666927255
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.3222825229168,
+   "lat": 36.01506408942048
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32279616594315,
+   "lat": 36.014930662714775
+ },
+ {
+   "name" : "jigok pond",
+   "type": "river",
+   "lon": 129.32236298918724,
+   "lat": 36.01503371588131
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.32288333773613,
+   "lat": 36.01495235812945
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.3220303952694,
+   "lat": 36.01551209776357
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.3221752345562,
+   "lat": 36.01538734993356
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.32224228978157,
+   "lat": 36.01539494328537
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.32231873273847,
+   "lat": 36.01540145187207
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.3223750591278,
+   "lat": 36.01549257202931
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.32249039411545,
+   "lat": 36.01556525112682
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.32261914014816,
+   "lat": 36.01554464064329
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.3224635720253,
+   "lat": 36.01571060912078
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.32282030582428,
+   "lat": 36.01548063963376
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.32270497083664,
+   "lat": 36.0155175215778
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.32291954755783,
+   "lat": 36.0155685054132
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.3228779733181,
+   "lat": 36.0155337930182
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.32290747761726,
+   "lat": 36.015698676758255
+ },
+ {
+   "name" : "Jigok center",
+   "type": "building",
+   "lon": 129.3229128420353,
+   "lat": 36.01564660824603
  }
 ]
