@@ -25,17 +25,10 @@ struct HomeView: View {
                     ActivityList(location: "building")
                     HStack {
                         Spacer()
-                        VStack(alignment: .trailing) {
-                            Text("반경 20m내 오차범위가 있을 수 있습니다.")
-                                .font(.footnote)
-                                .fontWeight(.light)
-                                .foregroundColor(Color.gray)
-                            NavigationLink {
-                                MapView(location: locations)
-                            } label: {
-                                Text("지도 보기")
-                            }
-                        }
+                        Text("반경 20m내 오차범위가 있을 수 있습니다.")
+                            .font(.footnote)
+                            .fontWeight(.light)
+                            .foregroundColor(Color.gray)
                         .padding()
                     }
                 }

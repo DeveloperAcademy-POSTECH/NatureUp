@@ -15,9 +15,7 @@ struct ContentView: View {
         case market = "상점"
         case profile = "프로필"
     }
-    
-    @State private var showingNotifications = false
-    @State private var showingMapView = false
+
     @State private var showingProfileEditor = false
     @State var tabSelection:Tabs = .home
     
