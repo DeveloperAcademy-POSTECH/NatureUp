@@ -11,6 +11,15 @@ struct ActivityList: View {
     @ObservedObject var model = ActivityViewModel()
     let location: String
     
+    let locationLabels = [
+        "building" : "건물 내",
+        "road" : "길거리",
+        "mountain" : "산",
+        "ocean" : "바다",
+        "river" : "강",
+        "market" : "가게"
+    ]
+    
     init(location: String) {
         self.location = location
         model.getQueryData(type: location)
@@ -19,7 +28,7 @@ struct ActivityList: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text(location)
+                Text(locationLabels[location] ?? "")
                     .font(.title2)
                     .fontWeight(.semibold)
                     .foregroundColor(Color("PrimaryGreen"))
