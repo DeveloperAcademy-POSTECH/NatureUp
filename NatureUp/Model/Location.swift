@@ -17,4 +17,8 @@ struct Location: Identifiable, Decodable {
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: lat, longitude: lon)
     }
+    
+    enum CodingKeys: String, CodingKey {
+        case name, type, lon, lat
+    }
 }

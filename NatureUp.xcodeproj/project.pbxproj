@@ -28,6 +28,7 @@
 		16A6722E2805F88C009A7DE0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6722D2805F88C009A7DE0 /* UserViewModel.swift */; };
 		16A6723028067585009A7DE0 /* PlayedActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6722F28067585009A7DE0 /* PlayedActivityViewModel.swift */; };
 		16A6723228067595009A7DE0 /* PlayedActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6723128067595009A7DE0 /* PlayedActivity.swift */; };
+		16A672342807ADE0009A7DE0 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A672332807ADE0009A7DE0 /* LocationViewModel.swift */; };
 		16B2F96F27FC78D300E83570 /* NatureUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F96E27FC78D300E83570 /* NatureUpApp.swift */; };
 		16B2F97127FC78D300E83570 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F97027FC78D300E83570 /* ContentView.swift */; };
 		16B2F9C427FEB44200E83570 /* MyStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2F9C327FEB44200E83570 /* MyStatus.swift */; };
@@ -84,6 +85,7 @@
 		16A6722D2805F88C009A7DE0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		16A6722F28067585009A7DE0 /* PlayedActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayedActivityViewModel.swift; sourceTree = "<group>"; };
 		16A6723128067595009A7DE0 /* PlayedActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayedActivity.swift; sourceTree = "<group>"; };
+		16A672332807ADE0009A7DE0 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		16B2F96B27FC78D300E83570 /* NatureUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatureUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B2F96E27FC78D300E83570 /* NatureUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureUpApp.swift; sourceTree = "<group>"; };
 		16B2F97027FC78D300E83570 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				16A672272805D559009A7DE0 /* ActivityViewModel.swift */,
 				16A6722D2805F88C009A7DE0 /* UserViewModel.swift */,
 				16A6722F28067585009A7DE0 /* PlayedActivityViewModel.swift */,
+				16A672332807ADE0009A7DE0 /* LocationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				16A6722E2805F88C009A7DE0 /* UserViewModel.swift in Sources */,
 				6F66451D28043354007C21CD /* ItemCardList.swift in Sources */,
 				16B2F9CE27FED1C100E83570 /* HomeView.swift in Sources */,
+				16A672342807ADE0009A7DE0 /* LocationViewModel.swift in Sources */,
 				B5C7FF7328000A050017C7AC /* ProfileView.swift in Sources */,
 				3483A468280089020046E9A9 /* ProfileStatus.swift in Sources */,
 				16B2F97127FC78D300E83570 /* ContentView.swift in Sources */,
