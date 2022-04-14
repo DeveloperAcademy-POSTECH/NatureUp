@@ -12,6 +12,7 @@ struct ProfileEditor: View {
     @State var username: String = ""
     @State private var status = true
     @State private var showingAlert = false
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         
@@ -59,7 +60,7 @@ struct ProfileEditor: View {
                     .padding(.all, 5)
                     .alert(isPresented: $showingAlert) {
                         Alert(title: Text("저장하시겠습니까?"), message: Text("취소 버튼을 누르면 저장되지 않습니다."), primaryButton: .destructive(Text("취소"), action: {
-                        }), secondaryButton: .cancel(Text("저장")))
+                        }), secondaryButton: .cancel(Text("저장"), action: {presentationMode.wrappedValue.dismiss()}))
                     }
             }
         }
