@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ActivityRow: View {
     let activityName: String
+    let level: Int
     
     var body: some View {
         ZStack {
@@ -19,6 +20,36 @@ struct ActivityRow: View {
                     .fontWeight(.medium)
                     .foregroundColor(Color.black)
                 Spacer()
+                VStack(alignment: .trailing) {
+                    HStack {
+                        switch level {
+                        case 1:
+                            Text("+\(3)")
+                        case 2:
+                            Text("+\(5)")
+                        case 3:
+                            Text("+\(7)")
+                        default :
+                            Text("+\(0)")
+                        }
+                        Image(systemName: "leaf.fill")
+                    }
+                    HStack {
+                        switch level {
+                        case 1:
+                            Text("+\(10)")
+                        case 2:
+                            Text("+\(20)")
+                        case 3:
+                            Text("+\(30)")
+                        default :
+                            Text("+\(0)")
+                        }
+                        Image(systemName: "star.circle.fill")
+                    }
+                }
+                .font(.footnote)
+                .foregroundColor(Color("SecondGreen"))
             }
             .padding()
         }
@@ -33,6 +64,6 @@ struct ActivityRow: View {
 
 struct Activity_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityRow(activityName: "쓰레기 분리수거 하기")
+        ActivityRow(activityName: "쓰레기 분리수거 하기", level: 1)
     }
 }
