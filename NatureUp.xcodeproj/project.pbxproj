@@ -20,6 +20,7 @@
 		05949EF1280809DC0065DDB8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05949EF0280809DC0065DDB8 /* LocationManager.swift */; };
 		160341A72802B96F00170408 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160341A62802B96F00170408 /* LocationListView.swift */; };
 		160341B928043F1800170408 /* ItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160341B828043F1800170408 /* ItemCardView.swift */; };
+		164F65A02808794D00B3B080 /* SwiftUIPullToRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 164F659F2808794D00B3B080 /* SwiftUIPullToRefresh */; };
 		16A672202805C54F009A7DE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16A6721F2805C54F009A7DE0 /* GoogleService-Info.plist */; };
 		16A672232805C5CD009A7DE0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 16A672222805C5CD009A7DE0 /* FirebaseFirestore */; };
 		16A672252805C5CD009A7DE0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 16A672242805C5CD009A7DE0 /* FirebaseStorage */; };
@@ -133,6 +134,7 @@
 			files = (
 				16A672232805C5CD009A7DE0 /* FirebaseFirestore in Frameworks */,
 				16A672252805C5CD009A7DE0 /* FirebaseStorage in Frameworks */,
+				164F65A02808794D00B3B080 /* SwiftUIPullToRefresh in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +327,7 @@
 			packageProductDependencies = (
 				16A672222805C5CD009A7DE0 /* FirebaseFirestore */,
 				16A672242805C5CD009A7DE0 /* FirebaseStorage */,
+				164F659F2808794D00B3B080 /* SwiftUIPullToRefresh */,
 			);
 			productName = NatureUp;
 			productReference = 16B2F96B27FC78D300E83570 /* NatureUp.app */;
@@ -356,6 +359,7 @@
 			mainGroup = 16B2F96227FC78D300E83570;
 			packageReferences = (
 				16A672212805C5CD009A7DE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				164F659E2808794C00B3B080 /* XCRemoteSwiftPackageReference "swiftui-pull-to-refresh" */,
 			);
 			productRefGroup = 16B2F96C27FC78D300E83570 /* Products */;
 			projectDirPath = "";
@@ -564,7 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NatureUp/Preview Content\"";
-				DEVELOPMENT_TEAM = 79Q32HWWTW;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NatureUp/Info.plist;
@@ -596,7 +600,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NatureUp/Preview Content\"";
-				DEVELOPMENT_TEAM = 79Q32HWWTW;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NatureUp/Info.plist;
@@ -644,6 +648,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		164F659E2808794C00B3B080 /* XCRemoteSwiftPackageReference "swiftui-pull-to-refresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-pull-to-refresh";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		16A672212805C5CD009A7DE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -655,6 +667,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		164F659F2808794D00B3B080 /* SwiftUIPullToRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 164F659E2808794C00B3B080 /* XCRemoteSwiftPackageReference "swiftui-pull-to-refresh" */;
+			productName = SwiftUIPullToRefresh;
+		};
 		16A672222805C5CD009A7DE0 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 16A672212805C5CD009A7DE0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

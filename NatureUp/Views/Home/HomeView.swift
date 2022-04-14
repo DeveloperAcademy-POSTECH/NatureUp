@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MapKit
+import SwiftUIPullToRefresh
 
 struct HomeView: View {
     @State var locationManager = LocationManager()
@@ -46,16 +47,23 @@ struct HomeView: View {
             Color("BackgroundGray")
             VStack {
                 MyStatus()
-                ScrollView {
-                    ActivityList(location: nearestPin?.type ?? "")
-                    ActivityList(location: secondestPin?.type ?? "")
-                    HStack {
-                        Spacer()
-                        Text("반경 20m내 오차범위가 있을 수 있습니다.")
-                            .font(.footnote)
-                            .fontWeight(.light)
-                            .foregroundColor(Color.gray)
-                        .padding()
+                RefreshableScrollView(loadingViewBackgroundColor: Color("BackgroundGray"), onRefresh: { done in
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                        getNearestPins()
+                        done()
+                    }
+                }) {
+                    VStack{
+                        ActivityList(location: nearestPin?.type ?? "")
+                        ActivityList(location: secondestPin?.type ?? "")
+                        HStack {
+                            Spacer()
+                            Text("반경 20m내 오차범위가 있을 수 있습니다.")
+                                .font(.footnote)
+                                .fontWeight(.light)
+                                .foregroundColor(.gray)
+                            .padding()
+                        }
                     }
                 }
                 NavigationLink(
