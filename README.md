@@ -14,7 +14,7 @@ Apple Developer Academy @ POSTECH, Afternoon Session 17 team's Mini Challenge Pr
 - Swift
 - MapKit
 - Firebase Firestore
-- [SwiftUIPullToRefresh](https://github.com/globulus/swiftui-pull-to-refresh)(Package: MIT License)
+- [SwiftUIPullToRefresh](https://github.com/globulus/swiftui-pull-to-refresh) (package - MIT License)
 
 ## 기능 소개
 ### NatureUp의 주요 기능은 다음과 같습니다.
