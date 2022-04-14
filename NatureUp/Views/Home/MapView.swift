@@ -12,12 +12,10 @@ struct MapView: View {
     @State private var viewModel = LoactionViewModel()
     let location : [Location]
     
-    init(location: [Location]) {
-        self.location = location
-    }
-    
     var body: some View {
-        Map(coordinateRegion: $viewModel.region,showsUserLocation: true, annotationItems: location) { location in
+        Map(coordinateRegion: $viewModel.region,
+            showsUserLocation: true,
+            annotationItems: location) { location in
             MapAnnotation(coordinate: location.coordinate) {
                 Image(systemName: "leaf")
                     .foregroundColor(Color("PrimaryGreen"))
