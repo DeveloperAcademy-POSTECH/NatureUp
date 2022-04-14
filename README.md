@@ -43,6 +43,12 @@ Apple Developer Academy @ POSTECH, Afternoon Session 17 team's Mini Challenge Pr
     유저는 환경 보호 활동과 평가를 통해 획득한 포인트를 통해 리더보드에 표시되는 자신의 명패를 꾸밀 수 있는 디자인 요소들을 구입할 수 있습니다. 이를 통해 유저의 보상 심리를 충족할 수 있게 합니다.
 
 ## 스크린샷
+<img src="https://user-images.githubusercontent.com/56063805/163396348-1fee02bd-95bd-4f44-b4f7-2128c93309fd.png" width="30%"><img src="https://user-images.githubusercontent.com/56063805/163396371-c5149568-68f8-4679-84aa-db25205fcec8.png" width="30%"><img src="https://user-images.githubusercontent.com/56063805/163396391-02dab55c-53a4-482a-b782-7a94cc807ad1.png" width="30%">
+<img src="https://user-images.githubusercontent.com/56063805/163396427-7bb34983-a479-4389-a387-e44de84ef6b8.png" width="30%"><img src="https://user-images.githubusercontent.com/56063805/163396455-c94d2fc0-601b-4e55-af98-7b8b894112d0.png" width="30%"><img src="https://user-images.githubusercontent.com/56063805/163396468-e6e3c233-dde0-4689-98dd-c8d37e5d2e64.png" width="30%">
+<img src="https://user-images.githubusercontent.com/56063805/163396505-07c25056-a8cf-4918-80b9-a6e945d8aa4e.png" width="30%"><img src="https://user-images.githubusercontent.com/56063805/163396548-9b177739-5f7c-4644-a5ee-9fd685d959bf.png" width="30%"><img src="https://user-images.githubusercontent.com/56063805/163396576-a56f28af-c639-4837-9658-39deaf8f6f99.png" width="30%">
+<img src="https://user-images.githubusercontent.com/56063805/163396613-96864f99-5df1-4b3c-ac19-c624d255767c.png" width="30%"><img src="https://user-images.githubusercontent.com/56063805/163396688-02941c0e-91bb-4f0d-a63b-a93011dd59d9.png" width="30%"><img src="https://user-images.githubusercontent.com/56063805/163396803-951efc2b-206b-4d49-97b0-b6de509f1a9a.png" width="30%">
+<img src="https://user-images.githubusercontent.com/56063805/163396957-9fa7bea7-e6ba-4f3c-87a5-b145aa80e581.png" width="30%"><img src="https://user-images.githubusercontent.com/56063805/163396853-ac9b3643-4bf7-471a-a9cb-9a6e106bc6d9.png" width="30%"><img src="https://user-images.githubusercontent.com/56063805/163397016-50bbd6b4-3eef-4c71-a07e-3ea53a984ae8.png" width="30%">
+<img src="https://user-images.githubusercontent.com/56063805/163397028-3bcdaaf4-5989-422d-b145-d4180f9ebdb2.png" width="30%"><img src="https://user-images.githubusercontent.com/56063805/163397048-62b034f7-6a4d-46b4-9d2d-c3ccd6d85839.png" width="30%"><img src="https://user-images.githubusercontent.com/56063805/163397064-a9f4f336-f1cb-42d1-a1ad-03d67251d183.png" width="30%">
 
 ## Contributors
 - [Everett](https://github.com/Shin-jun)

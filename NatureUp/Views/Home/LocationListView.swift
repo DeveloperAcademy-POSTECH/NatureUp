@@ -31,6 +31,7 @@ struct LocationListView: View {
                 HStack {
                     Text(activity.name)
                         .foregroundColor(.black)
+                    Spacer()
                     VStack(alignment: .trailing) {
                         HStack {
                             switch activity.level {
