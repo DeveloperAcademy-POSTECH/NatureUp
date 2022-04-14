@@ -17,6 +17,7 @@ struct ContentView: View {
     }
     
     @State private var showingNotifications = false
+    @State private var showingMapView = false
     @State private var showingProfileEditor = false
     @State var tabSelection:Tabs = .home
     
@@ -77,34 +78,37 @@ struct ContentView: View {
             .accentColor(Color("PrimaryGreen"))
             .navigationBarTitle(self.tabSelection.rawValue, displayMode: .inline)
             .toolbar {
-                if tabSelection == Tabs.home {
-                    Button {
-                        showingNotifications.toggle()
-                    } label: {
-                        Label("Notifications", systemImage: "bell.badge")
+                ToolbarItem(placement: .navigationBarLeading) {
+                    if tabSelection == Tabs.home {
+                        NavigationLink {
+                            MapView(location: locations)
+                        } label: {
+                            Label("MapAnnotation", systemImage: "map")
+                        }
                     }
-                    .accentColor(Color("PrimaryGreen"))
-                    .sheet(
-                        isPresented: $showingNotifications,
-                        content: {
-                            
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    if tabSelection == Tabs.home {
+                        NavigationLink {
                             NotificationView()
+                        } label: {
+                            Label("Notifications", systemImage: "bell.badge")
                         }
-                    )
-                } else if tabSelection == Tabs.profile {
-                    Button {
-                        showingProfileEditor.toggle()
-                    } label: {
-                        Text("Edit")
+                    } else if tabSelection == Tabs.profile {
+                        Button {
+                            showingProfileEditor.toggle()
+                        } label: {
+                            Text("Edit")
+                        }
+                        .accentColor(Color("PrimaryGreen"))
+                        .sheet(
+                            isPresented: $showingProfileEditor,
+                            content: {
+                                
+                                ProfileEditor()
+                            }
+                        )
                     }
-                    .accentColor(Color("PrimaryGreen"))
-                    .sheet(
-                        isPresented: $showingProfileEditor,
-                        content: {
-                            
-                            ProfileEditor()
-                        }
-                    )
                 }
             }
         }
