@@ -11,6 +11,15 @@ struct LocationListView: View {
     @ObservedObject var model = ActivityViewModel()
     let location: String
     
+    let locationLabels = [
+        "building" : "건물 내",
+        "road" : "길거리",
+        "mountain" : "산",
+        "ocean" : "바다",
+        "river" : "강",
+        "market" : "가게"
+    ]
+    
     init(location: String) {
         self.location = location
         model.getQueryData(type: location)
@@ -56,12 +65,12 @@ struct LocationListView: View {
             }
             .isDetailLink(false)
         }
-        .navigationBarTitle(location, displayMode: .inline)
+        .navigationBarTitle(locationLabels[location] ?? "", displayMode: .inline)
     }
 }
 
 struct LocationListView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationListView(location: "당신이 있는 건물 내")
+        LocationListView(location: "road")
     }
 }
