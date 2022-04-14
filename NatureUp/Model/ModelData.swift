@@ -10,6 +10,7 @@ import Foundation
 var userRankings: [UserRanking] = load("leaderBoardData.json")
 var items: [Item] = load("ItemList.json")
 var evaluations: [Evaluation] = load("EvaluationData.json")
+var locations: [Location] = load("locations.json")
 
 
 func load<T: Decodable>(_ filename: String) -> T {
