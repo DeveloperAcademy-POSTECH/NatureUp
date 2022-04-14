@@ -32,7 +32,6 @@ struct MarketView: View {
     var body: some View {
         ZStack{
             Color("BackgroundGray")
-                .ignoresSafeArea()
             VStack {
                 HStack {
                     Spacer()
@@ -79,7 +78,7 @@ struct MarketView: View {
                         .tag(3)
                     Text("효과")
                         .tag(4)
-                }.pickerStyle   (SegmentedPickerStyle())
+                }.pickerStyle(SegmentedPickerStyle())
                     .padding()
                 if (selectedNum == 1){
                     ItemCardList(
