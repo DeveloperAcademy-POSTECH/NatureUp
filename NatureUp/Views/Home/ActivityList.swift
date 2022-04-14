@@ -45,14 +45,14 @@ struct ActivityList: View {
             if model.list.count > 3 {
                 ForEach(model.list[0...2]) { activity in
                     NavigationLink(destination: AuthenticationView()) {
-                        ActivityRow(activityName: activity.name)
+                        ActivityRow(activityName: activity.name, level: activity.level)
                     }
                     .isDetailLink(false)
                 }
             } else {
                 ForEach(model.list) { activity in
                     NavigationLink(destination: AuthenticationView()) {
-                        ActivityRow(activityName: activity.name)
+                        ActivityRow(activityName: activity.name, level: activity.level)
                     }
                     .isDetailLink(false)
                 }

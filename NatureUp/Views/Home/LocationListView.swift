@@ -19,8 +19,40 @@ struct LocationListView: View {
     var body: some View {
         List(model.list) { activity in
             NavigationLink(destination: AuthenticationView()) {
-                Text(activity.name)
-                    .foregroundColor(.black)
+                HStack {
+                    Text(activity.name)
+                        .foregroundColor(.black)
+                    VStack(alignment: .trailing) {
+                        HStack {
+                            switch activity.level {
+                            case 1:
+                                Text("+\(3)")
+                            case 2:
+                                Text("+\(5)")
+                            case 3:
+                                Text("+\(7)")
+                            default :
+                                Text("+\(0)")
+                            }
+                            Image(systemName: "leaf.fill")
+                        }
+                        HStack {
+                            switch activity.level {
+                            case 1:
+                                Text("+\(10)")
+                            case 2:
+                                Text("+\(20)")
+                            case 3:
+                                Text("+\(30)")
+                            default :
+                                Text("+\(0)")
+                            }
+                            Image(systemName: "star.circle.fill")
+                        }
+                    }
+                    .font(.caption2)
+                    .foregroundColor(Color("SecondGreen"))
+                }
             }
             .isDetailLink(false)
         }
