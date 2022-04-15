@@ -23,7 +23,7 @@ Apple Developer Academy @ POSTECH, Afternoon Session 17 team's Mini Challenge Pr
 
     사용자가 위치한 가장 가까운 위치의 특징을 파악하여 사용자가 실천할 수 있는 환경 보호 활동 목록을 표시해줍니다. (현재 포항공과대학교 캠퍼스와 인근 지역 지원) <br>
     [<이슈 #30>](https://github.com/DeveloperAcademy-POSTECH/NatureUp/issues/30)<br>
-    [<가까운 위치 탐색 알고리즘 코드>](https://github.com/DeveloperAcademy-POSTECH/NatureUp/blob/main/NatureUp/Views/Home/HomeView.swift#L16-L42)
+    [<가까운 위치 탐색 알고리즘 코드>](https://github.com/DeveloperAcademy-POSTECH/NatureUp/blob/main/NatureUp/Views/Home/HomeView.swift#L17-L43)
 
 2. 환경 보호 활동을 진행한 모습을 촬영하여 인증
 
