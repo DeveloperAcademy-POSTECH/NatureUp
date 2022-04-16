@@ -32,7 +32,7 @@ struct CustomCameraView: View {
                 ZStack {
                     Rectangle()
                         .fill(.white)
-                        .frame(height: 190)
+                        .frame(height: UIScreen.CscreenHeight/4.5)
                     Button(action: {
                         cameraService.capturePhoto()
                     }, label: {
@@ -51,4 +51,10 @@ struct CustomCameraView: View {
             .ignoresSafeArea(edges: .bottom)
         }
     }
+}
+
+extension UIScreen{
+    static let CscreenWidth = UIScreen.main.bounds.size.width
+    static let CscreenHeight = UIScreen.main.bounds.size.height
+    static let CscreenSize = UIScreen.main.bounds.size
 }
