@@ -44,7 +44,7 @@ struct MarketView: View {
                             .opacity(0.05)
                             .frame(width:100, height:30)
                         HStack{
-                            Image(systemName: "leaf.fill")
+                            Image(systemName: "star.circle.fill")
                                 .foregroundColor(Color("PrimaryGreen"))
                             Text(String("\(userVM.user.points)"))
                         }
