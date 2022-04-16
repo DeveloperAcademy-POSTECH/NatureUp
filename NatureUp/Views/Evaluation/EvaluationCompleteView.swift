@@ -25,7 +25,7 @@ struct EvaluationCompleteView: View {
             ZStack {
                 Color("BackgroundGray")
                 VStack {
-                    Text("인증완료")
+                    Text("평가완료")
                         .font(.largeTitle)
                         .fontWeight(.black)
                         .foregroundColor(Color("PrimaryGreen"))
