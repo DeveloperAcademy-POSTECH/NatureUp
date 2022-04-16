@@ -33,7 +33,7 @@ struct MyStatus: View {
                 .frame(height: 25)
             Spacer()
             HStack(spacing: 5) {
-                Image(systemName:"star.circle.fill")
+                Image(systemName:"leaf.fill")
                     .foregroundColor(Color("PrimaryGreen"))
                     .padding(5)
                 Text("\(userVM.user.exp)")

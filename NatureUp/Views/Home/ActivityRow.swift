@@ -24,11 +24,11 @@ struct ActivityRow: View {
                     HStack {
                         switch level {
                         case 1:
-                            Text("+\(3)")
+                            Text("+\(10)")
                         case 2:
-                            Text("+\(5)")
+                            Text("+\(20)")
                         case 3:
-                            Text("+\(7)")
+                            Text("+\(30)")
                         default :
                             Text("+\(0)")
                         }
@@ -37,11 +37,11 @@ struct ActivityRow: View {
                     HStack {
                         switch level {
                         case 1:
-                            Text("+\(10)")
+                            Text("+\(3)")
                         case 2:
-                            Text("+\(20)")
+                            Text("+\(5)")
                         case 3:
-                            Text("+\(30)")
+                            Text("+\(7)")
                         default :
                             Text("+\(0)")
                         }
