@@ -36,11 +36,7 @@ Apple Developer Academy @ POSTECH, Afternoon Session 17 team's MC1 Project
     유저는 환경 보호 활동과 평가를 통해 획득한 포인트를 통해 리더보드에 표시되는 자신의 명패를 꾸밀 수 있는 디자인 요소들을 구입할 수 있습니다. 이를 통해 유저의 보상 심리를 충족할 수 있게 합니다.
 
 ## :people_hugging: Authors
-- [Everett](https://github.com/Shin-jun)
-- [Hyukey](https://github.com/devluce)
-- [Mize](https://github.com/DevMizeKR)
-- [Neis](https://github.com/JungYunseong)
-- [Nia](https://github.com/pig1606)
+- [@Everett](https://github.com/Shin-jun) | [@Hyukey](https://github.com/devluce) | [@Mize](https://github.com/DevMizeKR) | [@Neis](https://github.com/JungYunseong) | [@Nia](https://github.com/pig1606)
 
 ## :framed_picture: Demo
 
