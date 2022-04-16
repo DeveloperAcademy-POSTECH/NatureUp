@@ -47,7 +47,6 @@ struct MarketView: View {
                             Image(systemName: "leaf.fill")
                                 .foregroundColor(Color("PrimaryGreen"))
                             Text(String("\(userVM.user.points)"))
-                                .fontWeight(.medium)
                         }
                         
                     }
