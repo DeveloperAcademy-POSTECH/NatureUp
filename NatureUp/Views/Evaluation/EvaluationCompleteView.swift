@@ -20,7 +20,7 @@ struct EvaluationCompleteView: View {
         Button(action: {
             dismiss()
             dismiss()
-            userVM.updateUser(id: myId, info: ["exp": userVM.user.points + 1])
+            userVM.updateUser(id: myId, info: ["points": userVM.user.points + 1])
         } ) {
             ZStack {
                 Color("BackgroundGray")
